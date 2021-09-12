@@ -1,5 +1,6 @@
 # NTHU2021
 
+# linux binary analysis
 ## 20210917:week1
 
 - [Course outline]()
@@ -8,12 +9,13 @@
 
 ## 20210924: week 2
 
+# Reverse engineering
 ## week 3
 - [assmebly Programming]()
 - [basic REverse engineering]()
 
 ## week 4 :
-- [advanced REverse engineering ]
+- [advanced REverse engineering: Symbolic execution ]
 
 # LINUX EXPLOITATION
 ## week 5: buffer overflow ROP1 
@@ -37,11 +39,8 @@
 ## week 14: Forensics
 ## week 15: Malware Analysis
 
-# defensice security
- log analysis
- SOC 
-## week 16:
+# Defensice security
+## week 16: Defensice security: from  log analysis to SOC 
 ## week 17:  AI-powered attack and defense: An overview
-
 
 # week 18: FInal
