@@ -5,7 +5,7 @@
 - [Course outline]()
 - [Attack& defense:An overview]()
 
-# linux binary analysis
+# Linux binary analysis
 
 ## 20210924: week 2
 - [Linux programming]()
