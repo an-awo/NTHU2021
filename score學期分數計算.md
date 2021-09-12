@@ -11,13 +11,16 @@
 
 # Midterm and Final
 
-- 我沒教過的部分[上課期間會公告有哪些建議主題,可自挑主題(需教師同意)]
-- 評分標準[陸續公告]
+- 我沒教過的部分[上課期間會公告有哪些建議主題,可自挑主題(需經過同意)]
+
 
 ## Midterm  30%
 - 報告主題
   - 可提報想要報告的主題
   - 可從建議主題挑選
+    - Windows Binary Analysis
+    - Obfuscation/deObfuscation實測報告
+    - software packing/unpacking實測報告
     - advanced Reverse Engineering ==> triton, PIN, .... 
     - Pwn technique
 - 評分標準[陸續公告]
@@ -60,6 +63,8 @@
 - 可以繳多份報告證實自己本學期的奮鬥經驗(人生難得一拚)
 - 報告主題
   - Penetration Test滲透測試報告
+  - linux privilege escalation 測試報告
+  - Windows privilege escalation 測試報告
   - Forensics鑑識報告
 
 ## LABs 20%
