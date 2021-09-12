@@ -34,15 +34,15 @@
 ## week 11: powershell
 
 # From penetration test to Vulnerability Finding
-## week 12: penetration test
+## week 12:Penetration test
 ## week 13:Vulnerability Finding:bug bounty| Threat hunting
 
 # From Forensics to Malware analysis
 ## week 14: Forensics
 ## week 15: Malware Analysis
 
-# Defensice security
-## week 16: Defensice security: from  log analysis to SOC 
+# Defensive security
+## week 16: Defensive security: from  log analysis to SOC 
 ## week 17: AI-powered attack and defense: An overview
 
 # week 18: FInal
