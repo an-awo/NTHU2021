@@ -63,8 +63,9 @@
 - 可以繳多份報告證實自己本學期的奮鬥經驗(人生難得一拚)
 - 報告主題
   - Penetration Test滲透測試報告
-  - linux privilege escalation 測試報告
+  - Linux privilege escalation 測試報告
   - Windows privilege escalation 測試報告
+  - [Pentesting Azure Applications測試報告](https://www.books.com.tw/products/0010815310)
   - Forensics鑑識報告
 
 ## LABs 20%
