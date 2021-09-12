@@ -79,15 +79,19 @@
 ## CTF 10% [提供參賽證明|足以證明即可][額外加分]
 ```
 AIS3 EOF 2021
-Balsn CTF 2021
-Bomboofox CTF 2021 ?[時間不確定]
+Balsn CTF 2021 [11.20-22]
+Bomboofox CTF 2022 [時間待定]
 HITCON CTF 2021
 
 FOREIGN CTF == > See CTFTIME
 ```
 
-## Penetration Test(OSCP)
+# 資安活動與相關資訊
 
+- [HITCON Pacific 2021(2021年10月27、28日)]()
+- [台灣駭客年會HITCON Training 2021(2021年11月2-6日)](https://hitcon.kktix.cc/events/hitcon-training-2021)
+
+## Penetration Test(OSCP)
 - [system](https://docs.google.com/spreadsheets/d/1dwSMIAPIam0PuRBkCiDI88pU3yzrqqHkDtBngUHNCw8/edit#gid=665299979)
 - [OSCP Preparation Guide](https://blog.adithyanak.com/oscp-preparation-guide)
 - [The Ultimate OSCP Preparation Guide 2021](https://www.youtube.com/watch?v=Wqkr5S1b9gA&t=379s)
