@@ -23,8 +23,10 @@
   - core Assembly language
   - Calling Conventions
 - [basic Reverse Engineering]()
-  - radare2 RE
-  - Ghidra RE 
+  - gdb
+  - objdump
+  - radare2 
+  - Ghidra  
 
 ## week 4 :
 - [advanced REverse engineering: Symbolic execution ]
