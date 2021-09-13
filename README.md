@@ -1,5 +1,9 @@
 # NTHU2021
 
+
+- [Kali系統下載區](https://drive.google.com/file/d/1awLNHsJKgga2W0XFycnBmPEgzx4221Wi/view?usp=sharing)
+- [Ubuntu 18.04LTS系統下載區]()
+
 ## 20210917:week1
 
 - [Course outline]()
