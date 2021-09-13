@@ -2,7 +2,7 @@
 
 
 - [Kali系統下載區](https://drive.google.com/file/d/1awLNHsJKgga2W0XFycnBmPEgzx4221Wi/view?usp=sharing)
-- [Ubuntu 18.04LTS系統下載區]()
+- [Ubuntu 18.04LTS系統下載區](https://drive.google.com/file/d/1QPy_Ztk5Gl1ZkHRRCCytEJRem0KjItOw/view?usp=sharing)
 
 ## 20210917:week1
 
