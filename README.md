@@ -20,7 +20,7 @@
 - [assmebly Programming]()
   - NASM Assembly programming
   - GAS Assembly programming
-  - core Assembly language
+  - core Assembly language syntax
   - Calling Conventions
 - [Basic Reverse Engineering]()
   - gdb
