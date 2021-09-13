@@ -67,6 +67,9 @@
 
 ## week 16: Defensive security: from  log analysis to SOC 
 - Defensive security
+- MiTRE Att&CK vs MITRE Shield
+- NIST CSF
+
 - log analysis
   - splunk
   - OSSEC 
@@ -75,8 +78,6 @@
 - SOC
   - AlienVault OSSIM
 
-- MiTRE Att&CK vs MITRE Shield
-- NIST CSF
 
 ## week 17: AI-powered attack and defense: An overview
 
