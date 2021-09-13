@@ -81,14 +81,16 @@
 AIS3 EOF 2021
 Balsn CTF 2021 [11.20-22]
 Bomboofox CTF 2022 [時間待定]
-HITCON CTF 2021
+HITCON CTF 2021 ?
 
 FOREIGN CTF == > See CTFTIME
+
+ASIS CTF Quals 2021 [2021.10.22-24]
 ```
 
 # 資安活動與相關資訊
 
-- [HITCON Pacific 2021(2021年10月27、28日)]()
+- [HITCON Pacific 2021(2021年10月27、28日)](https://cfp2021.hitcon.org/zh/)
 - [台灣駭客年會HITCON Training 2021(2021年11月2-6日)](https://hitcon.kktix.cc/events/hitcon-training-2021)
 
 ## Penetration Test(OSCP)
