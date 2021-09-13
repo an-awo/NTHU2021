@@ -16,20 +16,23 @@
 - [Linux binary analysis]
 
 # Reverse engineering
-## week 3
+## week 3: Basic Reverse Engineering
 - [assmebly Programming]()
   - NASM Assembly programming
   - GAS Assembly programming
   - core Assembly language
   - Calling Conventions
-- [basic Reverse Engineering]()
+- [Basic Reverse Engineering]()
   - gdb
   - objdump
   - radare2 
   - Ghidra  
 
-## week 4 :
-- [advanced REverse engineering: Symbolic execution ]
+## week 4 : advanced REverse engineering: Symbolic execution 
+- Symbolic execution 
+- z3
+- angr
+- case study
 
 # LINUX EXPLOITATION
 ## week 5: buffer overflow ROP1 
