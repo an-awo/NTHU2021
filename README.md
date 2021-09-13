@@ -59,6 +59,7 @@
 ## week 15: Malware Analysis
 
 # Defensive security
+
 ## week 16: Defensive security: from  log analysis to SOC 
 - Defensive security
 - log analysis
@@ -71,6 +72,7 @@
 
 - MiTRE Att&CK vs MITRE Shield
 - NIST CSF
+
 ## week 17: AI-powered attack and defense: An overview
 
 # week 18: FInal
