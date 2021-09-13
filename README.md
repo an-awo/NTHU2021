@@ -4,21 +4,27 @@
 - [Kali系統下載區](https://drive.google.com/file/d/1awLNHsJKgga2W0XFycnBmPEgzx4221Wi/view?usp=sharing)
 - [Ubuntu 18.04LTS系統下載區](https://drive.google.com/file/d/1QPy_Ztk5Gl1ZkHRRCCytEJRem0KjItOw/view?usp=sharing)
 
-## 20210917:week1
+## week1:20210917
 
 - [Course outline]()
 - [Attack& defense:An overview]()
 
 # Linux binary analysis
 
-## 20210924: week 2
+## week 2: 20210924
 - [Linux programming]()
 - [Linux binary analysis]
 
 # Reverse engineering
 ## week 3
 - [assmebly Programming]()
+  - NASM Assembly programming
+  - GAS Assembly programming
+  - core Assembly language
+  - Calling Conventions
 - [basic Reverse Engineering]()
+  - radare2 RE
+  - Ghidra RE 
 
 ## week 4 :
 - [advanced REverse engineering: Symbolic execution ]
@@ -32,6 +38,13 @@
 
 ## week 8: windows internals 1
 
+- Tools:
+  - Windows Sysinternals(since 1996)
+  - Live KD
+  - windbg and Kernel debugging
+  - powershell
+  - python
+
 # week 9: Midterm
 
 ## week 10: windows internals 2
@@ -39,7 +52,7 @@
 
 # From penetration test to Vulnerability Finding
 ## week 12:Penetration test
-## week 13:Vulnerability Finding:bug bounty| Threat hunting
+## week 13:Vulnerability Finding:bug bounty| 
 
 # From Forensics to Malware analysis
 ## week 14: Forensics
@@ -47,6 +60,17 @@
 
 # Defensive security
 ## week 16: Defensive security: from  log analysis to SOC 
+- Defensive security
+- log analysis
+  - splunk
+  - OSSEC 
+- Threat hunting
+  - ELK
+- SOC
+  - AlienVault OSSIM
+
+- MiTRE Att&CK vs MITRE Shield
+- NIST CSF
 ## week 17: AI-powered attack and defense: An overview
 
 # week 18: FInal
