@@ -52,7 +52,7 @@
 
 # From penetration test to Vulnerability Finding
 ## week 12:Penetration test
-## week 13:Vulnerability Finding:bug bounty| 
+## week 13:Vulnerability Finding:bug bounty| FUZZ
 
 # From Forensics to Malware analysis
 ## week 14: Forensics
