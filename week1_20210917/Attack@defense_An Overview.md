@@ -1,7 +1,7 @@
 # Attack@defense:An Overview
 ```
 Offensive Security vs Defensive Security
-Red Team
+Red Team  Blue Team 
 
 Mitre Att&Ck
 Adversary Emulation Plans
@@ -27,6 +27,8 @@ ATT&CK is open and available to any person or organization for use at no charge.
 - [講解Using ATT&CK for Cyber Threat Intelligence Training](https://attack.mitre.org/resources/training/cti/)
 
 - 完成LAB1
+
+- [講解Adversary Emulation Plans]()
 
 # [MITRE Shield](https://shield.mitre.org/)
 - [MITRE Shield重新定義主動式資安防禦 2021](https://www.ithome.com.tw/article/143481)
