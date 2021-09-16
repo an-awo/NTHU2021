@@ -30,7 +30,7 @@ ATT&CK is open and available to any person or organization for use at no charge.
 
 - [講解Adversary Emulation Plans]()
 
-# [MITRE Shield](https://shield.mitre.org/)
+# [MITRE Shield](https://shield.mitre.org/) 主動式資安防禦ctive Defense
 - [MITRE Shield重新定義主動式資安防禦 2021](https://www.ithome.com.tw/article/143481)
 ```
 網路防護能力（General Cyber Defense）
