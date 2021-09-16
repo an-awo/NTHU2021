@@ -95,6 +95,16 @@
 - [台灣駭客年會HITCON Training 2021(2021年11月2-6日)](https://hitcon.kktix.cc/events/hitcon-training-2021)
 
 # 鼓勵您積極考取資安證照
+# offensive Security
+- [OSCP PEN-200:The official OSCP certification course](https://www.offensive-security.com/pwk-oscp/)
+- [OSWP PEN-210 Offensive Security Wireless Attacks:](https://www.offensive-security.com/wifu-oswp/)
+- [OSEP PEN-300:Evasion Techniques and Breaching Defenses: Advanced Pentesting Training](https://www.offensive-security.com/pen300-osep/)
+- [OSWE WEB-300 Learn web application security in Advanced Web Attacks and Exploitation.](https://www.offensive-security.com/awae-oswe/)
+
+## Offensive Security Exploit Developer (OSED) certification
+- [OSED EXP-301: Go beyond buffer overflows in Windows User Mode Exploit Development](https://www.offensive-security.com/exp301-osed/)
+- [OSEE EXP-401 Advanced Windows Exploitation: The Official OSEE Certification Course.](https://www.offensive-security.com/awe-osee/)
+
 ## Penetration Test(OSCP)
 - [system](https://docs.google.com/spreadsheets/d/1dwSMIAPIam0PuRBkCiDI88pU3yzrqqHkDtBngUHNCw8/edit#gid=665299979)
 - [OSCP Preparation Guide](https://blog.adithyanak.com/oscp-preparation-guide)
@@ -103,4 +113,9 @@
 - [範例說明1](https://blog.razrsec.uk/basic-pentesting-1-walkthrough/)
 - [範例說明2 PWNLAB: INIT (web)](https://www.vulnhub.com/entry/pwnlab-init,158/) [Walkthrough](https://noob2root.files.wordpress.com/2016/08/pwnlab-ctf.pdf)
 
+# 資安人才需求 ==> 缺哪種技術人才 ?
 - [資安人才需求==>DEVCORE 徵求紅隊演練工程師](https://devco.re/blog/2021/06/22/devcore-202106-recruit/)
+- GOOGLE | Github | MS 缺哪種技術人才 ?
+- 金控業缺哪種技術人才 ?
+
+- [Kali 文件中心](https://www.kali.org/docs/)
