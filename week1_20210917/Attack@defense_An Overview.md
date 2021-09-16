@@ -52,23 +52,37 @@ ATT&CK is open and available to any person or organization for use at no charge.
   - MITRE Engage is a framework for discussing and planning adversary engagement, deception, and denial activities. 
   - Engage is informed by adversary behavior observed in the real world and is intended to drive strategic cyber outcomes. 
   - Engage was created to help the private sector, government, and vendor communities to plan and execute the use of adversary engagement strategies and technologies.
+
+- [MITRE Engage Matrix Structure](https://engage.mitre.org/matrix/)- [MITRE Engage將取代MITRE Shield，聚焦交戰、拒絕與欺敵領域(ithome)](https://www.ithome.com.tw/news/146581)
   - MITRE新版資安知識庫，先前提出的主動式防禦知識庫MITRE Shield，更名為MITRE Engage
   - 正式版本將在秋季發布。
   - 新版內容變得較簡化，而框架採用的術語也有變動
-  - 同時提出戰略與交戰行動，並統整5大目標、9大方法與31項具體活動。
-  - 5大目標：準備(Prepare)、暴露(Expose)、影響(Affect)、引出(Elicit)與理解(Understand)
-  - 9類交戰方法，依序是：準備項目的計畫（Planning），暴露項目的收集（Collection）、偵測（Detection），影響項目的防護（Prevention）、引導（Direction ）與中斷（Disruption），引出項目的再確保（Reassurance）、動機（Motivation），以及理解項目的分析（Analysis）
-  - 以戰略行動而言，目前MITRE提出9種具體活動
-  - 以交戰行動而言，可歸為22種具體活動，累計起來共31種
+  - 同時提出戰略與交戰行動，並統整5大目標(Engage Goals)、9大方法(Engage Approaches)與31項具體活動(Engage Activities)。
+  - 5大目標(Engage Goals)：準備(Prepare)、暴露(Expose)、影響(Affect)、引出(Elicit)與理解(Understand)
+  - 9類交戰方法(Engage Approaches)，依序是：準備項目的計畫（Planning），暴露項目的收集（Collection）、偵測（Detection），影響項目的防護（Prevention）、引導（Direction ）與中斷（Disruption），引出項目的再確保（Reassurance）、動機（Motivation），以及理解項目的分析（Analysis）
+  - 以戰略行動而言，目前MITRE提出9種具體活動(Engage Activities)
+  - 以交戰行動而言，可歸為22種具體活動(Engage Activities)，累計起來共31種
 
 ![MITRE_Engage.png](./MITRE_Engage.png)
 
-- [MITRE Engage Matrix Structure](https://engage.mitre.org/matrix/)
 - [MITRE Engage ATT&CK® Mappings](https://engage.mitre.org/attack_mapping/)
 
 ## [MITRE D3FEND](https://d3fend.mitre.org/)
 - MITRE2021年6月新提出了[MITRE D3FEND](https://d3fend.mitre.org/)
+- 美國國安局（NSA）資助的研究項目，目前是早期發展階段
+- 目的是期望透過這個框架，能建立電腦網路防禦技術的術語，並闡明防禦與攻擊之間的關聯。
+- D3FEND是網路安全對策技術的知識庫，它是一份知識圖譜，定義了網路安全對策領域中的關鍵概念，以及相互聯繫這些概念所需關係，做出全面的參照與統整。
+- 這個知識庫框架總共歸納出5大類別，分別是：強化（Harden）、偵測（Detect）、隔離（Isolate）、欺敵（Deceive）、驅逐（Evict），並有17個防禦技術面向。
 
+
+
+- 強化（Harden）類別，包含應用程式、帳密憑證（Credential）、訊息與平臺這4大面向。
+- 偵測（Detect）類別，包含了檔案分析、識別碼分析、訊息分析、網路流量分析、處理程序分析與使用者行為分析這7大面向。
+- 隔離（Isolate）類別，包含了執行與網路這兩個面向。
+- 欺敵（Deceive）類別，包含了環境與物件這兩個面向。
+- 驅逐（Evict類別，則有帳密憑證與處理程序的兩個面向。
+
+MITRE認為，有了這樣的資訊框架，可直接幫助資安與技術主管，制定更務實地的採購或投資決策。同時，企業如果需詳細了解網路防禦的運作原理，MITRE發展的D3FEND，也會是初期可著手的實用工具。
 
 # [NIST CSF:The Cybersecurity Framework](https://www.nist.gov/cyberframework)
 
