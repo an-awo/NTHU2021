@@ -7,6 +7,11 @@ Mitre Att&Ck
 Adversary Emulation Plans
 
 Active Defense and MITRE Shield
+FROM MITRE Shield to MITRE Engage
+MITRE D3fend
+
+NIST CSF
+OWASP CDM
 ```
 ## [Mitre Att&Ck](https://attack.mitre.org/)
 ```
