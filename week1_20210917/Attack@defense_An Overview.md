@@ -120,10 +120,10 @@ The five Functions included in the Framework Core are:
 #
 ### `[延伸閱讀|read-around|Further reading|Weiterlesen|Lectures complémentaires]`
 
-### [CIS Center for Internet Security:CIS Controls v8 2021](https://www.cisecurity.org/controls/v8/)
+### [CIS(Center for Internet Security):CIS Controls v8 2021](https://www.cisecurity.org/controls/v8/)
 
 - [【資安框架】CIS Controls V7針對網路攻擊的防禦，提供一套處理動作的建議 2019](https://www.ithome.com.tw/article/129576)
-- [The CIS Controls Self-Assessment Tool, or CIS CSAT]
+- The CIS Controls Self-Assessment Tool, or CIS CSAT
 - [CIS Controls v8 Internet of Things Companion Guide](https://www.cisecurity.org/white-papers/cis-controls-v8-internet-of-things-companion-guide/)
 - [SANS Top 20:20 Critical Security Controls (CSC) for Effective Cyber Defense 2008](https://blog.netwrix.com/2018/02/01/top-20-critical-security-controls-for-effective-cyber-defense/)
 
