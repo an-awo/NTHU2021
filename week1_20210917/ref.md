@@ -12,6 +12,11 @@
     - 使用Docker展示Elasticsearch Filebeat Kibana(EFK) |Elastic, Logstash, Kibana (ELK)
 
 - [Hands-On Red Team Tactics (By Himanshu Sharma , Harpreet Singh) 2018](https://www.packtpub.com/product/hands-on-red-team-tactics/9781788995238)
+  - CH7.Age of Empire - The Beginning
+  - CH8.Age of Empire - Owning Domain Controllers
+  - CH10.C2 - Master of Puppets
+    - [C2 covert channels](https://holdmybeersecurity.com/2017/10/15/part-3-how-to-red-team-setting-up-environment/)
+  - CH11.Obfuscating C2s - Introducing Redirectors
   - [CH13.Data Exfiltration](https://subscription.packtpub.com/book/security/9781788995238/13)
     - Exfiltration via Netcat
     - Exfiltration via OpenSSL
@@ -20,12 +25,8 @@
     - Data exfiltration via Empire
     - Data exfiltration via DNS[DNSteal](https://github.com/m57/dnsteal)
     - [DATA EXFILTRATION](https://azeria-labs.com/data-exfiltration/)
-  - CH7.Age of Empire - The Beginning
-  - CH8.Age of Empire - Owning Domain Controllers
-  - CH10.C2 - Master of Puppets
-    - [C2 covert channels](https://holdmybeersecurity.com/2017/10/15/part-3-how-to-red-team-setting-up-environment/)
-  - CH11.Obfuscating C2s - Introducing Redirectors
+
+- [尚未出版Mastering Defensive Security By Cesar Bravo(2021)](https://www.packtpub.com/product/mastering-defensive-security/9781800208162)
 
 
-- [Mastering Defensive Security By Cesar Bravo(2021)](https://www.packtpub.com/product/mastering-defensive-security/9781800208162)
 - []()
