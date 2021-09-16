@@ -28,7 +28,7 @@
   - radare2 
   - Ghidra  
 
-## week 4 : advanced REverse engineering: Symbolic execution 
+## week 4 : REverse engineering:Symbolic execution 
 - Symbolic execution 
 - z3
 - angr
