@@ -13,7 +13,6 @@
 
 - 我沒教過的部分[上課期間會公告有哪些建議主題,可自挑主題(需經過同意)]
 
-
 ## Midterm  30%
 - 報告主題
   - 可提報想要報告的主題
@@ -76,18 +75,15 @@
   - pwn CTF解題報告
   - Powershell技術報告
 
-## CTF 10% [提供參賽證明|足以證明即可][額外加分]
-```
-AIS3 EOF 2021
-Balsn CTF 2021 [11.20-22]
-Bomboofox CTF 2022 [時間待定]
-HITCON CTF 2021 ?
+## 資安競賽 10% [提供參賽證明|足以證明即可][額外加分]
 
-FOREIGN CTF == > See CTFTIME
-
-ASIS CTF Quals 2021 [2021.10.22-24]
-```
-
+- CTF 
+  - AIS3 EOF 2021
+  - Balsn CTF 2021 [11.20-22]
+  - Bomboofox CTF 2022 [時間待定]
+  - HITCON CTF 2021 ?
+- FOREIGN CTF == > See CTFTIME
+  - ASIS CTF Quals 2021 [2021.10.22-24]
 - 110年金盾獎
   - 報名(含報名表上傳)日期:110年9月1日(二)~9月30日(四)17:00止
   - 競賽官網：https://csc.nccst.nat.gov.tw/index.aspx
