@@ -94,6 +94,7 @@
 - [HITCON Pacific 2021(2021年10月27、28日)](https://cfp2021.hitcon.org/zh/)
 - [台灣駭客年會HITCON Training 2021(2021年11月2-6日)](https://hitcon.kktix.cc/events/hitcon-training-2021)
 
+# 鼓勵您積極考取資安證照
 ## Penetration Test(OSCP)
 - [system](https://docs.google.com/spreadsheets/d/1dwSMIAPIam0PuRBkCiDI88pU3yzrqqHkDtBngUHNCw8/edit#gid=665299979)
 - [OSCP Preparation Guide](https://blog.adithyanak.com/oscp-preparation-guide)
