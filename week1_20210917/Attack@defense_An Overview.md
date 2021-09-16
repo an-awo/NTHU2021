@@ -85,7 +85,9 @@ The five Functions included in the Framework Core are:
 
 - [擬定資安策略需從整體角度看待，活用資安框架及Cyber Defense Matrix更是關鍵](https://www.ithome.com.tw/news/140095)
 - [DEvcore/你的資安策略夠明確嗎？透過框架優先緩解真實威脅 2020](https://devco.re/blog/2020/10/13/mitigate-real-threats-by-framework-and-standards/)
-
+#
+#
+#
 ### `[延伸閱讀|read-around|Further reading|Weiterlesen|Lectures complémentaires]`
 
 ### [CIS Center for Internet Security:CIS Controls v8 2021](https://www.cisecurity.org/controls/v8/)
