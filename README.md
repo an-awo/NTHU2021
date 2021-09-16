@@ -71,7 +71,7 @@
   - splunk
   - OSSEC 
 - Threat hunting
-  - ELK
+  - ELK/EFK
 - SOC
   - AlienVault OSSIM
 
