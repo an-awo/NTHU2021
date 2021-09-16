@@ -88,6 +88,11 @@ FOREIGN CTF == > See CTFTIME
 ASIS CTF Quals 2021 [2021.10.22-24]
 ```
 
+- 110年金盾獎
+  - 報名(含報名表上傳)日期:110年9月1日(二)~9月30日(四)17:00止
+  - 競賽官網：https://csc.nccst.nat.gov.tw/index.aspx
+  - 社群粉專：https://www.facebook.com/csc.nccst
+
 # 資安活動與相關資訊
 
 - [HITCON Pacific 2021(2021年10月27、28日)](https://cfp2021.hitcon.org/zh/)
