@@ -30,7 +30,7 @@ ATT&CK is open and available to any person or organization for use at no charge.
 
 - [講解Adversary Emulation Plans]()
 
-# [MITRE Shield](https://shield.mitre.org/) 主動式資安防禦Active Defense
+## [MITRE Shield](https://shield.mitre.org/) 主動式資安防禦Active Defense
 - [MITRE Shield重新定義主動式資安防禦 2021](https://www.ithome.com.tw/article/143481)
 ```
 網路防護能力（General Cyber Defense）
@@ -47,14 +47,25 @@ ATT&CK is open and available to any person or organization for use at no charge.
 - [Active Defense Techniques 36類 DTE0036](https://shield.mitre.org/techniques/)
 - [Active Defense Matrix](https://shield.mitre.org/matrix/)
 
-## MITRE Engage
+## MITRE Shield(2020年8月) ==>MITRE Engage
 - [MITRE Engage](https://engage.mitre.org/)
   - MITRE Engage is a framework for discussing and planning adversary engagement, deception, and denial activities. 
   - Engage is informed by adversary behavior observed in the real world and is intended to drive strategic cyber outcomes. 
   - Engage was created to help the private sector, government, and vendor communities to plan and execute the use of adversary engagement strategies and technologies.
-- [MITRE Engage Matrix Structure](https://engage.mitre.org/matrix/)
-- [MITRE Engage ATT&CK® Mappings]()
+  - MITRE新版資安知識庫，先前提出的主動式防禦知識庫MITRE Shield，更名為MITRE Engage
+  - 正式版本將在秋季發布。
+  - 新版內容變得較簡化，而框架採用的術語也有變動
+  - 同時提出戰略與交戰行動，並統整5大目標、9大方法與31項具體活動。
+  - 5大目標：準備(Prepare)、暴露(Expose)、影響(Affect)、引出(Elicit)與理解(Understand)
+  - 9類交戰方法，依序是：準備項目的計畫（Planning），暴露項目的收集（Collection）、偵測（Detection），影響項目的防護（Prevention）、引導（Direction ）與中斷（Disruption），引出項目的再確保（Reassurance）、動機（Motivation），以及理解項目的分析（Analysis）
+  - 以戰略行動而言，目前MITRE提出9種具體活動
+  - 以交戰行動而言，可歸為22種具體活動，累計起來共31種
 
+- [MITRE Engage Matrix Structure](https://engage.mitre.org/matrix/)
+- [MITRE Engage ATT&CK® Mappings](https://engage.mitre.org/attack_mapping/)
+
+## [MITRE D3FEND](https://d3fend.mitre.org/)
+- MITRE2021年6月新提出了[MITRE D3FEND](https://d3fend.mitre.org/)
 
 
 # [NIST CSF:The Cybersecurity Framework](https://www.nist.gov/cyberframework)
