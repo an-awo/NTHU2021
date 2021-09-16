@@ -6,23 +6,23 @@
 
 ## week1:20210917
 
-- [Course outline]()
-- [Attack& defense:An overview]()
+- [Course outline]
+- [Attack& defense:An overview]
 
 # Linux binary analysis
 
 ## week 2: 20210924
-- [Linux programming]()
+- [Linux programming]
 - [Linux binary analysis]
 
 # Reverse engineering
 ## week 3: Basic Reverse Engineering
-- [assmebly Programming]()
+- [assmebly Programming]
   - NASM Assembly programming
   - GAS Assembly programming
   - core Assembly language syntax
   - Calling Conventions
-- [Basic Reverse Engineering]()
+- [Basic Reverse Engineering]
   - gdb
   - objdump
   - radare2 
