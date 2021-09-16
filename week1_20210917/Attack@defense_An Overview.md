@@ -31,6 +31,7 @@ ATT&CK is open and available to any person or organization for use at no charge.
 - [講解Adversary Emulation Plans]()
 
 ## [MITRE Shield](https://shield.mitre.org/) 主動式資安防禦Active Defense
+
 - [MITRE Shield重新定義主動式資安防禦 2021](https://www.ithome.com.tw/article/143481)
 ```
 網路防護能力（General Cyber Defense）
@@ -74,7 +75,7 @@ ATT&CK is open and available to any person or organization for use at no charge.
 - D3FEND是網路安全對策技術的知識庫，它是一份知識圖譜，定義了網路安全對策領域中的關鍵概念，以及相互聯繫這些概念所需關係，做出全面的參照與統整。
 - 這個知識庫框架總共歸納出5大類別，分別是：強化（Harden）、偵測（Detect）、隔離（Isolate）、欺敵（Deceive）、驅逐（Evict），並有17個防禦技術面向。
 
-
+![MITRE_d3fend](./MITRE_d3fend.png)
 
 - 強化（Harden）類別，包含應用程式、帳密憑證（Credential）、訊息與平臺這4大面向。
 - 偵測（Detect）類別，包含了檔案分析、識別碼分析、訊息分析、網路流量分析、處理程序分析與使用者行為分析這7大面向。
