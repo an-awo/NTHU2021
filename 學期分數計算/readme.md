@@ -118,4 +118,4 @@
 - GOOGLE | Github | MS 缺哪種技術人才 ?
 - 金控業缺哪種技術人才 ?
 
-- [Kali 文件中心](https://www.kali.org/docs/)
+- [Kali 文件中心](https://www.kali.org/docs/) {尚未移除,暫放此處}
