@@ -70,7 +70,7 @@ ATT&CK is open and available to any person or organization for use at no charge.
 
 - [MITRE Engage ATT&CK® Mappings](https://engage.mitre.org/attack_mapping/)
 
-## [MITRE D3FEND](https://d3fend.mitre.org/)
+## [MITRE D3FEND](https://d3fend.mitre.org/)  [[專業的ITHOME報導2021.9.7]](https://www.ithome.com.tw/news/146581)
 - MITRE2021年6月新提出了[MITRE D3FEND](https://d3fend.mitre.org/)
 - 美國國安局（NSA）資助的研究項目，目前是早期發展階段
 - 目的是期望透過這個框架，能建立電腦網路防禦技術的術語，並闡明防禦與攻擊之間的關聯。
@@ -85,7 +85,6 @@ ATT&CK is open and available to any person or organization for use at no charge.
 - 欺敵（Deceive）類別，包含了環境與物件這兩個面向。
 - 驅逐（Evict類別，則有帳密憑證與處理程序的兩個面向。
 
-MITRE認為，有了這樣的資訊框架，可直接幫助資安與技術主管，制定更務實地的採購或投資決策。同時，企業如果需詳細了解網路防禦的運作原理，MITRE發展的D3FEND，也會是初期可著手的實用工具。
 
 # [NIST CSF:The Cybersecurity Framework](https://www.nist.gov/cyberframework)
 
