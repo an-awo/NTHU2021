@@ -102,3 +102,5 @@
 - [LAB_OVA](https://github.com/Ne3o1/OSCP)
 - [範例說明1](https://blog.razrsec.uk/basic-pentesting-1-walkthrough/)
 - [範例說明2 PWNLAB: INIT (web)](https://www.vulnhub.com/entry/pwnlab-init,158/) [Walkthrough](https://noob2root.files.wordpress.com/2016/08/pwnlab-ctf.pdf)
+
+- [資安人才需求==>DEVCORE 徵求紅隊演練工程師](https://devco.re/blog/2021/06/22/devcore-202106-recruit/)
