@@ -89,7 +89,7 @@
   - 競賽官網：https://csc.nccst.nat.gov.tw/index.aspx
   - 社群粉專：https://www.facebook.com/csc.nccst
 
-# 資安活動與相關資訊
+# 鼓勵您積極參與資安活動與相關資訊
 
 - [HITCON Pacific 2021(2021年10月27、28日)](https://cfp2021.hitcon.org/zh/)
 - [台灣駭客年會HITCON Training 2021(2021年11月2-6日)](https://hitcon.kktix.cc/events/hitcon-training-2021)
