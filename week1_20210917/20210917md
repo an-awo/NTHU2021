@@ -1,0 +1,11 @@
+
+# Reconnaissance
+## T1595_Active Scanning
+
+- T1595.001	Scanning IP Blocks
+  - nmap
+  - ip scan
+- T1595.002	Vulnerability Scanning
+  - scanner
+  - nmap nse
+    - https://nmap.org/nsedoc/scripts/smb-vuln-ms17-010.html
