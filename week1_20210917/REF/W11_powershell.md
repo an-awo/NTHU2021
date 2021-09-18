@@ -8,3 +8,13 @@ Detection and prevention malicious powershell
 ```
 
 ## [PowerShell documentation](https://docs.microsoft.com/en-us/powershell/scripting/how-to-use-docs?view=powershell-7.1)
+
+## 參考書籍與推薦章節
+- [PowerShell 流程自動化攻略 (Powershell for Sysadmins: A Hands-On Guide to Automating Your Workflow)](https://www.tenlong.com.tw/products/9789865026677)
+- [Learn Windows PowerShell in a Month of Lunches, 3/e (繁體中文版)](https://www.tenlong.com.tw/products/9789864343294)
+
+- [PowerShell Cookbook, 4th Edition 2021](https://www.oreilly.com/library/view/powershell-cookbook-4th/9781098101596/) [[Github]](https://github.com/LeeHolmes/PowerShellCookbook)
+- [Mastering PowerShell Scripting - Fourth Edition 2021](https://www.packtpub.com/product/mastering-powershell-scripting-fourth-edition/9781800206540) [[Github]](https://github.com/PacktPublishing/Mastering-Windows-PowerShell-Scripting-Fourth-Edition)
+  - Ch11.Windows Management Instrumentation (WMI) ==> Common Information Model (CIM) 
+
+- [Windows Server Automation with PowerShell Cookbook - Fourth Edition(2021)](https://www.packtpub.com/product/windows-server-automation-with-powershell-cookbook-fourth-edition/9781800568457) [[Github]](https://github.com/PacktPublishing/Windows-Server-Automation-with-PowerShell-7.1-Cookbook-Fourth-Edition)
