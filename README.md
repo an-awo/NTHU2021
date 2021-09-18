@@ -5,8 +5,8 @@
 - [Ubuntu 18.04LTS系統下載區](https://drive.google.com/file/d/1QPy_Ztk5Gl1ZkHRRCCytEJRem0KjItOw/view?usp=sharing)
 
 
-# 9月 17日 (星期五) · 下午1:30 - 4:30
-- [Google Meet 會議連結](https://meet.google.com/nmy-yvfw-cha)
+# 9月 24日 (星期五) · 下午1:30 - 4:30
+- [Google Meet 會議連結]()
 
 ## week1:20210917
 
