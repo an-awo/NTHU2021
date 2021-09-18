@@ -21,7 +21,7 @@ Ghidra
 
 - [Debugging with GDB](https://sourceware.org/gdb/current/onlinedocs/gdb/)
 - [GDB Internals內部運作原理](https://sourceware.org/gdb/wiki/Internals)
-- [Internals](https://en.wikipedia.org/wiki/GNU_Debugger)
+- [Internals@WIKI](https://en.wikipedia.org/wiki/GNU_Debugger)
    - GDB uses a system call named ptrace (the name is an abbreviation of "process trace") to observe and control the execution of another process, and examine and change the process's memory and register. A list of common gdb commands and corresponding ptrace calls are listed below:
    - (gdb) start : PTRACE_TRACEME – makes parent a tracer (called by a tracee)
    - (gdb) attache PID: PTRACE_ATTACH – attach to a running process
