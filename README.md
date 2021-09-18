@@ -31,6 +31,7 @@
   - objdump
   - radare2 
   - Ghidra  
+ - [RE實戰]助教示範
 
 ## week 4 : REverse engineering:Symbolic execution 
 - Symbolic execution 
