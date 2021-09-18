@@ -38,3 +38,4 @@ Ghidra
 
 ## Ghidra
 - [Ghidra CheatSheet](https://ghidra-sre.org/CheatSheet.html)
+- [The Ghidra Book(2020)](https://nostarch.com/GhidraBook)
