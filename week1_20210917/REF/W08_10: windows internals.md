@@ -3,8 +3,11 @@
 
 ## Tools:
 - [Windows Sysinternals(since 1996)]()
-Live KD
+- Live KD
 - [windbg and Kernel debugging]()
+- [Process Hacker](https://processhacker.sourceforge.io/)
+- [PeStudio](https://www.winitor.com/)  [[PDF]](https://www.winitor.com/pdf/pestudio.pdf)
+- [procdot](https://www.procdot.com/)
 - [powershell]
 - [python]()
 
