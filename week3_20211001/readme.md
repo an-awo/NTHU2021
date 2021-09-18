@@ -32,7 +32,7 @@ Ghidra
 
 ## [radare2](https://en.wikipedia.org/wiki/Radare2)
 - [The Official Radare2 Book](https://book.rada.re/index.html)
-- [](https://scoding.de/uploads/r2_cs.pdf)
+- [radare2 Cheatsheet](https://scoding.de/uploads/r2_cs.pdf)
 - [r2con](https://rada.re/con/)
 - [r2con@youtube](https://www.youtube.com/c/r2con)
 
