@@ -10,6 +10,13 @@ Detection and prevention malicious powershell
 ## [PowerShell documentation](https://docs.microsoft.com/en-us/powershell/scripting/how-to-use-docs?view=powershell-7.1)
 - [適用於系統管理的範例指令碼](https://docs.microsoft.com/zh-tw/powershell/scripting/samples/sample-scripts-for-administration?view=powershell-7.1)
 
+## Malicious Powershell
+- [Mimikatz](https://attack.mitre.org/software/S0002/)
+- [Empire](https://attack.mitre.org/software/S0363/)
+- [powersploit](https://attack.mitre.org/software/S0194/)
+
+## [Detection and prevention malicious powershell](https://arxiv.org/search/?query=Malicious+PowerShell&searchtype=all&source=header)
+
 # `LABs 20% 報告主題選項 1:Powershell技術報告`
 
 ## 參考書籍與推薦章節
