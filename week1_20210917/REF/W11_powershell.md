@@ -9,6 +9,8 @@ Detection and prevention malicious powershell
 
 ## [PowerShell documentation](https://docs.microsoft.com/en-us/powershell/scripting/how-to-use-docs?view=powershell-7.1)
 
+## `LABs 20% 報告主題選項 1:Powershell技術報告`
+
 ## 參考書籍與推薦章節
 - [PowerShell 流程自動化攻略 (Powershell for Sysadmins: A Hands-On Guide to Automating Your Workflow)](https://www.tenlong.com.tw/products/9789865026677)
 - [Learn Windows PowerShell in a Month of Lunches, 3/e (繁體中文版)](https://www.tenlong.com.tw/products/9789864343294)
