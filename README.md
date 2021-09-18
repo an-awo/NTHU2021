@@ -1,12 +1,12 @@
-# NTHU2021
-
-
-- [Kali系統下載區](https://drive.google.com/file/d/1awLNHsJKgga2W0XFycnBmPEgzx4221Wi/view?usp=sharing)
-- [Ubuntu 18.04LTS系統下載區](https://drive.google.com/file/d/1QPy_Ztk5Gl1ZkHRRCCytEJRem0KjItOw/view?usp=sharing)
-
 
 # 9月 24日 (星期五) · 下午1:30 - 4:30
 - [Google Meet 會議連結]()
+
+
+# 下載
+- [Kali系統下載區](https://drive.google.com/file/d/1awLNHsJKgga2W0XFycnBmPEgzx4221Wi/view?usp=sharing)
+- [Ubuntu 18.04LTS系統下載區](https://drive.google.com/file/d/1QPy_Ztk5Gl1ZkHRRCCytEJRem0KjItOw/view?usp=sharing)
+
 
 ## week1:20210917
 
