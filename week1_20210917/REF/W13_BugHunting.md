@@ -7,7 +7,7 @@
 - AFL ++
 - 
 
-## [研究論文](https://github.com/fengjixuchui/FuzzingPaper)
+## [FUZZing研究論文](https://github.com/fengjixuchui/FuzzingPaper)
 
 
 ## 全球大企業如何挖掘自家產品或服務的漏洞?
