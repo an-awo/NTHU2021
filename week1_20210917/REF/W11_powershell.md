@@ -8,6 +8,7 @@ Detection and prevention malicious powershell
 ```
 
 ## [PowerShell documentation](https://docs.microsoft.com/en-us/powershell/scripting/how-to-use-docs?view=powershell-7.1)
+- [適用於系統管理的範例指令碼](https://docs.microsoft.com/zh-tw/powershell/scripting/samples/sample-scripts-for-administration?view=powershell-7.1)
 
 # `LABs 20% 報告主題選項 1:Powershell技術報告`
 
