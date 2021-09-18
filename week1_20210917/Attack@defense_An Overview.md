@@ -61,7 +61,7 @@ ATT&CK is open and available to any person or organization for use at no charge.
   - Engage is informed by adversary behavior observed in the real world and is intended to drive strategic cyber outcomes. 
   - Engage was created to help the private sector, government, and vendor communities to plan and execute the use of adversary engagement strategies and technologies.
 
-- [MITRE Engage Matrix Structure](https://engage.mitre.org/matrix/)- [MITRE Engage將取代MITRE Shield，聚焦交戰、拒絕與欺敵領域(ithome)](https://www.ithome.com.tw/news/146581)
+- [MITRE Engage將取代MITRE Shield，聚焦交戰、拒絕與欺敵領域(ithome)](https://www.ithome.com.tw/news/146581)
   - MITRE新版資安知識庫，先前提出的主動式防禦知識庫MITRE Shield，更名為MITRE Engage
   - 正式版本將在秋季發布。
   - 新版內容變得較簡化，而框架採用的術語也有變動
@@ -71,6 +71,7 @@ ATT&CK is open and available to any person or organization for use at no charge.
   - 以戰略行動而言，目前MITRE提出9種具體活動(Engage Activities)
   - 以交戰行動而言，可歸為22種具體活動(Engage Activities)，累計起來共31種
 
+- [MITRE Engage Matrix Structure](https://engage.mitre.org/matrix/)
 ![MITRE_Engage.png](./MITRE_Engage.png)
 
 - [MITRE Engage ATT&CK® Mappings](https://engage.mitre.org/attack_mapping/)
