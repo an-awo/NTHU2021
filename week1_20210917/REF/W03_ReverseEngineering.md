@@ -1,4 +1,19 @@
+# W03_Reverse Engineering
+```
+- [assmebly Programming]
+  - NASM Assembly programming
+  - GAS Assembly programming
+  - core Assembly language syntax
+  - Calling Conventions
 
+- [Basic Reverse Engineering]
+  - gdb
+  - objdump
+  - radare2 
+  - Ghidra  
+
+- [RE實戰]助教示範
+```
 # `LABs 20% 報告主題選項:ReverseEngineeringCTF解題報告`
 
 ## 參考書籍與推薦章節
