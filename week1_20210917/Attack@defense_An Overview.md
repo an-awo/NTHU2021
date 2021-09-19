@@ -34,6 +34,7 @@ ATT&CK is open and available to any person or organization for use at no charge.
 - 完成LAB1
 
 - [講解Adversary Emulation Plans]()
+  - [08 - BruCON 0x0B - Automated adversary emulation using Caldera - Erik Van Buggenhout](https://www.youtube.com/watch?v=lyWJJRnTbI0) 
 
 ## [MITRE Shield](https://shield.mitre.org/) 主動式資安防禦Active Defense
 
