@@ -35,3 +35,5 @@
 
 - [Windows 黑客編程技術詳解 Windows黑客编程技术详解(2018)](https://www.tenlong.com.tw/products/9787115499240)
 - [C++黑客編程揭秘與防範（第2版） C++ 黑客编程揭秘与防范(第2版)2015](https://www.tenlong.com.tw/products/9787115380579)
+- [徹底研究 : 黑客編程技術揭秘與攻防實戰 彻底研究:黑客编程技术揭秘与攻防实战(2016)](https://www.tenlong.com.tw/products/9787113219864)
+- [Windows 核心編程, 5/e Windows核心编程(第5版) Jeffrey Richter, Christophe Nasarre(2008)](https://www.tenlong.com.tw/products/9787302184003)
