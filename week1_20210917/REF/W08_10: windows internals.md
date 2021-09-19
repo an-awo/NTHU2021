@@ -34,3 +34,4 @@
 - [Inside Windows Debugging (Tarik Soulami,2012)](https://www.tenlong.com.tw/products/9780735662780) [[簡體中文版2021]](https://www.tenlong.com.tw/products/9787115501486)
 
 - [Windows 黑客編程技術詳解 Windows黑客编程技术详解(2018)](https://www.tenlong.com.tw/products/9787115499240)
+- [C++黑客編程揭秘與防範（第2版） C++ 黑客编程揭秘与防范(第2版)2015](https://www.tenlong.com.tw/products/9787115380579)
