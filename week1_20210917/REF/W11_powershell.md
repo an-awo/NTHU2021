@@ -14,6 +14,8 @@ Detection and prevention malicious powershell
 - [Mimikatz](https://attack.mitre.org/software/S0002/)
 - [Empire](https://attack.mitre.org/software/S0363/)
 - [powersploit](https://attack.mitre.org/software/S0194/)
+- [Finding and Decoding Malicious Powershell Scripts - SANS DFIR Summit 2018](https://www.youtube.com/watch?v=JWC7fzhvAY8)
+
 
 ## [Detection and prevention malicious powershell](https://arxiv.org/search/?query=Malicious+PowerShell&searchtype=all&source=header)
 - [Revoke-Obfuscation: PowerShell Obfuscation Detection (And Evasion) Using Science(2017)](https://www.youtube.com/watch?v=x97ejtv56xw)
