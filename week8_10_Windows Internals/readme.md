@@ -1,5 +1,5 @@
 # week 8: windows internals 1
-
+- 閱讀並經顏基典
 ## [Windows Internals part 1](https://www.microsoftpressstore.com/store/windows-internals-part-1-system-architecture-processes-9780735684188)
 ```
 Chapter 1 Concepts and tools[本課程用到]
