@@ -30,22 +30,26 @@ consortium) defines.
   - Developers use the Managed Object Format (MOF) language to implement a CIM representation.
  
 # 存取WMI 和 CIM方法[練習與實測]
-- 使用powershell 存取WMI 和 CIM
+## 使用powershell 存取WMI 和 CIM
   - [Working with WMI](https://docs.microsoft.com/en-us/powershell/scripting/learn/ps101/07-working-with-wmi?view=powershell-7.1) 
   - Get-Command -Noun WMI*  ==> used to determine what WMI cmdlets exist in PowerShell 
     - The CIM cmdlets are designed so they can be used on both Windows and non-Windows machines. 
     - The WMI cmdlets are deprecated so my recommendation is to use the CIM cmdlets instead of the older WMI ones.
   - Get-Command -Module CimCmdlets  ==> obtain a list of the CIM cmdlets
+  - [CimCmdlets參考資料](https://docs.microsoft.com/en-us/powershell/module/cimcmdlets/?view=powershell-7.1)
   - [Get-CimInstance](https://docs.microsoft.com/en-us/powershell/module/cimcmdlets/get-ciminstance?view=powershell-7.1)
     - Get-CimInstance -Query 'Select * from Win32_BIOS' ==> can take the WQL query from that VBScript and use it with the Get-CimInstance cmdlet
     - Get-CimInstance -ClassName Win32_BIOS
   - [Invoke-CimMethod: Invokes a method of a CIM class.](https://docs.microsoft.com/en-us/powershell/module/cimcmdlets/invoke-cimmethod?view=powershell-7.1)
+    - Invoke a static method using arguments
 ```powsershell
 Invoke-CimMethod -ClassName Win32_Process -MethodName "Create" -Arguments @{
   CommandLine = 'notepad.exe'; CurrentDirectory = "C:\windows\system32"
 }
 ```
-- 使用python存取WMI 和 CIM[wmi模組]()
+## 使用python存取WMI 和 CIM ==> [wmi模組](https://pypi.org/project/WMI/)
+  - The Python WMI module is a lightweight wrapper on top of the pywin32 extensions, and hides some of the messy plumbing needed to get Python to talk to the WMI API.
   - [python wmi模塊 獲取windows內部信息](https://www.itread01.com/content/1553437344.html) 
   - [Python wmi.WMI屬性代碼示例](https://vimsky.com/zh-tw/examples/detail/python-attribute-wmi.WMI.html)
   - [Managing Windows System Administration With WMI And Python](https://blog.ipswitch.com/managing-windows-system-administration-with-wmi-and-python)
+  - [wmi Cookbook](http://timgolden.me.uk/python/wmi/cookbook.html)
