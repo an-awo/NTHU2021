@@ -10,7 +10,7 @@ Chapter 5 Memory management[本課程用到]
 Chapter 6 I/O system
 Chapter 7 Security[本課程用到]
 ```
-## ## [Windows Internals part 2](https://www.microsoftpressstore.com/store/windows-internals-part-2-9780135462331)
+## [Windows Internals part 2](https://www.microsoftpressstore.com/store/windows-internals-part-2-9780135462331)
 ```
 CHAPTER 8 System mechanisms [本課程用到]
 CHAPTER 9 Virtualization technologies 
