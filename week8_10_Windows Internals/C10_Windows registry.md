@@ -8,11 +8,15 @@
 ## Registry logical structure and The nine Registry root keys
 |名稱| 縮寫| 敘述 |
 |----| -----| ------|
-|HKEY_CLASSES_ROOT|HKCR	儲存Windows可辨識的檔案類型的詳細列表，以及相關聯的程式。|
+|HKEY_CLASSES_ROOT|HKCR	|儲存Windows可辨識的檔案類型的詳細列表，以及相關聯的程式。|
 |HKEY_CURRENT_USER|HKCU|	儲存當前使用者設定的資訊。|
-|HKEY_LOCAL_MACHINE|	|包括安裝在電腦上的硬體和軟體的資訊。|
-|HKEY_USERS|	|包含使用電腦的使用者的資訊。|
-|HKEY_CURRENT_CONFIG||	這個分支包含電腦當前的硬體組態資訊。|
+|HKEY_LOCAL_MACHINE|HKLM	|包括安裝在電腦上的硬體和軟體的資訊。|
+|HKEY_USERS|	HKU|包含使用電腦的使用者的資訊。|
+|HKEY_CURRENT_CONFIG|HKCC|	這個分支包含電腦當前的硬體組態資訊。|
+|HKEY_CURRENT_USER_LOCAL_SETTINGS|HKCULS||
+|HKEY_PERFORMANCE_DATA|HKPD||
+|HKEY_PERFORMANCE_NLSTEXT|HKPNL||
+|HKEY_PERFORMANCE_TEXT|HKPT||
 
 - Viewing key control blocks
   - !reg querykey command. ==> list all the key control blocks allocated on a system
