@@ -2,6 +2,18 @@
 - [Windows Sysinternals(since 1996)](https://docs.microsoft.com/en-us/sysinternals/)
 - [Troubleshooting with the Windows Sysinternals Tools](https://docs.microsoft.com/en-us/sysinternals/resources/troubleshooting-book)
 
+# DEMO
+## Process Explorer
+- [Sysinternals Video Library - Troubleshooting with Process Explorer(2018)](https://www.youtube.com/watch?v=YGtsMa9wbjw)
+- [Scan for Malware Using Process Explorer and Virus Total](https://www.youtube.com/watch?v=RnPtuTbqzd4)
+- [Finding Malware with Sysinternal's Process Explorer(2021)](https://www.youtube.com/watch?v=y2bNLCWHFNs)
+
+## Procmon and Procexp
+- [Debugging an application using Sysinternals Procmon and Procexp](https://www.youtube.com/watch?v=pjKNx41Ubxw)
+
+## Sysmon
+- [Threat Hunting via Sysmon - SANS Blue Team Summit(2019)](https://www.youtube.com/watch?v=7dEfKn70HCI)
+
 # [Tools](https://www.oreilly.com/library/view/troubleshooting-with-the/9780133986549/)
 ```
 Chapter 3. Process Explorer
