@@ -14,7 +14,7 @@
     - [Updating the windows registry with python (Modify path variable in windows with python)](https://www.youtube.com/watch?v=MdshNIw_ZRM)  
     - [example](https://www.tutorialspoint.com/windows-registry-access-using-python-winreg)
 ```Python
-    import winreg
+import winreg
 #connecting to key in registry
 access_registry = winreg.ConnectRegistry(None,winreg.HKEY_LOCAL_MACHINE)
 
