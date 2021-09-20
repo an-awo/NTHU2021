@@ -16,6 +16,8 @@ Detection and prevention malicious powershell
 - [powersploit](https://attack.mitre.org/software/S0194/)
 
 ## [Detection and prevention malicious powershell](https://arxiv.org/search/?query=Malicious+PowerShell&searchtype=all&source=header)
+- [Revoke-Obfuscation: PowerShell Obfuscation Detection (And Evasion) Using Science(2017)](https://www.youtube.com/watch?v=x97ejtv56xw)
+
 
 # `LABs 20% 報告主題選項 1:Powershell技術報告`
 
