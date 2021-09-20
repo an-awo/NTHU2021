@@ -7,6 +7,8 @@ Memory Forensics
 CASE Study
 ```
 
+## 學習資源
+- [Digital Forensics and Incident Response](https://www.jaiminton.com/cheatsheet/DFIR/#)
 
 ## 參考書籍與推薦章節
 
