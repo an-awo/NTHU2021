@@ -39,12 +39,6 @@ CHAPTER 12 Startup and shutdown
 - SEHOP
 - /GS
 
-# Windows Kernel exploitation
- - [windows-kernel-exploits](https://github.com/SecWiki/windows-kernel-exploits)
- - [Windows Kernel Exploitation: Lab](https://fluidattacks.com/blog/windows-kernel-debugging/)
- - [Windows 10 Kernel Mitigations and Exploitation w/ Jaime Geiger & Stephen Sims - SANS HackFest Summit](https://www.youtube.com/watch?v=7O5WV3T32qE)
- - [CVE-2021-31956 Exploiting the Windows Kernel (NTFS with WNF) – Part 1](https://research.nccgroup.com/2021/07/15/cve-2021-31956-exploiting-the-windows-kernel-ntfs-with-wnf-part-1/)
-
 
 # 參考書籍與推薦章節
 
@@ -56,3 +50,8 @@ CHAPTER 12 Startup and shutdown
 - [C++黑客編程揭秘與防範（第2版） C++ 黑客编程揭秘与防范(第2版)2015](https://www.tenlong.com.tw/products/9787115380579)
 - [徹底研究 : 黑客編程技術揭秘與攻防實戰 彻底研究:黑客编程技术揭秘与攻防实战(2016)](https://www.tenlong.com.tw/products/9787113219864)
 
+# Windows Kernel exploitation
+ - [windows-kernel-exploits](https://github.com/SecWiki/windows-kernel-exploits)
+ - [Windows Kernel Exploitation: Lab](https://fluidattacks.com/blog/windows-kernel-debugging/)
+ - [Windows 10 Kernel Mitigations and Exploitation w/ Jaime Geiger & Stephen Sims - SANS HackFest Summit](https://www.youtube.com/watch?v=7O5WV3T32qE)
+ - [CVE-2021-31956 Exploiting the Windows Kernel (NTFS with WNF) – Part 1](https://research.nccgroup.com/2021/07/15/cve-2021-31956-exploiting-the-windows-kernel-ntfs-with-wnf-part-1/)
