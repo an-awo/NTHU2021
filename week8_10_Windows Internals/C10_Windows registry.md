@@ -5,7 +5,7 @@
 - [Practical Windows Registry Explanation](https://www.youtube.com/watch?v=tBwAHqqPoQY)
 - [Windows Registry@維基百科]()
 
-## Registry logical structure and The nine Registry root keys
+## Registry logical structure and 9 Registry root keys
 |名稱| 縮寫| 敘述 |
 |----| -----| ------|
 |HKEY_CLASSES_ROOT|HKCR	|儲存Windows可辨識的檔案類型的詳細列表，以及相關聯的程式。|
