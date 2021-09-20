@@ -53,3 +53,7 @@ Invoke-CimMethod -ClassName Win32_Process -MethodName "Create" -Arguments @{
   - [Python wmi.WMI屬性代碼示例](https://vimsky.com/zh-tw/examples/detail/python-attribute-wmi.WMI.html)
   - [Managing Windows System Administration With WMI And Python](https://blog.ipswitch.com/managing-windows-system-administration-with-wmi-and-python)
   - [wmi Cookbook](http://timgolden.me.uk/python/wmi/cookbook.html)
+
+# attack surface| attack vectors
+- [Abusing Windows Management Instrumentation (WMI)(2015)](https://www.youtube.com/watch?v=0SjMgnGwpq8)
+- [Demo 17 - Fileless Malware Attack Chain - VBA, WMI, and PowerShell](https://www.youtube.com/watch?v=-hhgiTP_fXQ)
