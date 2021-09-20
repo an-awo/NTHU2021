@@ -32,6 +32,7 @@
 
 # Tools
 - regedit登錄編輯程式
+  - [Regedit: The built-in editor for the Windows registry](https://www.ionos.com/digitalguide/websites/web-development/regedit/) 
 - kernel debugger
 - Powershell
   - [Working with Registry Keys](https://docs.microsoft.com/en-us/powershell/scripting/samples/working-with-registry-keys?view=powershell-7.1)
