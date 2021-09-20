@@ -20,6 +20,13 @@
 ## [ListDLLs:a command-line DLL viewer](https://docs.microsoft.com/en-us/sysinternals/downloads/listdlls)
 - [Understanding DLLs in Windows Applications](https://www.youtube.com/watch?v=XXkxkruDRmA)
 
+#
+- [Five Awesome Tools to perform Behavioural Analysis of Malware:behavioural analysis of Adwind RAT(2017)](https://www.youtube.com/watch?v=noErOEHcAj8)
+  - 1. Process Hacker (http://processhacker.sourceforge.net/)
+  - 2. Process Monitor (ProcMon) (https://technet.microsoft.com/en-us/s...)
+  - 3. CaptureBat (https://www.honeynet.org/node/315)
+  - 4. Microsoft Network Monitor (https://blogs.technet.microsoft.com/n...)
+  - 5. Autoruns (https://technet.microsoft.com/en-us/s...)
 
 # [Tools](https://www.oreilly.com/library/view/troubleshooting-with-the/9780133986549/)
 ```
