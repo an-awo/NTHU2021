@@ -2,8 +2,10 @@
 
 - WMI is an implementation of Web-Based Enterprise Management (WBEM), a standard that the Distributed Management Task Force (DMTF—an industry industry
 consortium) defines. 
-- The WBEM standard encompasses the design of an extensible enterprise data-collection and data-management facility that has the flexibility and extensibility required to manage
-local and remote systems that comprise arbitrary components.
+- The WBEM standard encompasses the design of an extensible enterprise data-collection and data-management facility that has the flexibility and extensibility required to manage local and remote systems that comprise arbitrary components.
+
+- WMI是一項核心的Windows管理技術，WMI作為一種規範和基礎結構，通過它可以訪問、配置、管理和監視幾乎所有的Windows資源
+- 使用者可在遠程計算機器上啟動一個進程；設定一個在特定日期和時間運行的進程；遠程啟動計算機；獲得本地或遠程計算機的已安裝程序列表；查詢本地或遠程計算機的Windows事件日誌等等。
 
 # WMI architecture see Figure 10-27
 
@@ -27,16 +29,23 @@ local and remote systems that comprise arbitrary components.
   - Provider developers use the CIM to represent the components that make up the parts of an application for which the developers want to enable management. 
   - Developers use the Managed Object Format (MOF) language to implement a CIM representation.
  
- - WMI 和 CIM
-   - powershell 
-     - [Working with WMI](https://docs.microsoft.com/en-us/powershell/scripting/learn/ps101/07-working-with-wmi?view=powershell-7.1) 
-     - Get-Command -Noun WMI*  ==> used to determine what WMI cmdlets exist in PowerShell 
-       - The CIM cmdlets are designed so they can be used on both Windows and non-Windows machines. 
-       - The WMI cmdlets are deprecated so my recommendation is to use the CIM cmdlets instead of the older WMI ones.
-     - Get-Command -Module CimCmdlets  ==> obtain a list of the CIM cmdlets
-     - [Get-CimInstance](https://docs.microsoft.com/en-us/powershell/module/cimcmdlets/get-ciminstance?view=powershell-7.1)
-     - Get-CimInstance -Query 'Select * from Win32_BIOS' ==> can take the WQL query from that VBScript and use it with the Get-CimInstance cmdlet
-     - Get-CimInstance -ClassName Win32_BIOS
-     - [Invoke-CimMethod: Invokes a method of a CIM class.](https://docs.microsoft.com/en-us/powershell/module/cimcmdlets/invoke-cimmethod?view=powershell-7.1)
-
-
+# 存取WMI 和 CIM方法[練習與實測]
+- 使用powershell 存取WMI 和 CIM
+  - [Working with WMI](https://docs.microsoft.com/en-us/powershell/scripting/learn/ps101/07-working-with-wmi?view=powershell-7.1) 
+  - Get-Command -Noun WMI*  ==> used to determine what WMI cmdlets exist in PowerShell 
+    - The CIM cmdlets are designed so they can be used on both Windows and non-Windows machines. 
+    - The WMI cmdlets are deprecated so my recommendation is to use the CIM cmdlets instead of the older WMI ones.
+  - Get-Command -Module CimCmdlets  ==> obtain a list of the CIM cmdlets
+  - [Get-CimInstance](https://docs.microsoft.com/en-us/powershell/module/cimcmdlets/get-ciminstance?view=powershell-7.1)
+    - Get-CimInstance -Query 'Select * from Win32_BIOS' ==> can take the WQL query from that VBScript and use it with the Get-CimInstance cmdlet
+    - Get-CimInstance -ClassName Win32_BIOS
+  - [Invoke-CimMethod: Invokes a method of a CIM class.](https://docs.microsoft.com/en-us/powershell/module/cimcmdlets/invoke-cimmethod?view=powershell-7.1)
+```powsershell
+Invoke-CimMethod -ClassName Win32_Process -MethodName "Create" -Arguments @{
+  CommandLine = 'notepad.exe'; CurrentDirectory = "C:\windows\system32"
+}
+```
+- 使用python存取WMI 和 CIM[wmi模組]()
+  - [python wmi模塊 獲取windows內部信息](https://www.itread01.com/content/1553437344.html) 
+  - [Python wmi.WMI屬性代碼示例](https://vimsky.com/zh-tw/examples/detail/python-attribute-wmi.WMI.html)
+  - [Managing Windows System Administration With WMI And Python](https://blog.ipswitch.com/managing-windows-system-administration-with-wmi-and-python)
