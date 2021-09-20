@@ -1,5 +1,9 @@
 # week 8: windows internals 1
-- 閱讀並經顏基典
+- 閱讀並精研經典有助於打下深厚基礎
+- 初期研讀會比較繁瑣,日後就會看到種大影響
+- 只有學生時期具有相對充分時間可以打基礎  宜保握時間
+- 本課程就引領學生針對幾項主題深入探討
+- 
 ## [Windows Internals part 1](https://www.microsoftpressstore.com/store/windows-internals-part-1-system-architecture-processes-9780735684188)
 ```
 Chapter 1 Concepts and tools[本課程用到]
