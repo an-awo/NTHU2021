@@ -30,7 +30,7 @@ consortium) defines.
   - Developers use the Managed Object Format (MOF) language to implement a CIM representation.
  
 # 存取WMI 和 CIM方法[練習與實測]
-## 使用powershell 存取WMI 和 CIM
+## [1]使用powershell 存取WMI 和 CIM
   - [Working with WMI](https://docs.microsoft.com/en-us/powershell/scripting/learn/ps101/07-working-with-wmi?view=powershell-7.1) 
   - Get-Command -Noun WMI*  ==> used to determine what WMI cmdlets exist in PowerShell 
     - The CIM cmdlets are designed so they can be used on both Windows and non-Windows machines. 
@@ -47,7 +47,7 @@ Invoke-CimMethod -ClassName Win32_Process -MethodName "Create" -Arguments @{
   CommandLine = 'notepad.exe'; CurrentDirectory = "C:\windows\system32"
 }
 ```
-## 使用python存取WMI 和 CIM ==> [wmi模組](https://pypi.org/project/WMI/)
+## [2]使用python存取WMI 和 CIM ==> [wmi模組](https://pypi.org/project/WMI/)
   - The Python WMI module is a lightweight wrapper on top of the pywin32 extensions, and hides some of the messy plumbing needed to get Python to talk to the WMI API.
   - [python wmi模塊 獲取windows內部信息](https://www.itread01.com/content/1553437344.html) 
   - [Python wmi.WMI屬性代碼示例](https://vimsky.com/zh-tw/examples/detail/python-attribute-wmi.WMI.html)
