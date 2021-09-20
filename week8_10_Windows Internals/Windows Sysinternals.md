@@ -7,12 +7,19 @@
 - [Sysinternals Video Library - Troubleshooting with Process Explorer(2018)](https://www.youtube.com/watch?v=YGtsMa9wbjw)
 - [Scan for Malware Using Process Explorer and Virus Total](https://www.youtube.com/watch?v=RnPtuTbqzd4)
 - [Finding Malware with Sysinternal's Process Explorer(2021)](https://www.youtube.com/watch?v=y2bNLCWHFNs)
+- [TechDays 2018 - Troubleshooting processes with Process Explorer and Process Monitor(2018)](https://www.youtube.com/watch?v=rxpoWXLho9Y)
 
-## Procmon and Procexp
+## [Procmon:Process Monitor](https://docs.microsoft.com/en-us/sysinternals/downloads/procmon)
+- Process Monitor，用於對應用程序和 Windows 進行故障排除的強大工具
+- [Process Monitor，用於對應用程序和 Windows 進行故障排除的強大工具](https://www.youtube.com/watch?v=UL1msF9-bnk)
 - [Debugging an application using Sysinternals Procmon and Procexp](https://www.youtube.com/watch?v=pjKNx41Ubxw)
 
 ## Sysmon
 - [Threat Hunting via Sysmon - SANS Blue Team Summit(2019)](https://www.youtube.com/watch?v=7dEfKn70HCI)
+
+## [ListDLLs:a command-line DLL viewer](https://docs.microsoft.com/en-us/sysinternals/downloads/listdlls)
+- [Understanding DLLs in Windows Applications](https://www.youtube.com/watch?v=XXkxkruDRmA)
+
 
 # [Tools](https://www.oreilly.com/library/view/troubleshooting-with-the/9780133986549/)
 ```
