@@ -3,9 +3,11 @@
 - WMI is an implementation of Web-Based Enterprise Management (WBEM), a standard that the Distributed Management Task Force (DMTF—an industry industry
 consortium) defines. 
 - The WBEM standard encompasses the design of an extensible enterprise data-collection and data-management facility that has the flexibility and extensibility required to manage local and remote systems that comprise arbitrary components.
-
+- WMI（Windows Management Instrumentation）是微軟根據 DMTF（Distributed Management Task Force）所制訂的 Web-based Enterprise Management（WBEM）為基礎的實作，藉此讓系統管理人員能方便管理系統，以及取得系統資訊。
 - WMI是一項核心的Windows管理技術，WMI作為一種規範和基礎結構，通過它可以訪問、配置、管理和監視幾乎所有的Windows資源
 - 使用者可在遠程計算機器上啟動一個進程；設定一個在特定日期和時間運行的進程；遠程啟動計算機；獲得本地或遠程計算機的已安裝程序列表；查詢本地或遠程計算機的Windows事件日誌等等。
+- [WIKI](https://en.wikipedia.org/wiki/Windows_Management_Instrumentation)
+- [Windows WMI：WMI存儲庫，提供程序，基礎結構，名稱空間等(2020)](https://www.youtube.com/watch?v=_jOY-EIDTxk)
 
 # WMI architecture see Figure 10-27
 
@@ -30,7 +32,8 @@ consortium) defines.
   - Developers use the Managed Object Format (MOF) language to implement a CIM representation.
  
 # 存取WMI 和 CIM方法[練習與實測]
-## [1]使用powershell 存取WMI 和 CIM
+## [1]Windows Management Instrumentation Tester tool (WbemTest) p.492
+## [2]使用powershell 存取WMI 和 CIM
   - [Working with WMI](https://docs.microsoft.com/en-us/powershell/scripting/learn/ps101/07-working-with-wmi?view=powershell-7.1) 
   - Get-Command -Noun WMI*  ==> used to determine what WMI cmdlets exist in PowerShell 
     - The CIM cmdlets are designed so they can be used on both Windows and non-Windows machines. 
@@ -47,7 +50,7 @@ Invoke-CimMethod -ClassName Win32_Process -MethodName "Create" -Arguments @{
   CommandLine = 'notepad.exe'; CurrentDirectory = "C:\windows\system32"
 }
 ```
-## [2]使用python存取WMI 和 CIM ==> [wmi模組](https://pypi.org/project/WMI/)
+## [3]使用python存取WMI 和 CIM ==> [wmi模組](https://pypi.org/project/WMI/)
   - The Python WMI module is a lightweight wrapper on top of the pywin32 extensions, and hides some of the messy plumbing needed to get Python to talk to the WMI API.
   - [python wmi模塊 獲取windows內部信息](https://www.itread01.com/content/1553437344.html) 
   - [Python wmi.WMI屬性代碼示例](https://vimsky.com/zh-tw/examples/detail/python-attribute-wmi.WMI.html)
@@ -56,4 +59,5 @@ Invoke-CimMethod -ClassName Win32_Process -MethodName "Create" -Arguments @{
 
 # attack surface| attack vectors
 - [Abusing Windows Management Instrumentation (WMI)(2015)](https://www.youtube.com/watch?v=0SjMgnGwpq8)
+- [Investigating WMI Attacks](https://www.youtube.com/watch?v=aBQ1vEjK6v4)
 - [Demo 17 - Fileless Malware Attack Chain - VBA, WMI, and PowerShell](https://www.youtube.com/watch?v=-hhgiTP_fXQ)
