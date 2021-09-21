@@ -4,7 +4,7 @@
 - 只有學生時期具有相對充分時間可以打基礎  宜保握時間
 - 本課程就引領學生針對幾項主題深入探討
 - 
-## [Windows Internals part 1](https://www.microsoftpressstore.com/store/windows-internals-part-1-system-architecture-processes-9780735684188)  [[O’Reilly網站]](https://www.oreilly.com/library/view/windows-internals-part/9780135462348/)
+## [Windows Internals part 1](https://www.microsoftpressstore.com/store/windows-internals-part-1-system-architecture-processes-9780735684188)  [[O’Reilly網站]](https://www.oreilly.com/library/view/windows-internals-seventh/9780133986471/)
 ```
 Chapter 1 Concepts and tools[本課程用到]
 Chapter 2 System architecture[本課程用到]
