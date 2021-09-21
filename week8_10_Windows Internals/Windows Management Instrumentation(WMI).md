@@ -31,7 +31,7 @@ consortium) defines.
   - Provider developers use the CIM to represent the components that make up the parts of an application for which the developers want to enable management. 
   - Developers use the Managed Object Format (MOF) language to implement a CIM representation.
  
-# 存取WMI 和 CIM方法[練習與實測]
+# 存取WMI 和 CIM方法[實測練習]
 ## [1]Windows Management Instrumentation Tester tool (WbemTest) p.492
 ## [2]使用powershell 存取WMI 和 CIM
   - [Working with WMI](https://docs.microsoft.com/en-us/powershell/scripting/learn/ps101/07-working-with-wmi?view=powershell-7.1) 
