@@ -30,7 +30,18 @@ consortium) defines.
   - The CIM specifies how management systems represent, from a systems management perspective, anything from a computer to an application or device on a computer. 
   - Provider developers use the CIM to represent the components that make up the parts of an application for which the developers want to enable management. 
   - Developers use the Managed Object Format (MOF) language to implement a CIM representation.
- 
+
+# [常用的 WMI 類別](https://ithelp.ithome.com.tw/articles/10028586)
+```
+BIOS 資料：Win32_BIOS
+已安裝的 Hotfix 資料：Win32_QuickFixEngineering
+可用的磁碟空間：Win32_LogicalDisk
+登入工作階段資料：Win32_LogonSession
+已登入電腦的使用者資料：Win32_ComputerSystem
+電腦當地時間：Win32_LocalTime
+網路介面卡屬性：Win32_NetworkAdapter
+網路介面卡設定：Win32_NetworkAdapterConfiguration
+```
 # 存取WMI 和 CIM方法[實測練習]
 ## [1]Windows Management Instrumentation Tester tool (WbemTest) p.492
 ## [2]使用powershell 存取WMI 和 CIM
