@@ -9,6 +9,7 @@ CASE Study
 
 ## 學習資源
 - [Digital Forensics and Incident Response](https://www.jaiminton.com/cheatsheet/DFIR/#)
+- [Windows Memory Analysis Checklist](https://www.dumpanalysis.org/windows-memory-analysis-checklist)
 
 ## 參考書籍與推薦章節
 
