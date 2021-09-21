@@ -70,7 +70,7 @@ Invoke-CimMethod -ClassName Win32_Process -MethodName "Create" -Arguments @{
 
 ## [查詢 WMI 物件和屬性的好工具 WMI Explorer](https://blog.poychang.net/explore-full-set-of-wmi-class-and-properties-with-wmi-explorer/)
 
-# attack surface| attack vectors
+# WMI:attack surface| attack vectors
 - [Abusing Windows Management Instrumentation (WMI)(2015)](https://www.youtube.com/watch?v=0SjMgnGwpq8)
 - [Investigating WMI Attacks](https://www.youtube.com/watch?v=aBQ1vEjK6v4)
 - [Demo 17 - Fileless Malware Attack Chain - VBA, WMI, and PowerShell](https://www.youtube.com/watch?v=-hhgiTP_fXQ)
