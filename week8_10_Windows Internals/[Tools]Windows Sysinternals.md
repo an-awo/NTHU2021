@@ -115,6 +115,8 @@ WinObj
 LoadOrder
 PipeList
 ClockRes
+
+
 Chapter 16. Miscellaneous utilities
 RegJump
 Hex2Dec
