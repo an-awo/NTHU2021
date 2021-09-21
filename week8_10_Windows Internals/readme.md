@@ -32,3 +32,7 @@ CHAPTER 12 Startup and shutdown
 - [procdot](https://www.procdot.com/)
 - [powershell]
 - [python]()
+
+## Programming Windows
+
+- [Windows® via C/C++, Fifth Edition(2007)](https://www.oreilly.com/library/view/windows-via-cc/9780735639904/)
