@@ -57,6 +57,8 @@ Invoke-CimMethod -ClassName Win32_Process -MethodName "Create" -Arguments @{
   - [Managing Windows System Administration With WMI And Python](https://blog.ipswitch.com/managing-windows-system-administration-with-wmi-and-python)
   - [wmi Cookbook](http://timgolden.me.uk/python/wmi/cookbook.html)
 
+## [查詢 WMI 物件和屬性的好工具 WMI Explorer](https://blog.poychang.net/explore-full-set-of-wmi-class-and-properties-with-wmi-explorer/)
+
 # attack surface| attack vectors
 - [Abusing Windows Management Instrumentation (WMI)(2015)](https://www.youtube.com/watch?v=0SjMgnGwpq8)
 - [Investigating WMI Attacks](https://www.youtube.com/watch?v=aBQ1vEjK6v4)
