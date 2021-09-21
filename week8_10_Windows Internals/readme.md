@@ -36,3 +36,5 @@ CHAPTER 12 Startup and shutdown
 ## Programming Windows
 
 - [Windows® via C/C++, Fifth Edition(2007)](https://www.oreilly.com/library/view/windows-via-cc/9780735639904/)
+- [Windows API index](https://docs.microsoft.com/en-us/windows/win32/apiindex/windows-api-list)
+- [Win32 API(Windows API)](https://docs.microsoft.com/en-us/windows/win32/apiindex/windows-api-list)
