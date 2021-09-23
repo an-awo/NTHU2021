@@ -22,7 +22,6 @@
 
 ## objdump指令參數
 - objdump -D -M intel file.bin | grep main.: -A20
-- 
 ```
 objdump --help
 Usage: objdump <option(s)> <file(s)>
@@ -88,10 +87,13 @@ Usage: objdump <option(s)> <file(s)>
                              or deeper
       --dwarf-check          Make additional dwarf internal consistency checks.      
 
-objdump: supported targets: elf64-x86-64 elf32-i386 elf32-iamcu elf32-x86-64 pei-i386 pei-x86-64 elf64-l1om elf64-k1om elf64-little 
-         elf64-big elf32-little elf32-big pe-x86-64 pe-bigobj-x86-64 pe-i386 plugin srec symbolsrec verilog tekhex binary ihex
-objdump: supported architectures: i386 i386:x86-64 i386:x64-32 i8086 i386:intel i386:x86-64:intel i386:x64-32:intel i386:nacl \
-          i386:x86-64:nacl i386:x64-32:nacl iamcu iamcu:intel l1om l1om:intel k1om k1om:intel plugin
+objdump: supported targets: 
+      elf64-x86-64 elf32-i386 elf32-iamcu elf32-x86-64 pei-i386 pei-x86-64 
+      elf64-l1om elf64-k1om elf64-little elf64-big elf32-little elf32-big 
+      pe-x86-64 pe-bigobj-x86-64 pe-i386 plugin srec symbolsrec verilog tekhex binary ihex
+objdump: supported architectures: 
+      i386 i386:x86-64 i386:x64-32 i8086 i386:intel i386:x86-64:intel i386:x64-32:intel i386:nacl 
+      i386:x86-64:nacl i386:x64-32:nacl iamcu iamcu:intel l1om l1om:intel k1om k1om:intel plugin
 
 反組譯常用參數
 The following i386/x86-64 specific disassembler options are supported for use
