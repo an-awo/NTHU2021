@@ -16,8 +16,9 @@
 - Many Ehancements
   - [PEDA - Python Exploit Development Assistance for GDB](https://github.com/longld/peda)
   - [GEF - GDB Enhanced Features](https://gef.readthedocs.io/en/master/)
-  - [Pwngdb:GDB for pwn(angelboy)](https://github.com/scwuaptx/Pwngdb)
   - [pwndbg](https://github.com/pwndbg/pwndbg)
+  - [Pwngdb:GDB for pwn(angelboy)](https://github.com/scwuaptx/Pwngdb)
+  - [Pwndbg + GEF + Peda — One for all, and all for one](https://infosecwriteups.com/pwndbg-gef-peda-one-for-all-and-all-for-one-714d71bf36b8)
 
 ## [gdb-peda]
 - PEDA is a Python GDB script with many handy commands to help speed up exploit development process on Linux/Unix. 
@@ -114,6 +115,7 @@ gef➤ run  ==> 會開啟漂亮視窗
 
 ## gdb常用指令
 - [官方龐大文件Debugging with GDB](https://sourceware.org/gdb/current/onlinedocs/gdb/)
+- [GDB Cheat Sheet](https://darkdust.net/files/GDB%20Cheat%20Sheet.pdf)
 - run ==> 執行(簡寫:r)
 - q 離開
 - disassemble <func>  反組譯 (簡寫:disas)
@@ -146,18 +148,23 @@ gef➤ run  ==> 會開啟漂亮視窗
 {long} 8bytes
 ```
 - x 檢視記憶體的資料
-- x/[Size Modifiers][Format] <0x400686>
-  - [Size Modifiers]
-    - b(byte)/1 byte (8-bit)
-    - h(Halfword)/2 byte (16-bit)
-    - w(Word)/4 byte (32-bit)
-    - g(Giant Word)/8 byte(64-bit)
-  - [Format]
-    - o octal
-    - x hexadecimal
-    - t binary
-    - s string
-    - i 組合語言
+- x/nfu <address> ==> Print memory.
+  - n: How many units to print (default 1).
+  - f: Format character (like „print“).
+    - d Integer, signed decimal.
+    - t Integer, print as binary (t = „two“).
+    - o Integer, print as octal.
+    - u Integer, unsigned decimal.
+    - x Integer, print as hexadecimal.
+    - f Floating point number.
+    - c Read as integer, print as character.
+    - s Try to treat as C string.
+  - u: Unit.
+    Unit is one of:
+    - b: Byte/1 byte (8-bit)
+    - h: Half-word (two bytes)
+    - w: Word (four bytes)
+    - g: Giant word (eight bytes))
 - vmmap ==>查看⽬前程式的記憶體分佈，以及 rwx 權限設定
 - p <register> 查看某暫存器
 - j *<0x809030> 跳到某個位址 (jump)
