@@ -12,6 +12,105 @@
   - [調試（debugging）](#調試debugging)
   - [視圖模式](#視圖模式)
 
+PS:忘了從哪個地方整理過來,若有同學知道請告知來源,讓我好修正
+
+## 簡介
+
+IDA Pro 昂貴的價格令很多二進位愛好者望而卻步，於是在開源世界中催生出了一個新的逆向工程框架——Radare2，它擁有非常強大的功能，包括反彙編、調試、打補丁、虛擬化等等，而且可以運行在幾乎所有的主流平臺上（GNU/Linux、Windows、BSD、iOS、OSX……）。Radare2 開發之初僅提供了基於命令列的操作，儘管現在也有非官方的GUI，但我更喜歡直接在終端上運行它，當然這也就意味著更高陡峭的學習曲線。Radare2　是由一系列的元件構成的，這些元件賦予了 Radare2 強大的分析能力，可以在 Radare2 中或者單獨被使用。
+
+這裡是 Radare2 與其他二進位分析工具的對比。（[Comparison Table](http://rada.re/r/cmp.html)）
+
+## 安裝
+
+```bash
+$ git clone https://github.com/radare/radare2.git
+$ cd radare2
+$ ./sys/install.sh
+```
+
+### 更新
+
+```bash
+$ ./sys/install.sh
+```
+
+### 卸載
+
+```bash
+$ make uninstall
+$ make purge
+```
+
+## 命令行使用方法
+
+Radare2 在命令列下有一些小工具可供使用：
+```
+- radare2：十六進位編輯器和調試器的核心，通常通過它進入互動式介面。
+- rabin2：從可執行二進位檔案中提取資訊。
+- rasm2：彙編和反彙編。
+- rahash2：基於塊的雜湊工具。
+- radiff2：二進位檔案或代碼差異比對。
+- rafind2：查找位元組模式。
+- ragg2：r_egg 的前端，將高階語言編寫的簡單程式編譯成x86、x86-64和ARM的二進位檔案。
+- rarun2：用於在不同環境中運行程式。
+- rax2：資料格式轉換。
+```
+### radare2/r2
+
+```text
+$ r2 -h
+Usage: r2 [-ACdfLMnNqStuvwzX] [-P patch] [-p prj] [-a arch] [-b bits] [-i file]
+          [-s addr] [-B baddr] [-M maddr] [-c cmd] [-e k=v] file|pid|-|--|=
+ --           run radare2 without opening any file
+ -            same as 'r2 malloc://512'
+ =            read file from stdin (use -i and -c to run cmds)
+ -=           perform !=! command to run all commands remotely
+ -0           print \x00 after init and every command
+ -a [arch]    set asm.arch
+ -A           run 'aaa' command to analyze all referenced code
+ -b [bits]    set asm.bits
+ -B [baddr]   set base address for PIE binaries
+ -c 'cmd..'   execute radare command
+ -C           file is host:port (alias for -c+=http://%s/cmd/)
+ -d           debug the executable 'file' or running process 'pid'
+ -D [backend] enable debug mode (e cfg.debug=true)
+ -e k=v       evaluate config var
+ -f           block size = file size
+ -F [binplug] force to use that rbin plugin
+ -h, -hh      show help message, -hh for long
+ -H ([var])   display variable
+ -i [file]    run script file
+ -I [file]    run script file before the file is opened
+ -k [k=v]     perform sdb query into core->sdb
+ -l [lib]     load plugin file
+ -L           list supported IO plugins
+ -m [addr]    map file at given address (loadaddr)
+ -M           do not demangle symbol names
+ -n, -nn      do not load RBin info (-nn only load bin structures)
+ -N           do not load user settings and scripts
+ -o [OS/kern] set asm.os (linux, macos, w32, netbsd, ...)
+ -q           quiet mode (no prompt) and quit after -i
+ -p [prj]     use project, list if no arg, load if no file
+ -P [file]    apply rapatch file and quit
+ -R [rarun2]  specify rarun2 profile to load (same as -e dbg.profile=X)
+ -s [addr]    initial seek
+ -S           start r2 in sandbox mode
+ -t           load rabin2 info in thread
+ -u           set bin.filter=false to get raw sym/sec/cls names
+ -v, -V       show radare2 version (-V show lib versions)
+ -w           open file in write mode
+ -X [rr2rule] specify custom rarun2 directive
+ -z, -zz      do not load strings or load them even in raw
+```
+
+參數很多，這裡最重要是 `file`。如果你想 attach 到一個進程上，則使用 `pid`。常用參數如下：
+
+- `-A`：相當於在交互介面輸入了 `aaa`。
+- `-c`：運行 radare 命令。（`r2 -A -q -c 'iI~pic' file`）
+- `-d`：調試二進位檔案或進程。
+- `-a`,`-b`,`-o`：分別指定體系結構、位元數和作業系統，通常是自動的，但也可以手動指定。
+- `-w`：使用可寫模式打開。
+
 ## 互動式使用方法
 
 當我們進入到 Radare2 的互動式介面後，就可以使用互動式命令進行操作。
