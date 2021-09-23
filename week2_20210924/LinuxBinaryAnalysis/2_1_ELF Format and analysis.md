@@ -2,9 +2,10 @@
 
 | 系統 |檔案格式 |
 |-----|------|
-| Linux | ELF |
-|Windows |PE/PE+|
-|Mach kernel. NeXTSTEP, macOS, and iOS |Mach-o|
+| Linux | [ELF](https://en.wikipedia.org/wiki/Executable_and_Linkable_Format) |
+|Windows |[PE Format(Windows)](https://docs.microsoft.com/en-us/windows/win32/debug/pe-format)|
+|macOS, and iOS |[Mach-o](https://en.wikipedia.org/wiki/Mach-O)|
+
 
 # ELF_Format:Analysis
 ```
