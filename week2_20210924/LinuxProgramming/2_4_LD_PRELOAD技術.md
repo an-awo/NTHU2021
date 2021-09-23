@@ -57,6 +57,8 @@ ksu@KSU-Ubuntu-1604-32:~$ LD_PRELOAD=./hook.so ./main
 
 ## ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)CTF:pass
 
+## EasyCTF 2017 LuckGuess 
+
 ### `[延伸閱讀|read-around|Further reading|Weiterlesen|Lectures complémentaires]`
 
  - [[Practical Binary Analysis: Build Your Own Linux Tools for Binary Instrumentation, Analysis, and Disassembly,Dennis Andriesse]](https://www.tenlong.com.tw/products/9781593279127)
