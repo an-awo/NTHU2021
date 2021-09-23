@@ -8,10 +8,6 @@
 - [Understanding Static, Stack, and Heap Memory Regions (Examples in C)](https://www.youtube.com/watch?v=jKcg3ze10Hk)
 - [Pointers and dynamic memory - stack vs heap](https://www.youtube.com/watch?v=_8-ht2AKyH4&t=128s)
 
-## Pointer:Pointers to struct and Function Pointers
-
-- [Function Pointers in C / C++](https://www.youtube.com/watch?v=ynYtgGUNelE)
-- [C Programming: Function Pointers and qsort](https://www.youtube.com/watch?v=TpIuj3Lgho0)
 
 # example 1 
 - 變數的記憶體位址
@@ -69,12 +65,14 @@ The following values are supported:
 to disable aslr ==> echo 0 | sudo tee /proc/sys/kernel/randomize_va_space
 to enable aslr  ==> echo 2 | sudo tee /proc/sys/kernel/randomize_va_space
 
-This won't survive a reboot, so you'll have to configure this in sysctl. Add a file /etc/sysctl.d/01-disable-aslr.conf containing:
+This won't survive a reboot, so you'll have to configure this in sysctl. 
+Add a file /etc/sysctl.d/01-disable-aslr.conf containing:
+
 kernel.randomize_va_space = 0
 
 should permanently disable this.
 ```
-## stuctue [C structs and Pointers](https://www.programiz.com/c-programming/c-structures-pointers)
+## stuctue記憶體位址 [C structs and Pointers](https://www.programiz.com/c-programming/c-structures-pointers)
 ```c
 # include <stdio.h>
 
@@ -129,14 +127,14 @@ Address: book: ffffe0b0, book.title: ffffe0b0, book.author : ffffe0e2, book.subj
 title : C   author: NTHU  subject: Program  book_id: 723456
 ```
 
-# example 3
+# example 3:執行底下程式看看
 ```c
-[narendra@CentOS]$ gcc memory-layout.c -o memory-layout
-[narendra@CentOS]$ size memory-layout
+gcc memory-layout.c -o memory-layout
+size memory-layout < ==使用size看看不同區段的大小增長
 ```
+- [Memory Layout of C Programs](https://viblo.asia/p/memory-layout-of-c-programs-3NVRkbXnv9xn)
 
-
-##
+## example 3a:
 ```c
 #include <stdio.h>
  
