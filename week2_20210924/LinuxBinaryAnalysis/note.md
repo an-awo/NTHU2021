@@ -30,6 +30,4 @@ Can we identify any useful function names?
 Can we identify any libraries used?
 When was the binary written to disk?
 
-- [PE Format(Windows)](https://docs.microsoft.com/en-us/windows/win32/debug/pe-format)
-- [ELF Format(Linux /Unix)]()
-- [Mach-O Format(macOS and iOS)]()
+
