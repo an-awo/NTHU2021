@@ -18,7 +18,9 @@ PS:忘了從哪個地方整理過來,若有同學知道來源,請告知讓我好
 
 ## 簡介
 
-IDA Pro 昂貴的價格令很多二進位愛好者望而卻步，於是在開源世界中催生出了一個新的逆向工程框架——Radare2，它擁有非常強大的功能，包括反彙編、調試、打補丁、虛擬化等等，而且可以運行在幾乎所有的主流平臺上（GNU/Linux、Windows、BSD、iOS、OSX……）。Radare2 開發之初僅提供了基於命令列的操作，儘管現在也有非官方的GUI，但我更喜歡直接在終端上運行它，當然這也就意味著更高陡峭的學習曲線。Radare2　是由一系列的元件構成的，這些元件賦予了 Radare2 強大的分析能力，可以在 Radare2 中或者單獨被使用。
+- Radare2擁有非常強大的功能，包括反彙編、調試、打補丁、虛擬化等等
+- 可運行在幾乎所有的主流平臺上（GNU/Linux、Windows、BSD、iOS、OSX……）
+- Radare2　是由一系列的元件構成的，這些元件賦予了 Radare2 強大的分析能力，可以在 Radare2 中或者單獨被使用。
 
 - [Radare2 與其他二進位分析工具的對比](http://rada.re/r/cmp.html)
 - [The Official Radare2 Book](https://book.rada.re/)
