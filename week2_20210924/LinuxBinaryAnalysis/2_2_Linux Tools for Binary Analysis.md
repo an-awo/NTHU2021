@@ -128,6 +128,7 @@ a filename can be specified using the LD_DEBUG_OUTPUT environment variable.
 - [在 Linux 上分析二進位檔案的 10 種方法](https://linux.cn/article-12187-1.html)
 - [[Binary analysis tools]](https://linuxsecurity.expert/security-tools/binary-analysis-tools)
 - [[The Top 51 Binary Analysis Open Source Projects]](https://awesomeopensource.com/projects/binary-analysis)
+- [Open-source Software Security Tools for Binary Analysis and Rewriting | GrammaTech(2019)](https://blogs.grammatech.com/open-source-tools-for-binary-analysis-and-rewriting)
 
 ## 教科書 Practical Binary Analysis
  - [[教科書Practical Binary Analysis: Build Your Own Linux Tools for Binary Instrumentation, Analysis, and Disassembly,Dennis Andriesse]](https://www.tenlong.com.tw/products/9781593279127) [[Github]](https://github.com/wilvk/practical-binary) [[官方網站:下載ova及code]](https://practicalbinaryanalysis.com/)
