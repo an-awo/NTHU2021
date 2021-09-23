@@ -163,4 +163,4 @@ int rand(void) {
 gcc -fPIC -shared -o hook.so ./hook.c -ldl
 echo 0 | LD_PRELOAD=./hook.so ./LuckyGuess
 ```
-#### 解法2
+#### 解法2: binary Patch see Ghidra_RE
