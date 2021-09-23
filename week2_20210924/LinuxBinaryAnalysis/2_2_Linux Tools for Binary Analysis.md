@@ -42,8 +42,12 @@ ldconfig
 
 - [[The strace Command in Linux]](https://www.baeldung.com/linux/strace-command)
 - [Kali linux:installation] apt-get install -y strace
-- CTF : CSIE_strace
 - help ==>strace -h
+- CTF : CSIE_strace
+  - chmod 777 strace
+  - strace ./strace
+  - strace -s 1000 ./strace 
+
 
 
 ## `[實作練習|pratice|s'entraîner|üben|관행|práctica]`
