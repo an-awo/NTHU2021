@@ -109,10 +109,58 @@ gef➤ run  ==> 會開啟漂亮視窗
 - [gef➤ heap <sub_commands>](https://gef.readthedocs.io/en/master/commands/heap/)
 - [gef➤ got](https://gef.readthedocs.io/en/master/commands/got/)
 - [gef➤ dereference](https://gef.readthedocs.io/en/master/commands/dereference/)
-- [gef➤ cs main 返組譯 capstone-disassemble](https://gef.readthedocs.io/en/master/commands/capstone-disassemble/)
+- [gef➤ cs main [capstone-disassemble]](https://gef.readthedocs.io/en/master/commands/capstone-disassemble/)
 
 
 ## gdb常用指令
+- [官方龐大文件Debugging with GDB](https://sourceware.org/gdb/current/onlinedocs/gdb/)
+- run ==> 執行(簡寫:r)
+- q 離開
+- disassemble <func>  反組譯 (簡寫:disas)
+  - disassemble 敲敲兩下tab，會列出程式用到的所有func 
+
+- 設置斷點 break (簡寫: b)
+  - break * <0x809030>
+  - break * <func_name>
+    -* 用func_name可省略
+
+- info查看各種資訊
+  - info breakpoint ==>查看已設定斷點 (簡寫: i b)
+  - info registers  ==> 顯示所有暫存器
+  - info registers eax ==>  顯示eax暫存器 (簡寫: i r eax)
+
+- 執行程式
+  - ni  ==>下一個指令 {func直接執行完畢}   (簡寫: n)
+  - si  ==>下一個指令 {逐步執行func中的指令} (簡寫: s)
+  - continue ==> 執行到斷點(簡寫: c)
+
+- set 設定與修改
+  - set * address = value
+  - set $register = value
+```
+將address中的值設成value
+* 默認4bytes
+可換成
+{char} 1byte
+{short} 2bytes
+{long} 8bytes
+```
+- x 檢視記憶體的資料
+- x/[Size Modifiers][Format] <0x400686>
+  - [Size Modifiers]
+    - b(byte)/1 byte (8-bit)
+    - h(Halfword)/2 byte (16-bit)
+    - w(Word)/4 byte (32-bit)
+    - g(Giant Word)/8 byte(64-bit)
+  - [Format]
+    - o octal
+    - x hexadecimal
+    - t binary
+    - s string
+    - i 組合語言
+- vmmap ==>查看⽬前程式的記憶體分佈，以及 rwx 權限設定
+- p <register> 查看某暫存器
+- j *<0x809030> 跳到某個位址 (jump)
 
 ## 示範解題
 
