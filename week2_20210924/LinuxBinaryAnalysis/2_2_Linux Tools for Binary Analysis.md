@@ -38,6 +38,36 @@ ldconfig
 - strace 工具==>不是追蹤呼叫的函數庫，而是追蹤系統呼叫。系統呼叫是你與內核對接來完成工作的。
 - data duplicator (dd)
 
+## socat 與 nc
+### server端Terminal
+```
+# server.py
+
+import sys
+
+def print_flag(): 
+	flag_hex = [111,104,101,114,96,108,125,103,106,106,89,114,110,99,117,
+	99,89,107,105,107,99,104,114,117,89,106,105,117,114,89,111,104,89,114,111,107,99,123]
+	i = 0
+	while ( i < 38):
+		sys.stdout.write(chr(flag_hex[i] ^ 6))
+		i += 1
+
+input = input('why did you save me? ')
+#input = raw_input('why did you save me? ')
+
+if input == 'to_say_something':
+	print_flag()
+```
+```
+socat TCP-LISTEN:20000,fork EXEC:'python3 ./server.py'
+```
+### Clinet 端terminal
+```
+nc 127.0.0.1 20000
+why did you save me? to_say_something
+inctfj{XXXXXXXXXXXXXXXXXXXXXX}r
+```
 ## 實作練習 strace
 
 - [[The strace Command in Linux]](https://www.baeldung.com/linux/strace-command)
