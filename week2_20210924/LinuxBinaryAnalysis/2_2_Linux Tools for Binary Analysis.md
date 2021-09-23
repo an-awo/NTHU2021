@@ -33,7 +33,8 @@ ldconfig
 
 ### 其他
 - objcopy
-- ltrace and strace
+- ltrace 命令==>顯示運行時從函數庫中調用的所有函數
+- strace 工具==>不是追蹤呼叫的函數庫，而是追蹤系統呼叫。系統呼叫是你與內核對接來完成工作的。
 - data duplicator (dd)
 
 ## 實作練習 strace
@@ -122,10 +123,11 @@ Valid options for the LD_DEBUG environment variable are:
 To direct the debugging output into a file instead of standard output
 a filename can be specified using the LD_DEBUG_OUTPUT environment variable.
 ```
-## [10 ways to analyze binary files on Linux](https://opensource.com/article/20/4/linux-binary-analysis)
- - [在 Linux 上分析二進位檔案的 10 種方法](https://linux.cn/article-12187-1.html)
- - ltrace 命令==>顯示運行時從函數庫中調用的所有函數
- - strace 工具==>不是追蹤呼叫的函數庫，而是追蹤系統呼叫。系統呼叫是你與內核對接來完成工作的。
+## 網路資源 : 可視時間增加自己的工具庫
+- [10 ways to analyze binary files on Linux](https://opensource.com/article/20/4/linux-binary-analysis)
+- [在 Linux 上分析二進位檔案的 10 種方法](https://linux.cn/article-12187-1.html)
+- [[Binary analysis tools]](https://linuxsecurity.expert/security-tools/binary-analysis-tools)
+- [[The Top 51 Binary Analysis Open Source Projects]](https://awesomeopensource.com/projects/binary-analysis)
 
 ## 教科書 Practical Binary Analysis
  - [[教科書Practical Binary Analysis: Build Your Own Linux Tools for Binary Instrumentation, Analysis, and Disassembly,Dennis Andriesse]](https://www.tenlong.com.tw/products/9781593279127) [[Github]](https://github.com/wilvk/practical-binary) [[官方網站:下載ova及code]](https://practicalbinaryanalysis.com/)
