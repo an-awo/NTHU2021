@@ -4,7 +4,7 @@
 - [示範解題](#示範解題)
 - [學習資源](#學習資源)
 
-## Ghidra簡介
+## [Ghidra簡介](https://en.wikipedia.org/wiki/Ghidra)
 
 - Ghidra is a software reverse engineering (SRE) suite of tools developed by NSA’s Research Directorate in support of the Cybersecurity mission.
 - Ghidra is open-source.
