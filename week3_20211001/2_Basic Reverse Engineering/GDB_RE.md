@@ -7,40 +7,6 @@
 - [學習資源](#學習資源)
 ## 簡介
 
-## gdb-gef
-- [GEF - GDB Enhanced Features](https://gef.readthedocs.io/en/master/)
-- GEF is a set of commands for X86, ARM, MIPS, PowerPC and SPARC to make GDB cool again for exploit dev. 
-- aimed to be used mostly by exploit developers and reverse-engineers, to provide additional features to GDB using the Python API to assist during the process of dynamic analysis and exploit development.
-- full support for both Python2 and Python3 indifferently (as more and more distros start pushing gdb compiled with Python3 support).
-- [文件](https://gef.readthedocs.io/en/master/)
-
-### [Key Features](https://gef.readthedocs.io/en/master/)
-- One single GDB script
-- Entirely OS Agnostic, NO dependencies: GEF is battery-included and is installable instantly
-- Fast limiting the number of dependencies and optimizing code to make the commands as fast as possible
-- Provides a great variety of commands to drastically change your experience in GDB.
-- Easily extensible to create other commands by providing more comprehensible layout to GDB Python API.
-- Full Python3 support (Python2 support was dropped - see gef-legacy).
-- Built around an architecture abstraction layer, so all commands work in any GDB-supported architecture such as x86-32/64, ARMv5/6/7,AARCH64, SPARC, MIPS, PowerPC, etc.
--Suited for real-life apps debugging, exploit development, just as much as CTF
-
-## [安裝](https://gef.readthedocs.io/en/master/config/)
-```
-$ git clone https://github.com/hugsy/gef.git  # or git pull to update
-$ echo 'source /path/to/gef.py' >> ~/.gdbinit
-```
-
-### ![#1589F0](https://via.placeholder.com/15/1589F0/000000?text=+)`常用指令`
-
-```gdb
-$ gdb-gef ./a.out ==> 需要設定
-gef➤ gef help
-gef➤ run  ==> 會開啟漂亮視窗
-```
-- [gef➤ checksec](https://gef.readthedocs.io/en/master/commands/checksec/)
-- [gef➤ elf](https://gef.readthedocs.io/en/master/commands/elf-info/)
-gef➤ vmmap -- Display a comprehensive layout of the virtual memory mapping. 
-gef➤ registers
 
 ## [gdb-peda]
 - PEDA is a Python GDB script with many handy commands to help speed up exploit development process on Linux/Unix. 
@@ -91,6 +57,51 @@ echo "source ~/peda/peda.py" >> ~/.gdbinit
   - vmmap -- Get virtual mapping address ranges of section(s) in debugged process
   - xormem -- XOR a memory region with a key
 
-## 常用指令
+## gdb-gef
+- [GEF - GDB Enhanced Features](https://gef.readthedocs.io/en/master/)
+- GEF is a set of commands for X86, ARM, MIPS, PowerPC and SPARC to make GDB cool again for exploit dev. 
+- aimed to be used mostly by exploit developers and reverse-engineers, to provide additional features to GDB using the Python API to assist during the process of dynamic analysis and exploit development.
+- full support for both Python2 and Python3 indifferently (as more and more distros start pushing gdb compiled with Python3 support).
+- [文件](https://gef.readthedocs.io/en/master/)
+
+### [Key Features](https://gef.readthedocs.io/en/master/)
+- One single GDB script
+- Entirely OS Agnostic, NO dependencies: GEF is battery-included and is installable instantly
+- Fast limiting the number of dependencies and optimizing code to make the commands as fast as possible
+- Provides a great variety of commands to drastically change your experience in GDB.
+- Easily extensible to create other commands by providing more comprehensible layout to GDB Python API.
+- Full Python3 support (Python2 support was dropped - see gef-legacy).
+- Built around an architecture abstraction layer, so all commands work in any GDB-supported architecture such as x86-32/64, ARMv5/6/7,AARCH64, SPARC, MIPS, PowerPC, etc.
+-Suited for real-life apps debugging, exploit development, just as much as CTF
+
+## [安裝](https://gef.readthedocs.io/en/master/config/)
+```
+$ git clone https://github.com/hugsy/gef.git  # or git pull to update
+$ echo 'source /path/to/gef.py' >> ~/.gdbinit
+```
+
+### ![#1589F0](https://via.placeholder.com/15/1589F0/000000?text=+)`常用指令`
+
+```gdb
+$ gdb-gef ./a.out ==> 需要設定
+gef➤ gef help
+gef➤ run  ==> 會開啟漂亮視窗
+```
+- [gef➤ checksec](https://gef.readthedocs.io/en/master/commands/checksec/)
+- [gef➤ canary](https://gef.readthedocs.io/en/master/commands/canary/)
+- [gef➤ aslr](https://gef.readthedocs.io/en/master/commands/aslr/)
+- [gef➤ elf](https://gef.readthedocs.io/en/master/commands/elf-info/)
+- [gef➤ vmmap -- Display a comprehensive layout of the virtual memory mapping.](https://gef.readthedocs.io/en/master/commands/vmmap/)
+- [gef➤ registers ==>print all the registers and dereference any pointers](https://gef.readthedocs.io/en/master/commands/registers/)
+- [gef➤ memory watch XXX](https://gef.readthedocs.io/en/master/commands/memory/)
+- [gef➤ heap <sub_commands>](https://gef.readthedocs.io/en/master/commands/heap/)
+- [gef➤ got](https://gef.readthedocs.io/en/master/commands/got/)
+- [gef➤ dereference](https://gef.readthedocs.io/en/master/commands/dereference/)
+- [gef➤ cs main 返組譯 capstone-disassemble](https://gef.readthedocs.io/en/master/commands/capstone-disassemble/)
+
+
+## gdb常用指令
+
 ## 示範解題
+
 ## 學習資源
