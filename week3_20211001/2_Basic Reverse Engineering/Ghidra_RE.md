@@ -15,7 +15,7 @@
 - In support of NSA's Cybersecurity mission, Ghidra was built to solve scaling and teaming problems on complex SRE efforts, and to provide a customizable and extensible SRE research platform. 
 - NSA has applied Ghidra SRE capabilities to a variety of problems that involve analyzing malicious code and generating deep insights for NSA analysts who seek a better understanding of potential vulnerabilities in networks and systems.
 
-## 2.安裝
+## 安裝
 ### 撰寫 run_ghidra.sh
 ```
 mkdir Ghidra
