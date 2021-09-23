@@ -30,15 +30,18 @@ $ git clone https://github.com/hugsy/gef.git  # or git pull to update
 $ echo 'source /path/to/gef.py' >> ~/.gdbinit
 ```
 
-## ![#1589F0](https://via.placeholder.com/15/1589F0/000000?text=+)`範例練習`
+### ![#1589F0](https://via.placeholder.com/15/1589F0/000000?text=+)`常用指令`
 
 ```gdb
-$ gdb ./a.out
-gef➤  gef help
+$ gdb-gef ./a.out ==> 需要設定
+gef➤ gef help
 gef➤ run  ==> 會開啟漂亮視窗
-gef➤ vmmap -- Display a comprehensive layout of the virtual memory mapping. 
-gef➤  registers
 ```
+- [gef➤ checksec](https://gef.readthedocs.io/en/master/commands/checksec/)
+- [gef➤ elf](https://gef.readthedocs.io/en/master/commands/elf-info/)
+gef➤ vmmap -- Display a comprehensive layout of the virtual memory mapping. 
+gef➤ registers
+
 ## [gdb-peda]
 - PEDA is a Python GDB script with many handy commands to help speed up exploit development process on Linux/Unix. 
 - PEDA is also a framework for writing custom interactive Python GDB commands.
