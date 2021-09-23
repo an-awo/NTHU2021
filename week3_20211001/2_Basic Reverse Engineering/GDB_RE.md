@@ -5,13 +5,24 @@
 - [常用指令](#常用指令)
 - [示範解題](#示範解題)
 - [學習資源](#學習資源)
-## 簡介
-
+## GDB簡介
+- [GDB: The GNU Project Debugger](https://www.gnu.org/software/gdb/)
+- GDB allows you to see what is going on `inside' another program while it executes -- or what another program was doing at the moment it crashed.
+- GDB can do four main kinds of things (plus other things in support of these) to help you catch bugs in the act:
+  - Start your program, specifying anything that might affect its behavior.
+  - Breakpoint:Make your program stop on specified conditions.
+  - Examine what has happened, when your program has stopped.
+  - Binary Patch:Change things in your program, so you can experiment with correcting the effects of one bug and go on to learn about another.
+- Many Ehancements
+  - [PEDA - Python Exploit Development Assistance for GDB](https://github.com/longld/peda)
+  - [GEF - GDB Enhanced Features](https://gef.readthedocs.io/en/master/)
+  - [Pwngdb:GDB for pwn(angelboy)](https://github.com/scwuaptx/Pwngdb)
+  - [pwndbg](https://github.com/pwndbg/pwndbg)
 
 ## [gdb-peda]
 - PEDA is a Python GDB script with many handy commands to help speed up exploit development process on Linux/Unix. 
 - PEDA is also a framework for writing custom interactive Python GDB commands.
-- [PEDA - Python Exploit Development Assistance for GDB]()
+- [PEDA - Python Exploit Development Assistance for GDB](https://github.com/longld/peda)
 
 ### 安裝peda
 ```
@@ -33,6 +44,7 @@ echo "source ~/peda/peda.py" >> ~/.gdbinit
     - Get/set config option:
         gdb-peda$ pshow option
         gdb-peda$ pset option <name> <value>
+
 ### Key Features:[資料來源:github網址](https://github.com/longld/peda)
 - Enhance the display of gdb: colorize and display disassembly codes, registers, memory information during debugging.
 - Add commands to support debugging and exploit development (for a full list of commands use peda help):
