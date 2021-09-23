@@ -3,7 +3,8 @@
 ### Linux 工具集
 ```
 file 
-size 
+size 列出目的模組或檔案大小
+
 strings
 hexdump | hd
 ```
