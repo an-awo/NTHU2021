@@ -17,37 +17,6 @@ onegaget
 ROPgaget
 ```
 
-# socat 
-### server端Terminal
-```
-# server.py
-
-import sys
-
-def print_flag(): 
-	flag_hex = [111,104,101,114,96,108,125,103,106,106,89,114,110,99,117,
-	99,89,107,105,107,99,104,114,117,89,106,105,117,114,89,111,104,89,114,111,107,99,123]
-	i = 0
-	while ( i < 38):
-		sys.stdout.write(chr(flag_hex[i] ^ 6))
-		i += 1
-
-input = input('why did you save me? ')
-#input = raw_input('why did you save me? ')
-
-if input == 'to_say_something':
-	print_flag()
-```
-```
-socat TCP-LISTEN:20000,fork EXEC:'python3 ./server.py'
-```
-### Clinet 端terminal
-```
-nc 127.0.0.1 20000
-why did you save me? to_say_something
-inctfj{all_these_moments_lost_in_time}r
-```
-
 
 # 1.reverse engineering
 -[Ubuntu 18.04 安裝 pwndbg](https://www.twblogs.net/a/5d485a28bd9eee5327fb9acb)
