@@ -20,8 +20,8 @@ int main()
 |gcc helloCTFer.c -o helloCTFer |./helloCTFer   | file ./helloCTFer   |
 |gcc helloCTFer.c -o helloCTFer.exe | ./helloCTFer.exe | file ./helloCTFer.exe|
 
-
-hexdump -C helloCTFer.exe
+- strings ./helloCTFer
+- hexdump -C helloCTFer.exe
 
 
 - [ELF File magic](https://unix.stackexchange.com/questions/153352/what-is-elf-magic)
