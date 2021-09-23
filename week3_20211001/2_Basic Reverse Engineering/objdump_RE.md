@@ -1,8 +1,11 @@
 # objdump技術實戰
-
-1.使用objdump 檢視ELF
-2.objdump 反組譯技術
-```
+- [objdump](#objdump)
+- [objdump指令參數](#objdump指令參數)
+- 
+## [objdump]()
+- 常用應用
+  - 1.使用objdump 檢視ELF
+  - 2.objdump 反組譯
 ## 1.使用objdump 檢視ELF
 ```
 使用 objdump 來查看目的檔案的內部結構 ==> objdump -h elfDemo.o
@@ -16,7 +19,7 @@ objdump -x -s -d elfDemo.o ==> 檢視 Sections:
 ```
 
 
-## objdump 指令參數
+## objdump指令參數
 - objdump -D -M intel file.bin | grep main.: -A20
 ```
 objdump --help
