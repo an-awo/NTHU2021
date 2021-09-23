@@ -1,7 +1,9 @@
 # objdump技術實戰
 - [objdump](#objdump)
 - [objdump指令參數](#objdump指令參數)
-- 
+- [objdump反組譯範例](#objdump反組譯範例)
+- [CTF解題](#CTF解題)
+
 ## [objdump]()
 - 常用應用
   - 1.使用objdump 檢視ELF
@@ -113,7 +115,8 @@ with the -M switch (multiple options should be separated by commas):
   intel64     Display instruction in Intel64 ISA
 Report bugs to <http://www.sourceware.org/bugzilla/>.
 ```
-## 2.objdump 反組譯技術 === 逆向工程技術 -d  -M -j -S參數
+## objdump反組譯範例
+－ 逆向工程技術 -d  -M -j -S參數
 
 ### 範例程式  
 ```
@@ -139,3 +142,5 @@ int main()
 |objdump -S -M intel helloCTFer||
 |objdump -S -j .text -M intel helloCTFer ||
 |objdump -S -j .text -M intel helloCTFer --no-show-raw-insn  ||
+
+## CTF解題
