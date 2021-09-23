@@ -147,8 +147,8 @@ gef➤ run  ==> 會開啟漂亮視窗
 {short} 2bytes
 {long} 8bytes
 ```
-- x 檢視記憶體的資料
-- x/nfu <address> ==> Print memory.
+
+- x/nfu <address> ==> Print memory.檢視記憶體的資料
   - n: How many units to print (default 1).
   - f: Format character (like „print“).
     - d Integer, signed decimal.
@@ -165,6 +165,7 @@ gef➤ run  ==> 會開啟漂亮視窗
     - h: Half-word (two bytes)
     - w: Word (four bytes)
     - g: Giant word (eight bytes))
+
 - vmmap ==>查看⽬前程式的記憶體分佈，以及 rwx 權限設定
 - p <register> 查看某暫存器
 - j *<0x809030> 跳到某個位址 (jump)
