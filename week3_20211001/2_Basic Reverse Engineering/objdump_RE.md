@@ -5,24 +5,24 @@
 - [CTF解題](#CTF解題)
 
 ## [objdump]()
+- objdump is a command-line program for displaying various information about object files on Unix-like operating systems.
+- it can be used as a disassembler to view an executable in assembly form. 
+- It is part of the GNU Binutils for fine-grained control over executables and other binary data. 
+- objdump uses the BFD library to read the contents of object files.
 - 常用應用
   - 1.使用objdump 檢視ELF
-  - 2.objdump 反組譯
-## 1.使用objdump 檢視ELF
-```
-使用 objdump 來查看目的檔案的內部結構 ==> objdump -h elfDemo.o
-
-objdump -x -s -d elfDemo.o ==> 檢視 Sections:                       
-                                               .data 段 ==> 保存已經初始化了的全域變數和局部靜態變數
-                                               .rodata 段  ==> 保存唯讀資料，包括唯讀變數和字串常量
-                                               .bss 段 ==> 保存未初始化的全域變數和局部靜態變數
-                                    Contents of section .text:      =====> .text 的程式的十六進位形式
-                                   Disassembly of section .text:   =====> .text 程式反組譯(assembly程式)
-```
-
+    - objdump -h elfDemo.o ==> 使用 objdump 來查看目的檔案的內部結構
+    - objdump -x -s -d elfDemo.o  ==> 檢視 Sections
+      - .data 段 ==> 保存已經初始化了的全域變數和局部靜態變數
+      - .rodata 段  ==> 保存唯讀資料，包括唯讀變數和字串常量
+      - .bss 段 ==> 保存未初始化的全域變數和局部靜態變數
+      - Contents of section .text:      =====> .text 的程式的十六進位形式
+      - Disassembly of section .text:   =====> .text 程式反組譯(assembly程式)
+  - 2.objdump 反組譯 [本節重點]
 
 ## objdump指令參數
 - objdump -D -M intel file.bin | grep main.: -A20
+- 
 ```
 objdump --help
 Usage: objdump <option(s)> <file(s)>
