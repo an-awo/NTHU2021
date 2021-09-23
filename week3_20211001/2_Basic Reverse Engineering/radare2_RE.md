@@ -11,7 +11,8 @@
   - [列印（print） & 反彙編（disassembling）](#列印print--反彙編disassembling)
   - [調試（debugging）](#調試debugging)
   - [視圖模式](#視圖模式)
-- [使用radare2/r2解CTF](#使用radare2/r2解CTF)
+- [CTF解題](#CTF解題)
+- [網路學習資源](#網路學習資源)
 
 PS:忘了從哪個地方整理過來,若有同學知道來源,請告知讓我好修正
 
@@ -662,6 +663,8 @@ Function Keys: (See 'e key.'), defaults to:
 - `;`：添加注釋。
 - `V`：查看圖形。
 - `:`：運行 radare2 命令
-## 使用radare2/r2解CTF
+## CTF解題
 - [InCTF Junior　blade](https://medium.com/@amustaque97/demystify-reverse-engineering-ctf-challenge-blade-40c45e7933c0)
 - [easyCTF-2018-Adder](https://github.com/asinggih/easyCTF-2018-writeups/blob/master/Reverse_Engineering/Adder.md)
+
+## 網路學習資源
