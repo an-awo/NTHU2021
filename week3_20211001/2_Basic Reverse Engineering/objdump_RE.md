@@ -146,10 +146,11 @@ int main()
 |objdump -S -j .text -M intel helloCTFer --no-show-raw-insn  ||
 
 ## CTF解題
-- EasyCTF 2017_LuckyGuess
-  - 使用objdump 反組譯會發現有使用rand 
-  - 查看rand 語法
-  - 撰寫rand
+### EasyCTF 2017_LuckyGuess 
+#### [參考解答1](https://github.com/ss8651twtw/Reverse-CTF-writeups/tree/main/EasyCTF_LuckyGuess)
+- 使用objdump 反組譯會發現有使用rand 
+- 查看rand 語法
+- 撰寫rand
 ```c
 #include <stdlib.h>
 
@@ -157,8 +158,9 @@ int rand(void) {
 	return 0;
 }
 ```
-  - 編譯與執行 ==> 使用LD_PRELOAD
+- 編譯與執行 ==> 使用LD_PRELOAD
 ```
 gcc -fPIC -shared -o hook.so ./hook.c -ldl
 echo 0 | LD_PRELOAD=./hook.so ./LuckyGuess
 ```
+#### 解法2
