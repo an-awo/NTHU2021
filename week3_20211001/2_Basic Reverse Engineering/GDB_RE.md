@@ -1,7 +1,7 @@
 # GDB
 - [GDB簡介](#GDB簡介)
 - [gdb-gef](#gdb-gef)
-- [gdb-peda]
+- [gdb-peda](#gdb-peda)
 - [常用指令](#常用指令)
 - [示範解題](#示範解題)
 - [學習資源](#學習資源)
