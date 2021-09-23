@@ -2,16 +2,16 @@
 
 ### Linux 工具集
 ```
-file 
-size 列出目的模組或檔案大小
+- file 
+- size 列出目的模組或檔案大小
+- [strings](https://linux.die.net/man/1/strings)
+- hexdump | hd
 
-strings
-hexdump | hd
-```
 ### 資訊分析工具
 
-- ldd 
-- nm
+- [Ldd(List Dynamic Dependencies，列出動態庫依賴關係)](https://man7.org/linux/man-pages/man1/ldd.1.html)
+  - root@kali:/usr/bin# ldd xxd 
+- [nm - list symbols from object files](https://linux.die.net/man/1/nm)
 - objdump
 - [readelf](https://sourceware.org/binutils/docs-2.32/binutils/readelf.html#readelf)
 
@@ -23,20 +23,21 @@ strip  ==> 刪除目的檔案中的全部或者特定符號，可以減小可執
 ldconfig
 ```
 ### 運行時分析工具
-
-- strace
-- addr2line
+- ltrace 命令(A library call tracer)==>顯示運行時從函數庫中調用的所有函數
+  - [指令參數](https://man7.org/linux/man-pages/man1/ltrace.1.html)
+- strace 工具==>不是追蹤呼叫的函數庫，而是追蹤系統呼叫。系統呼叫是你與內核對接來完成工作的。
+  - [10 Strace Commands for Troubleshooting and Debugging Linux Processes](https://www.tecmint.com/strace-commands-for-troubleshooting-and-debugging-linux/) 
 - GNU Debugger (GDB)
-
-### 
-- [Evan's Debugger (EDB)](https://github.com/eteran/edb-debugger)
-- [Cutter: Free and Open Source RE Platform powered by Rizin](https://cutter.re/)
+- addr2line
 
 ### 其他
 - objcopy
-- ltrace 命令==>顯示運行時從函數庫中調用的所有函數
-- strace 工具==>不是追蹤呼叫的函數庫，而是追蹤系統呼叫。系統呼叫是你與內核對接來完成工作的。
 - data duplicator (dd)
+- [Evan's Debugger (EDB)](https://github.com/eteran/edb-debugger)
+- [Cutter: Free and Open Source RE Platform powered by Rizin](https://cutter.re/)
+
+
+## 實作練習:
 
 ## socat 與 nc
 ### server端Terminal
