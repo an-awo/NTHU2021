@@ -54,9 +54,6 @@ https://github.com/NationalSecurityAgency/ghidra/issues/1495
 ```
 ## 示範解題
 
-- [InCTF Junior　blade](https://medium.com/@amustaque97/demystify-reverse-engineering-ctf-challenge-blade-40c45e7933c0)
-- [easyCTF-2018-Adder](https://github.com/asinggih/easyCTF-2018-writeups/blob/master/Reverse_Engineering/Adder.md)
-
 ### EasyCTF 2017_LuckyGuess解題
 ## 題目敘述
 ```
@@ -282,6 +279,9 @@ Breakpoint 1, 0x0000000000400b93 in main ()
 Continuing.
 easyctf{XXXXXXXXXXXXXXX}[Inferior 1 (process 24458) exited with code 01]
 ```
+
+- [InCTF Junior　blade](https://medium.com/@amustaque97/demystify-reverse-engineering-ctf-challenge-blade-40c45e7933c0)
+- [easyCTF-2018-Adder](https://github.com/asinggih/easyCTF-2018-writeups/blob/master/Reverse_Engineering/Adder.md)
 
 ## 學習資源
 - [Ghidra - Journey from Classified NSA Tool to Open Source](https://www.youtube.com/watch?v=kx2xp7IQNSc&t=683s)
