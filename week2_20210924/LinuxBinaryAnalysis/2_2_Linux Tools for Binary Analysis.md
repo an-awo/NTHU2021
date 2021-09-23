@@ -19,7 +19,7 @@ hexdump | hd
 ```
 chrpath ==  change the rpath or runpath in binaries
 patchelf == PatchELF is a simple utility for modifying existing ELF executables and libraries
-strip
+strip  ==> 刪除目的檔案中的全部或者特定符號，可以減小可執行檔的大小。
 ldconfig
 ```
 ### 運行時分析工具
