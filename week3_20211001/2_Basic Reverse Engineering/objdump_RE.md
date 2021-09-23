@@ -164,3 +164,6 @@ gcc -fPIC -shared -o hook.so ./hook.c -ldl
 echo 0 | LD_PRELOAD=./hook.so ./LuckyGuess
 ```
 #### 解法2: binary Patch see Ghidra_RE
+
+- [InCTF Junior　blade](https://medium.com/@amustaque97/demystify-reverse-engineering-ctf-challenge-blade-40c45e7933c0)
+- [easyCTF-2018-Adder](https://github.com/asinggih/easyCTF-2018-writeups/blob/master/Reverse_Engineering/Adder.md)
