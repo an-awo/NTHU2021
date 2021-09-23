@@ -72,15 +72,8 @@ void main (void){
   func(global_init_var + local_init_val + local_static_init_var);
 }
 ```
-## 編譯成32-bit[使用Ubuntu 18.04/20,04 LTS ro Kali_201902]
-```
-gcc -m32 -c elfDemo.c -o elfDemo.o
 
-gcc -m32 elfDemo.c -o elfDemo.out
-
-gcc -m32 -static elfDemo.c -o elfDemo_static.out
-```
-## 編譯成64-bit[使用Ubuntu 18.04/20,04 LTS ro Kali_201902]
+## 編譯成64-bit[使用Ubuntu 18.04/20,04 LTS or Kali_201902]
 ```
 $ gcc elfDemo.c -o elf Demo.exec
 $ gcc -static elfDemo.c -o elfDemo_static.exec
@@ -107,9 +100,7 @@ $ gcc -e -fPIC elfDemo.c -o elfDemo_pie.rel && gcc -shared elfDemo_pie.rel -o el
 | 段（Section） | 包含了`連結視圖Linking view`中大量的目的檔案資訊。|
 | 段標頭表（Section Header Table）| 包含了描述檔中所有`段（Section）`的資訊。|
 
-## 實作練習:使用objdump 檢視ELF
-
-## 使用readelf 檢視ELF
+## 使用readelf 檢視ELF  也可以使用 使用objdump 檢視ELF
 
 |名稱|說明|readelf 檢視|
 | -------|-------------------------|-------------|
@@ -173,48 +164,7 @@ Usage: readelf <option(s)> elf-file(s)
   -v --version           Display the version number of readelf
 ```
 ### 檢視 Section Headers
-```
-readelf --sections --wide flag 
-There are 30 section headers, starting at offset 0x3960:
 
-Section Headers:
-  [Nr] Name              Type            Address          Off    Size   ES Flg Lk Inf Al
-  [ 0]                   NULL            0000000000000000 000000 000000 00      0   0  0
-  [ 1] .interp           PROGBITS        00000000000002a8 0002a8 00001c 00   A  0   0  1
-  [ 2] .note.ABI-tag     NOTE            00000000000002c4 0002c4 000020 00   A  0   0  4
-  [ 3] .note.gnu.build-id NOTE            00000000000002e4 0002e4 000024 00   A  0   0  4
-  [ 4] .gnu.hash         GNU_HASH        0000000000000308 000308 000024 00   A  5   0  8
-  [ 5] .dynsym           DYNSYM          0000000000000330 000330 0000a8 18   A  6   1  8
-  [ 6] .dynstr           STRTAB          00000000000003d8 0003d8 000082 00   A  0   0  1
-  [ 7] .gnu.version      VERSYM          000000000000045a 00045a 00000e 02   A  5   0  2
-  [ 8] .gnu.version_r    VERNEED         0000000000000468 000468 000020 00   A  6   1  8
-  [ 9] .rela.dyn         RELA            0000000000000488 000488 0000c0 18   A  5   0  8
-  [10] .rela.plt         RELA            0000000000000548 000548 000018 18  AI  5  23  8
-  [11] .init             PROGBITS        0000000000001000 001000 000017 00  AX  0   0  4
-  [12] .plt              PROGBITS        0000000000001020 001020 000020 10  AX  0   0 16
-  [13] .plt.got          PROGBITS        0000000000001040 001040 000008 08  AX  0   0  8
-  [14] .text             PROGBITS        0000000000001050 001050 000161 00  AX  0   0 16
-  [15] .fini             PROGBITS        00000000000011b4 0011b4 000009 00  AX  0   0  4
-  [16] .rodata           PROGBITS        0000000000002000 002000 000021 00   A  0   0  4
-  [17] .eh_frame_hdr     PROGBITS        0000000000002024 002024 00003c 00   A  0   0  4
-  [18] .eh_frame         PROGBITS        0000000000002060 002060 000108 00   A  0   0  8
-  [19] .init_array       INIT_ARRAY      0000000000003de8 002de8 000008 08  WA  0   0  8
-  [20] .fini_array       FINI_ARRAY      0000000000003df0 002df0 000008 08  WA  0   0  8
-  [21] .dynamic          DYNAMIC         0000000000003df8 002df8 0001e0 10  WA  6   0  8
-  [22] .got              PROGBITS        0000000000003fd8 002fd8 000028 08  WA  0   0  8
-  [23] .got.plt          PROGBITS        0000000000004000 003000 000020 08  WA  0   0  8
-  [24] .data             PROGBITS        0000000000004020 003020 000010 00  WA  0   0  8
-  [25] .bss              NOBITS          0000000000004030 003030 000008 00  WA  0   0  1
-  [26] .comment          PROGBITS        0000000000000000 003030 00001c 01  MS  0   0  1
-  [27] .symtab           SYMTAB          0000000000000000 003050 000600 18     28  45  8
-  [28] .strtab           STRTAB          0000000000000000 003650 000202 00      0   0  1
-  [29] .shstrtab         STRTAB          0000000000000000 003852 000107 00      0   0  1
-Key to Flags:
-  W (write), A (alloc), X (execute), M (merge), S (strings), I (info),
-  L (link order), O (extra OS processing required), G (group), T (TLS),
-  C (compressed), x (unknown), o (OS specific), E (exclude),
-  l (large), p (processor specific)
-```
 ```
 readelf --sections --wide /bin/bash
 There are 29 section headers, starting at offset 0x11ce48:
@@ -312,6 +262,5 @@ Program Headers:
    - examine PE structure using tools(What tools? Googling them!)
    - examine PE structure using python
    - demo what you can find
-   - [使用pyelftools分析](https://coolbyte.eu/2018/anatomy-elf-part2-pht/)
 
 ## Midterm 30% 報告主題 Windows Binary Analysis
