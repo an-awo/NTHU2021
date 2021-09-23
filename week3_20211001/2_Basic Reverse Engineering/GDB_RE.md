@@ -74,7 +74,7 @@ echo "source ~/peda/peda.py" >> ~/.gdbinit
 - GEF is a set of commands for X86, ARM, MIPS, PowerPC and SPARC to make GDB cool again for exploit dev. 
 - aimed to be used mostly by exploit developers and reverse-engineers, to provide additional features to GDB using the Python API to assist during the process of dynamic analysis and exploit development.
 - full support for both Python2 and Python3 indifferently (as more and more distros start pushing gdb compiled with Python3 support).
-- [文件](https://gef.readthedocs.io/en/master/)
+- [官方說明文件](https://gef.readthedocs.io/en/master/)
 
 ### [Key Features](https://gef.readthedocs.io/en/master/)
 - One single GDB script
