@@ -106,7 +106,7 @@ $ gcc -e -fPIC elfDemo.c -o elfDemo_pie.rel && gcc -shared elfDemo_pie.rel -o el
 | 段（Section） | 包含了`連結視圖Linking view`中大量的目的檔案資訊。|
 | 段標頭表（Section Header Table）| 包含了描述檔中所有`段（Section）`的資訊。|
 
-## 使用objdump 檢視ELF see next talk
+## 實作練習:使用objdump 檢視ELF
 
 ## 使用readelf 檢視ELF
 
@@ -254,7 +254,6 @@ Key to Flags:
   L (link order), O (extra OS processing required), G (group), T (TLS),
   C (compressed), x (unknown), o (OS specific), E (exclude),
   l (large), p (processor specific)
-
 ```
 ### Execution view: Program Header Table (PHT)
 ```
@@ -293,7 +292,7 @@ Program Headers:
    09     
    10     .init_array .fini_array .data.rel.ro .dynamic .got 
 ```
-## `[練習|pratice|s'entraîner|üben|관행|práctica]`
+## `[實作練習|pratice|s'entraîner|üben|관행|práctica]`
  
   - strip or Not-strip: this is a test
   - 教科書1.2 Symbols and Stripped Binaries
@@ -312,6 +311,6 @@ Program Headers:
    - examine PE structure using tools(What tools? Googling them!)
    - examine PE structure using python
    - demo what you can find
+   - [使用pyelftools分析](https://coolbyte.eu/2018/anatomy-elf-part2-pht/)
 
-## `[延伸閱讀|read-around|Further reading|Weiterlesen|Lectures complémentaires]`
-- [使用pyelftools分析](https://coolbyte.eu/2018/anatomy-elf-part2-pht/)
+## Midterm 30% 報告主題 Windows Binary Analysis
