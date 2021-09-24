@@ -1,5 +1,4 @@
 # Memory Layout of C Programs
-- [Memory Layout of C Programs](https://www.geeksforgeeks.org/memory-layout-of-c-program/)
 - [Memory Layout of C Program](https://www.javatpoint.com/memory-layout-in-c)
 - [Memory Layout of C program](https://aticleworld.com/memory-layout-of-c-program/)
 - [Memory Layout of C Program](https://www.hackerearth.com/practice/notes/memory-layout-of-c-program/)
@@ -132,6 +131,7 @@ title : C   author: NTHU  subject: Program  book_id: 723456
 gcc memory-layout.c -o memory-layout
 size memory-layout < ==使用size看看不同區段的大小增長
 ```
+- [資料來源:Memory Layout of C Programs](https://www.geeksforgeeks.org/memory-layout-of-c-program/)
 - [Memory Layout of C Programs](https://viblo.asia/p/memory-layout-of-c-programs-3NVRkbXnv9xn)
 
 ## example 3a:
