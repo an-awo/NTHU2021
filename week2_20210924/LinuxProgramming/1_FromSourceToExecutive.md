@@ -65,10 +65,10 @@ https://www.itread01.com/p/1385440.html
 - relocation 重定位
 - Resolving References
 
+原始程式碼 ==> helloCTFer.c
 
 | PHASE |command|
 |-----------------------|-------------|
-|原始程式碼| |helloCTFer.c|
 |預處理preprocessing|gcc –E helloCTFer.c –o helloCTFer.i |
 |編譯compilation |gcc –S helloCTFer.i  -o helloCTFer.s |
 |彙編assembly  |gcc -c helloCTFer.s -o helloCTFer.o |
