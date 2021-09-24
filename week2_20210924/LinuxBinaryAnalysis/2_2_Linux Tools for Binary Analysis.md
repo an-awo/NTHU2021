@@ -1,7 +1,6 @@
 # Linux Tools for Binary Analysis
 
 ### Linux 工具集
-```
 - file 
 - size 列出目的模組或檔案大小
 - [strings](https://linux.die.net/man/1/strings)
@@ -23,6 +22,7 @@ strip  ==> 刪除目的檔案中的全部或者特定符號，可以減小可執
 ldconfig
 ```
 ### 運行時分析工具
+
 - ltrace 命令(A library call tracer)==>顯示運行時從函數庫中調用的所有函數
   - [指令參數](https://man7.org/linux/man-pages/man1/ltrace.1.html)
 - strace 工具==>不是追蹤呼叫的函數庫，而是追蹤系統呼叫。系統呼叫是你與內核對接來完成工作的。
@@ -83,7 +83,7 @@ inctfj{XXXXXXXXXXXXXXXXXXXXXX}r
 
 ## `[實作練習|pratice|s'entraîner|üben|관행|práctica]`
 - [Advanced C and C++ Compiling  Milan Stevanovic/Apress 高級C/C++編譯技術(2014)](https://www.books.com.tw/products/CN11244082)
-
+  - ch13.Linux Toolbox 
 
 ### 實作練習導讀
 - 連結過程調試 Debugging the Linking
