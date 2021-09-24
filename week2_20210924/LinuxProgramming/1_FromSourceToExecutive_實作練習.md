@@ -12,7 +12,7 @@ int main()
    return 0;
 }
 ```
-## Unumtu 16.04 LTS(32 bits)
+## Unumtu 18.04 LTS/Kali Linux
 
 | (1) 編譯 | (2)執行 |(3)檢查執行檔檔案格式|
 |-----------------------|-------------|-------------|
@@ -42,6 +42,9 @@ https://www.itread01.com/p/1385440.html
 # 2_Linux C 程式的編譯與運行:
 
 ### 編譯的各階段
+
+![CompilationProcess.png](CompilationProcess.png)
+
 
 | PHASE | Description |command|
 |-----------------------|-------------|-------------|
