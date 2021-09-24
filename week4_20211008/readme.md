@@ -56,7 +56,17 @@ exploits CDCL. Essentially, CDCL enables “pruning” in the exploration proces
 - [Sydr: Cutting Edge Dynamic Symbolic Execution(202011)](https://arxiv.org/abs/2011.09269)
 - [[PAPER]TracerX: Dynamic Symbolic Execution with Interpolation(202012)](https://arxiv.org/abs/2012.00556)
 
+### improving dynamic symbolic execution
+- There are several interesting areas to research:
+  - Modeling function semantics in symbolic execution could increase accuracy and possibly speed up DSE(tolower/toupper are interesting because they constrain a symbol case).
+  - Symbolic memory model [9] could provide new symbolic states interesting for futher analysis.
+  - Using Z3-solver tactics could possibly decrease time spent in solver.
+  - Developing light-weight security predicates to find some types of dangerous vulnerabilities.
 
+### review
+- [(State of) The Art of War:Offensive Techniques in Binary Analysis(2016)](https://www.researchgate.net/publication/306304563_SOK_State_of_The_Art_of_War_Offensive_Techniques_in_Binary_Analysis)
+
+## AUTOMATED BINARY ANALYSIS
 ## Symbolic Execution
 
 - [MIT 2014](https://www.youtube.com/watch?v=yRVZPvHYHzw)
