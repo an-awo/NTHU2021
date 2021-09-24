@@ -32,7 +32,7 @@ ELF 檔案格式與分析
 4.Creating a Binary Analysis Methodology
 5.Linux Tools for Binary Analysis
 
-6.Analyzing a Simple Bind Shell
+6.Analyzing a Simple Bind Shell(32bit)
 7.Analyzing a Simple Reverse Shell
 8.Identifying Vulnerabilities
 9.Understanding Anti-Analysis Techniques
