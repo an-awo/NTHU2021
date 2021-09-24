@@ -13,7 +13,7 @@ Calling Conventions
 
 | assembler | description | 副檔名Filename Extension|
 |---------| ----------|-----------|
-| [GAS(GNU Assembler,as)](https://en.wikipedia.org/wiki/GNU_Assembler)| | .as  .s|
+| [GAS(GNU Assembler,as)](https://en.wikipedia.org/wiki/GNU_Assembler)|  AT&T-style syntax | .as  .s|
 |[NASM(Netwide Assembler)](https://en.wikipedia.org/wiki/Netwide_Assembler)| | .asm|
 |[MASM(Microsoft Macro Assembler)](https://en.wikipedia.org/wiki/Microsoft_Macro_Assembler) ||.asm|
 
