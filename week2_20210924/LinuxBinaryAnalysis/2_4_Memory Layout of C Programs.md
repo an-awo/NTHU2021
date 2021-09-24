@@ -1,7 +1,9 @@
 # Memory Layout of C Programs
-- [Memory Layout of C Program](https://www.javatpoint.com/memory-layout-in-c)
-- [Memory Layout of C program](https://aticleworld.com/memory-layout-of-c-program/)
+
+- [講解 Memory Layout of C program](https://aticleworld.com/memory-layout-of-c-program/)
 - [Memory Layout of C Program](https://www.hackerearth.com/practice/notes/memory-layout-of-c-program/)
+- [Memory Layout of C Program](https://www.javatpoint.com/memory-layout-in-c)
+
 - [C Programming Tutorial 1 : Memory Layout of a C / C++ Program : Think Aloud Academy](https://www.youtube.com/watch?v=0jhQBQcGnuM)
 - [C Programming Tutorial 2 : Memory Leak in a C / C++ Program : Think Aloud Academy](https://www.youtube.com/watch?v=MT26vLibudQ)
 - [Understanding Static, Stack, and Heap Memory Regions (Examples in C)](https://www.youtube.com/watch?v=jKcg3ze10Hk)
@@ -71,7 +73,7 @@ kernel.randomize_va_space = 0
 
 should permanently disable this.
 ```
-## stuctue記憶體位址 [C structs and Pointers](https://www.programiz.com/c-programming/c-structures-pointers)
+## struct 與 記憶體位址 
 ```c
 # include <stdio.h>
 
@@ -144,7 +146,7 @@ int main(void)
 }
 ```
 
-##
+## example 3b:
 ```c
 
 #include <stdio.h>
@@ -156,7 +158,7 @@ int main(void)
     return 0;
 }
 ```
-##
+## example 3c
 ```c
 #include <stdio.h>
  
@@ -168,7 +170,7 @@ int main(void)
     return 0;
 }
 ```
-##
+## example 3d
 ```c
 #include <stdio.h>
  
@@ -180,7 +182,7 @@ int main(void)
     return 0;
 }
 ```
-##
+## example 3e
 ```c
 #include <stdio.h>
  
@@ -192,7 +194,7 @@ int main(void)
     return 0;
 }
 ```
-##
+## example 4:
 ```c
 # https://www.hackerearth.com/practice/notes/memory-layout-of-c-program/
 #include <stdio.h>
