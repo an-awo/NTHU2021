@@ -16,6 +16,9 @@
   - Condition	on inputs –for the	execution to follow that path	
   - Check	path condition satisfiability	–	explore	only feasible paths	
 
+- [MIT 2014](https://www.youtube.com/watch?v=yRVZPvHYHzw)
+
+
 ## 挑戰課題
 -  path explosion problem in DSE
 
