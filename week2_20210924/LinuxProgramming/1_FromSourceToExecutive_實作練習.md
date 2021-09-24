@@ -46,13 +46,13 @@ https://www.itread01.com/p/1385440.html
 ![CompilationProcess.png](CompilationProcess.png)
 
 
-| PHASE | Description |command|
-|-----------------------|-------------|-------------|
+| PHASE |command|
+|-----------------------|-------------|
 |原始程式碼| |helloCTFer.c|
-|預處理||gcc –E helloCTFer.c –o helloCTFer.i |
-|編譯 | AT&T 格式|gcc –S helloCTFer.i  -o helloCTFer.s |
-|彙編 | |gcc -c helloCTFer.s -o helloCTFer.o |
-|連結 || gcc  helloCTFer.o -o helloCTFer  |
+|預處理preprocessing|gcc –E helloCTFer.c –o helloCTFer.i |
+|編譯compilation |gcc –S helloCTFer.i  -o helloCTFer.s |
+|彙編assembly  |gcc -c helloCTFer.s -o helloCTFer.o |
+|連結linking | gcc  helloCTFer.o -o helloCTFer  |
 
 ```
 gcc helloCTFer.c -o hello -save-temps --verbose
