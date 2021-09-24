@@ -83,7 +83,7 @@ gcc helloCTFer.c -o hello -save-temps --verbose
 ```
 
 
-## 3_[AT&T Syntax]  VS  [Intel Syntax]
+## 3_組語程式格式:[AT&T Syntax]  VS  [Intel Syntax]
 ```
 gcc helloCTFer.c -o helloCTFer.s
 gcc -S -masm=AT&T  my_XXX.c -o my_XXX.s
@@ -96,8 +96,7 @@ gcc -S -masm=intel my_XXX.c -o my_XXX.s  -fno-asynchronous-unwind-tables
 ## 4_Reversing using objdump
 
 ```
-objdump逆向成組語技術  執行檔==> 組合語言
-
+objdump逆向成組語  執行檔==> 組合語言
 
 objdump -S -M intel objfile | less
 
