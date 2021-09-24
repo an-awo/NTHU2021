@@ -22,7 +22,7 @@ ELF 檔案格式與分析
 
 # 參考書籍與推薦章節
 
-- [Practical Binary Analysis(2018)](https://nostarch.com/binaryanalysis)
+ - [[教科書Practical Binary Analysis: Build Your Own Linux Tools for Binary Instrumentation, Analysis, and Disassembly,Dennis Andriesse]](https://www.tenlong.com.tw/products/9781593279127) [[Github]](https://github.com/wilvk/practical-binary) [[官方網站:下載ova及code]](https://practicalbinaryanalysis.com/)
 
 - [Binary Analysis Cookbook By Michael Born(2019)](https://www.packtpub.com/product/binary-analysis-cookbook/9781789807608) [[GITHUB]](https://github.com/PacktPublishing/Binary-Analysis-Cookbook)
 ```
