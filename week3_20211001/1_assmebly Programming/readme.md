@@ -35,7 +35,8 @@ Calling Conventions
 - [GNU Assembler Examples](https://cs.lmu.edu/~ray/notes/gasexamples/)
 
 ## NASM
-- [講解NASM Tutorial](https://cs.lmu.edu/~ray/notes/nasmtutorial/)
+- [講解NASM Tutorial](https://cs.lmu.edu/~ray/notes/nasmtutorial)
+- [很好的官方文件](https://www.nasm.us/doc/)
 - [Introduction to NASM Programming](http://courses.ics.hawaii.edu/ReviewICS312/morea/FirstProgram/ics312_nasm_first_program.pdf)
 - [Learn Assembly Language](Learn Assembly Language)
 - [Sakib2263/64-Bit-NASM-Assembly-Code-Examples](https://github.com/Sakib2263/64-Bit-NASM-Assembly-Code-Examples)
