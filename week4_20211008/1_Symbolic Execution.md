@@ -1,6 +1,8 @@
 # agenda
 
 - [Symbolic Execution](##SymbolicExecution)
+- [StaticSymbolicExecution(SSE)](#StaticSymbolicExecution(SSE))
+- [DynamicSymbolicexecution(DSE)](#DynamicSymbolicexecution(DSE))
 
 ## SymbolicExecution
 
@@ -24,7 +26,7 @@
 -  path explosion problem in DSE
 
 
-### Static Symbolic Execution (SSE)
+## StaticSymbolicExecution(SSE)
 - [Avgerinoset al. 2016; Khurshid et al. 2003]. 
 - the symbolic execution tree is encoded as a single logic formula whose treatment can be outsourced to an SMT solver [De Moura et al. 2002].
 - The solver then deals with what is essentially a huge disjunctive formula. 
@@ -33,7 +35,7 @@
 and Sakallah 1999]. See e.g. Section 3.4 of [de Moura and Bjørner 2008] on how the SMT solver Z3
 exploits CDCL. Essentially, CDCL enables “pruning” in the exploration process of the solver.
 
-### Dynamic symbolic execution (DSE)
+## DynamicSymbolicexecution(DSE)
 - Dynamic symbolic execution (DSE) is a powerful and trendy method. 
 - It has been used for several tasks, such as:
   - Code coverage
