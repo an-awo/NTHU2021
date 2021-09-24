@@ -3,24 +3,14 @@
 - [Shared libraries with GCC on Linux](https://www.cprogramming.com/tutorial/shared-libraries-linux-gcc.html)
 - [Static and Dynamic Libraries in C Language](https://medium.com/@luischaparroc/https-medium-com-luischaparroc-dynamic-libraries-in-c-96a989848476)
 - [Library可分成三種，static、shared與dynamically loaded](https://blog.xuite.net/tzeng015/twblog/113272198)
-```
-首先有一些名詞要弄懂，soname、real name與linker name。
 
-so name 用來表示是一個特定library 的名稱，像是libmylib.so.1 。
-前面以`lib' 開頭，接著是該library 的名稱，然後是`.so' ，接著
-是版號，用來表名他的介面；如果介面改變時，就會增加版號來維護相容度。
 
-real name 是實際放有library程式的檔案名稱，後面會再加上minor 版號與
-release 版號，像是libmylib.so.1.0.0 。
+| name | 說明|
+|-----| -------|
+|soname| 用來表示是一個特定library 的名稱，像是libmylib.so.1 。前面以`lib' 開頭，接著是該library 的名稱，然後是`.so' ，接著是版號，用來表名他的介面；如果介面改變時，就會增加版號來維護相容度。|
+|real name| 實際放有library程式的檔案名稱，後面會再加上minor 版號與 release 版號，像是libmylib.so.1.0.0| 
+|linker name| 於連結時的名稱，是不含版號的soname ，如: libmylib.so。 通常linker name與real name是用ln 指到對應的real name ，用來提供彈性與維護性。|
 
-一般來說，版號的改變規則是(印象中在APress-Difinitive Guide to GCC中有
-提到，但目前手邊沒這本書)，最尾碼的release版號用於程式內容的修正，
-介面完全沒有改變。中間的minor用於有新增加介面，但相舊介面沒改變，所以
-與舊版本相容。最前面的version版號用於原介面有移除或改變，與舊版不相容時。
-
-linker name是用於連結時的名稱，是不含版號的soname ，如: libmylib.so。
-通常linker name與real name是用ln 指到對應的real name ，用來提供彈性與維護性。
-```
 
 # 2_2_DynamicLibrary_in_c.md
 ## example 1:
