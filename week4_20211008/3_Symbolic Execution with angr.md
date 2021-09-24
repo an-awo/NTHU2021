@@ -4,14 +4,20 @@
 - [Solving CTF challenges using angr](#SolvingCTFchallengesusingangr)
 
 ## Angr
->* [SOK: (State of) The Art of War: Offensive Techniques in Binary Analysis](https://ieeexplore.ieee.org/document/7546500)
->* [1_論文2017](https://ieeexplore.ieee.org/document/8077799) [2_Youtube](https://www.youtube.com/watch?v=Wx2RhKI7TIU) [3_angr Documentation](https://docs.angr.io/) [4_GITHUB](https://github.com/angr/angr) [5_官方網址](https://angr.io/)
->* [範例](https://docs.angr.io/examples)
+- [SOK: (State of) The Art of War: Offensive Techniques in Binary Analysis](https://ieeexplore.ieee.org/document/7546500)
+- [1_論文2017](https://ieeexplore.ieee.org/document/8077799) 
+- [2_Youtube](https://www.youtube.com/watch?v=Wx2RhKI7TIU) 
+- [3_angr Documentation](https://docs.angr.io/) 
+- [4_GITHUB](https://github.com/angr/angr) 
+- [5_官方網址](https://angr.io/)
+- [範例](https://docs.angr.io/examples)
+- [angr/angr-doc](https://github.com/angr/angr-doc)
+
 
 ## Angr教學
->* [Youtube 教學1](https://www.youtube.com/watch?v=a4tKDX4F5Ng)[Youtube 教學2](https://www.youtube.com/watch?v=XgHZ6QnZkgc)[Youtube 教學3](https://www.youtube.com/watch?v=XgHZ6QnZkgc)[Youtube 教學4](https://www.youtube.com/channel/UCLx14vWN9uw5ziL_dq0WDfA/videos)
+- [Youtube 教學1](https://www.youtube.com/watch?v=a4tKDX4F5Ng)[Youtube 教學2](https://www.youtube.com/watch?v=XgHZ6QnZkgc)[Youtube 教學3](https://www.youtube.com/watch?v=XgHZ6QnZkgc)[Youtube 教學4](https://www.youtube.com/channel/UCLx14vWN9uw5ziL_dq0WDfA/videos)
 
->* [Teaching with angr: A Symbolic Execution Curriculum and CTF](https://www.usenix.org/sites/default/files/conference/protected-files/ase18_slides_feng.pdf)
+- [Teaching with angr: A Symbolic Execution Curriculum and CTF](https://www.usenix.org/sites/default/files/conference/protected-files/ase18_slides_feng.pdf)
 
 
 ## SolvingCTFchallengesusingangr
