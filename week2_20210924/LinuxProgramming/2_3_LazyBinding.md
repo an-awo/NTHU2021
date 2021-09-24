@@ -131,3 +131,14 @@ int main()
      
      //sleep(60);
 ```
+
+>* [[why use lazy binding for Position-Independent Code Function Calls]](https://stackoverflow.com/questions/63745016/why-use-lazy-binding-for-position-independent-code-function-calls)
+
+
+```
+Lazy binding (also known as lazy linking or on-demand symbol resolution)
+
+Procedure Linkage Table (PLT)
+Global Offset Table (GOT)
+```
+### GOT hijacking
