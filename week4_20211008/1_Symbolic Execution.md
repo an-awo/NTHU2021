@@ -1,5 +1,5 @@
 # agenda
-- [Symbolic Execution](#Symbolic Execution)
+[Symbolic Execution](#Symbolic Execution)
 
 ## Symbolic Execution
 
