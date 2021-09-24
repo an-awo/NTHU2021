@@ -32,5 +32,10 @@ Calling Conventions
   - Chapter 7: String Instructions & Structures
 
 ## 微軟MASM
+- [Assembly Language for x86 Processors, 8th edition(2019)](http://asmirvine.com/)
+  - [videonotes](https://media.pearsoncmg.com/ph/esm/ecs_irvine_x86_8/cw/#videonotes)
+  - [彙編語言 : 基於 x86處理器 (原書第7版)中譯本](https://www.tenlong.com.tw/products/9787111530367)
+  - [第7版簡報](http://asmirvine.com/instructors.htm)
+
 - [現代 x86 彙編語言程序設計, 2/e (Modern X86 Assembly Language Programming: Covers x86 64-bit, AVX, AVX2, and AVX-512, 2/e)](https://www.tenlong.com.tw/products/9787111686088)
 
