@@ -100,6 +100,14 @@ $ gcc -e -fPIC elfDemo.c -o elfDemo_pie.rel && gcc -shared elfDemo_pie.rel -o el
 | 段（Section） | 包含了`連結視圖Linking view`中大量的目的檔案資訊。|
 | 段標頭表（Section Header Table）| 包含了描述檔中所有`段（Section）`的資訊。|
 
+## 分析ELF的工具
+- 使用python
+  - [pwntools|pwnlib.elf](https://docs.pwntools.com/en/stable/elf.html) 
+  - [pyelftools](https://github.com/eliben/pyelftools)
+- 使用rust
+  - [elf-parser](https://github.com/finixbit/elf-parser)
+- 使用linux Tools:readelf, objdump 
+
 ## 使用readelf 檢視ELF  也可以使用 使用objdump 檢視ELF
 
 |名稱|說明|readelf 檢視|
@@ -111,6 +119,7 @@ $ gcc -e -fPIC elfDemo.c -o elfDemo_pie.rel && gcc -shared elfDemo_pie.rel -o el
 | .shstrtab === 段表字串表（Section Header String Table） |  |  readelf -x .shstrtab elfDemo.o |
 | 符號表symbol tables (Elf32/64_Sym)  Symbol table '.symtab' | An object file's symbol table holds information needed to locate and relocate a program's symbolic definitions and references | readelf -s elfDemo.o |
 | 重定位表 Elf32/64_Rel|  | readelf -r elfDemo.o |
+
 
 ```
 Usage: readelf <option(s)> elf-file(s)
@@ -243,6 +252,9 @@ Program Headers:
    09     
    10     .init_array .fini_array .data.rel.ro .dynamic .got 
 ```
+
+## 不同SECTIONS的說明
+
 ## `[實作練習|pratice|s'entraîner|üben|관행|práctica]`
  
   - strip or Not-strip: this is a test
