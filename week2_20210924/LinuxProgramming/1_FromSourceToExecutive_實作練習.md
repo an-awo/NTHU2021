@@ -1,4 +1,4 @@
-# 實作練習:FromSourceToExecutive
+# FromSourceToExecutive
 
 # 1.Linux C 程式的編譯與運行:
 ## 範例
