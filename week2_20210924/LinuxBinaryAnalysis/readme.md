@@ -20,27 +20,25 @@ ELF 檔案格式與分析
 ## 實作練習_ELF檔案格式分析
 
 
-
-
 # 參考書籍與推薦章節
 
 - [Practical Binary Analysis(2018)](https://nostarch.com/binaryanalysis)
 
-- [Binary Analysis Cookbook By Michael Born(2019)](https://www.packtpub.com/product/binary-analysis-cookbook/9781789807608)
+- [Binary Analysis Cookbook By Michael Born(2019)](https://www.packtpub.com/product/binary-analysis-cookbook/9781789807608) [[GITHUB]](https://github.com/PacktPublishing/Binary-Analysis-Cookbook)
 ```
-1.	Setting Up the Lab
-2.	32-bit Assembly on Linux and the ELF Specification
-3.	64-bit Assembly on Linux and the ELF Specification
-4.	Creating a Binary Analysis Methodology
-5.	Linux Tools for Binary Analysis
+1.Setting Up the Lab
+2.32-bit Assembly on Linux and the ELF Specification
+3.64-bit Assembly on Linux and the ELF Specification
+4.Creating a Binary Analysis Methodology
+5.Linux Tools for Binary Analysis
 
-6.	Analyzing a Simple Bind Shell
-7.	Analyzing a Simple Reverse Shell
-8.	Identifying Vulnerabilities
-9.	Understanding Anti-Analysis Techniques
-10.	A Simple Reverse Shell With Polymorphism
+6.Analyzing a Simple Bind Shell
+7.Analyzing a Simple Reverse Shell
+8.Identifying Vulnerabilities
+9.Understanding Anti-Analysis Techniques
+10.A Simple Reverse Shell With Polymorphism
 ```
-# 4.Creating a Binary Analysis Methodology
+### 4.Creating a Binary Analysis Methodology
 ```
 Technical requirements
 Performing binary discovery
