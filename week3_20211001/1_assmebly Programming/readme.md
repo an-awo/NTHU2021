@@ -31,6 +31,17 @@ Calling Conventions
   - Chapter 6: Functions
   - Chapter 7: String Instructions & Structures
 
+## GAS
+- [GNU Assembler Examples](https://cs.lmu.edu/~ray/notes/gasexamples/)
+
+## NASM
+- [講解NASM Tutorial](https://cs.lmu.edu/~ray/notes/nasmtutorial/)
+- [Introduction to NASM Programming](http://courses.ics.hawaii.edu/ReviewICS312/morea/FirstProgram/ics312_nasm_first_program.pdf)
+- [Learn Assembly Language](Learn Assembly Language)
+- [Sakib2263/64-Bit-NASM-Assembly-Code-Examples](https://github.com/Sakib2263/64-Bit-NASM-Assembly-Code-Examples)
+- [Sample 64-bit nasm programs](https://www.csee.umbc.edu/portal/help/nasm/sample_64.shtml)
+- [Sample nasm programs(32 bit)](https://www.csee.umbc.edu/portal/help/nasm/sample.shtml)
+
 ## 微軟MASM
 - [Assembly Language for x86 Processors, 8th edition(2019)](http://asmirvine.com/)
   - [videonotes](https://media.pearsoncmg.com/ph/esm/ecs_irvine_x86_8/cw/#videonotes)
