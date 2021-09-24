@@ -24,6 +24,19 @@ CTF解題
   - Condition	on inputs –for the	execution to follow that path	
   - Check	path condition satisfiability	–	explore	only feasible paths	
 
+## 挑戰課題
+-  path explosion problem in DSE
+
+
+### Static Symbolic Execution (SSE)
+- [Avgerinoset al. 2016; Khurshid et al. 2003]. 
+- the symbolic execution tree is encoded as a single logic formula whose treatment can be outsourced to an SMT solver [De Moura et al. 2002].
+- The solver then deals with what is essentially a huge disjunctive formula. 
+- limitations:(as compared with DSE, for example)  the loop bounds, including nestedloops, must be pre-specified. 
+- advantage:( over (non-pruning) DSE): its SMTsolver can use the optimization method of conflict directed clause learning (CDCL) [Marques-Silva
+and Sakallah 1999]. See e.g. Section 3.4 of [de Moura and Bjørner 2008] on how the SMT solver Z3
+exploits CDCL. Essentially, CDCL enables “pruning” in the exploration process of the solver.
+
 ### Dynamic symbolic execution (DSE)
 - Dynamic symbolic execution (DSE) is a powerful and trendy method. 
 - It has been used for several tasks, such as:
@@ -35,9 +48,13 @@ CTF解題
   - Automatic crackme solving
   - Reconstruction of algorithm
   - Deobfuscation
+- DART [Godefroid et al. 2005],
+- CUTE [Sen et al. 2005] 
+- [KLEE [Cadar et al. 2008a] w]
 - [Miasm動態符號執行(DSE)](https://github.com/cea-sec/miasm)
 - [](https://www.cis.upenn.edu/~mhnaik/edu/cis700/lessons/symbolic_execution.pdf)
-- [[PAPER]TracerX: Dynamic Symbolic Execution with Interpolation](https://arxiv.org/abs/2012.00556)
+- [Sydr: Cutting Edge Dynamic Symbolic Execution(202011)](https://arxiv.org/abs/2011.09269)
+- [[PAPER]TracerX: Dynamic Symbolic Execution with Interpolation(202012)](https://arxiv.org/abs/2012.00556)
 
 
 ## Symbolic Execution
