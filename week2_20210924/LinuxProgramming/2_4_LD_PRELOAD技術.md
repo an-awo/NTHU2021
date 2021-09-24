@@ -1,4 +1,4 @@
-# 2.4_LD_PRELOAD技術
+# 2.3_LD_PRELOAD技術
 ```
 使用LD_PRELOAD技術完成簡易型駭客程式注入
 ```
