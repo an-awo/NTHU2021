@@ -13,9 +13,9 @@ Calling Conventions
 
 | assembler | description | 副檔名Filename Extension|
 |---------| ----------|-----------|
-| GAS| | |
-|NASM| | |
-|MASM |||
+| [GAS(GNU Assembler,as)](https://en.wikipedia.org/wiki/GNU_Assembler)| | .as  .s|
+|[NASM(Netwide Assembler)](https://en.wikipedia.org/wiki/Netwide_Assembler)| | .asm|
+|[MASM(Microsoft Macro Assembler)](https://en.wikipedia.org/wiki/Microsoft_Macro_Assembler) ||.asm|
 
 ## 參考書籍與推薦章節
 - [Assembly Programming and Computer Architecture for Software Engineers(2017)](https://www.prospectpressvt.com/textbooks/hall-assembly-programming-and-computer-architecture-for-software-engineers)
