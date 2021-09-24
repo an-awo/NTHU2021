@@ -2,10 +2,10 @@
 # LinuxProgramming上課內容
 ```
 1.從原始程式碼到可執行檔
-  LD_PRELOAD技術
 2.函式庫開發
   2.1.靜態連結函式庫開發
   2.2.動態連結函式庫開發
+3.LD_PRELOAD技術
 ```
 
 # 1.從原始程式碼到可執行檔
@@ -18,37 +18,19 @@ GCC 編譯過程
 連結階段
 ```
 ## 實作練習_原始程式碼到可執行檔
-## 實作練習_LD_PRELOAD技術
+
 
 # 2.函式庫開發
 
 # 2.1.靜態連結函式庫開發
-```
-位址空間分配
-靜態連結過程
-靜態程式庫
-```
-## 實作練習_靜態程式庫建立與分析
+
+## 實作練習_靜態程式庫建立
+
 # 2.2.動態連結函式庫開發
-```
-動態連結
-位置無關程式(Position-Independent Code, PIC)
-延遲綁定(lazy binding)
-```
-## 實作練習_動態連結建立與分析
 
->* [[why use lazy binding for Position-Independent Code Function Calls]](https://stackoverflow.com/questions/63745016/why-use-lazy-binding-for-position-independent-code-function-calls)
+## 實作練習_動態連結建立
 
-## [Lazy binding](http://www.qnx.com/developers/docs/qnxcar2/index.jsp?topic=%2Fcom.qnx.doc.neutrino.prog%2Ftopic%2Fdevel_Lazy_binding.html) 
-```
-Lazy binding (also known as lazy linking or on-demand symbol resolution)
-
-Procedure Linkage Table (PLT)
-Global Offset Table (GOT)
-```
-### GOT hijacking
-
-
+## 3._LD_PRELOAD
 
 # 參考書籍與推薦章節
 
