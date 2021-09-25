@@ -1,5 +1,9 @@
 # Linux Tools for Binary Analysis
+- [常用工具集](#常用工具集)
+- [實作練習](#實作練習)
+- [Binary Analysis Framework](#Binary Analysis Framework)
 
+## 常用工具集
 ### Linux 工具集
 - file 
 - size 列出目的模組或檔案大小
@@ -37,7 +41,7 @@ ldconfig
 - [Cutter: Free and Open Source RE Platform powered by Rizin](https://cutter.re/)
 
 
-## 實作練習:
+## 實作練習
 
 ## socat 與 nc
 ### server端Terminal
@@ -78,8 +82,6 @@ inctfj{XXXXXXXXXXXXXXXXXXXXXX}r
   - chmod 777 strace
   - strace ./strace
   - strace -s 1000 ./strace 
-
-
 
 ## `[實作練習|pratice|s'entraîner|üben|관행|práctica]`
 - [Advanced C and C++ Compiling  Milan Stevanovic/Apress 高級C/C++編譯技術(2014)](https://www.books.com.tw/products/CN11244082)
@@ -179,7 +181,8 @@ a filename can be specified using the LD_DEBUG_OUTPUT environment variable.
      - 5.8 Examining Instruction-Level Behavior Using objdump
      - 5.9 Dumping a Dynamic String Buffer Using gdb
 
-# [Pharos Static Binary Analysis Framework](https://github.com/cmu-sei/pharos)
+## Binary Analysis Framework
+-[Pharos Static Binary Analysis Framework](https://github.com/cmu-sei/pharos)
 - The Pharos static binary analysis framework is a project of the Software Engineering Institute at Carnegie Mellon University.
 - The framework is designed to facilitate the automated analysis of binary programs. 
 - It uses the ROSE compiler infrastructure developed by Lawrence Livermore National Laboratory for disassembly, control flow analysis, instruction semantics, and more.
