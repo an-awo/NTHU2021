@@ -183,11 +183,15 @@ a filename can be specified using the LD_DEBUG_OUTPUT environment variable.
 
 ## BinaryAnalysisFramework
 - [博士論文 Binary Analysis Framework(2017)](https://scholar.dsu.edu/cgi/viewcontent.cgi?article=1310&context=theses)
+- [86 Open Source Binary Analysis Software Projects](https://opensourcelibs.com/libs/binary-analysis)
+
+- [BitBlaze Binary Analysis Platform(2008)](http://bitblaze.cs.berkeley.edu/)
 - [Carnegie Mellon University Binary Analysis Platform (CMU BAP)](https://github.com/BinaryAnalysisPlatform/bap)
 - [Angr](https://angr.io/)
 - [Triton Dynamic Binary Analysis Framework](https://triton.quarkslab.com/)
 - [BARF:Binary Analysis and Reverse engineering Framework](https://github.com/programa-stic/barf-project/)
-- [86 Open Source Binary Analysis Software Projects](https://opensourcelibs.com/libs/binary-analysis)
+
+
 ### [Pharos Static Binary Analysis Framework](https://github.com/cmu-sei/pharos)
 - The Pharos static binary analysis framework is a project of the Software Engineering Institute at Carnegie Mellon University.
 - The framework is designed to facilitate the automated analysis of binary programs. 
