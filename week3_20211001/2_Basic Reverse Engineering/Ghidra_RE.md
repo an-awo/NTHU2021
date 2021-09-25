@@ -54,7 +54,9 @@ https://github.com/NationalSecurityAgency/ghidra/issues/1495
 不支援32 位元
 ```
 ## Ghidra技術
-- 各種view 的使用: byte view
+- 各種view 的使用: List View | Bytes view | 
+  ![Ghidra_views](Ghidra_views.png)
+
 - Ghidra 設定CUSTOMIZING GHIDRA
 - plugin manager
   - [Reversing Statically-Linked Binaries with Function Signatures - bin 0x2D](https://www.youtube.com/watch?v=CgGha_zLqlo)
