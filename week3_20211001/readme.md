@@ -19,11 +19,11 @@ Ghidra
 - [Reverse Engineering 101](https://malwareunicorn.org/workshops/re101.html#0)
 - [Modern Binary Exploitation - CSCI 4968(2015)](https://github.com/RPISEC/MBE)
 
-## Software/Binary Protection
+## Software/Binary{Malware?} Protection
 - [段鋼加密與解密：軟體保護技術攻防指南](https://www.tenlong.com.tw/products/9789865004309)
   - 保護篇 CHAPTER 17 軟體保護技術 ---CHAPTER 21 VMProtect 逆向和還原淺析
 
-## Binary Unpacking
+## Binary{Malware?} Unpacking
 - [段鋼加密與解密：軟體保護技術攻防指南](https://www.tenlong.com.tw/products/9789865004309)
   - CHAPTER 07 Windows 核心基礎
   - CHAPTER 08 Windows 下的例外處理(SEH) 
@@ -39,7 +39,7 @@ Ghidra
     - [can1357/NoVmp](https://github.com/can1357/NoVmp)
   - 脫殼篇 CHAPTER 16 脫殼技術
 
-## Binary Deobfuscation
+## Binary{Malware?} Deobfuscation
 - [Advanced Binary Deobfuscation](https://github.com/malrev/ABD)
 - [A Generic Approach to Automatic Deobfuscation of Executable Code(2015)](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7163054)
 - [Case Study: Egregor ransomeware]
