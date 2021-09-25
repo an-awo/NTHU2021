@@ -1,7 +1,7 @@
 # agenda
-- [Symbolic Execution](#"Symbolic Execution")
+- [Symbolic Execution](#SymbolicExecution)
 
-## Symbolic Execution
+## SymbolicExecution
 
 - symbolic execution (also symbolic evaluation or symbex) is a means of analyzing a program to determine what inputs cause each part of a program to execute. 
 - An interpreter follows the program, assuming symbolic values for inputs rather than obtaining actual inputs as normal execution of the program would. 
