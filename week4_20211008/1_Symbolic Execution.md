@@ -16,6 +16,10 @@
   - Condition	on inputs –for the	execution to follow that path	
   - Check	path condition satisfiability	–	explore	only feasible paths	
 
+- [REVIEW A Survey of Symbolic Execution Techniques(2016)](https://arxiv.org/abs/1610.00502)
+- [Symbolic Execution PAPERs](https://arxiv.org/search/?query=Symbolic+Execution&searchtype=all&source=header)
+
+
 ## 挑戰課題
 -  path explosion problem in DSE
 
@@ -42,12 +46,17 @@ exploits CDCL. Essentially, CDCL enables “pruning” in the exploration proces
   - Deobfuscation
 - [簡報 Dynamic symbolic execution(2018)](https://www.cis.upenn.edu/~mhnaik/edu/cis700/lessons/symbolic_execution.pdf) 
 - [簡報 Dynamic	Symbolic	Execution	](https://www.st.cs.uni-saarland.de/edu/automatedtestingverification12/slides/11-DynamicSymbolicExecution.pdf)
+- [YOUTUBE Chapter 11: Dynamic Symbolic Execution(2016)](https://www.youtube.com/watch?v=QrtGOrSrVPQ)
+- [YOUTUBE Module 11: Dynamic Symbolic Execution](https://www.youtube.com/watch?v=UhtUyTJ-P2c)
+- [Playing with Dynamic symbolic execution(2017)](https://miasm.re/blog/2017/10/05/playing_with_dynamic_symbolic_execution.html)
 - DART [Godefroid et al. 2005],
 - CUTE [Sen et al. 2005] 
 - [KLEE [Cadar et al. 2008a] w]
 - [Miasm動態符號執行(DSE)](https://github.com/cea-sec/miasm)
 - [PAPER Sydr: Cutting Edge Dynamic Symbolic Execution(202011)](https://arxiv.org/abs/2011.09269)
 - [PAPER TracerX: Dynamic Symbolic Execution with Interpolation(202012)](https://arxiv.org/abs/2012.00556)
+- [碩士論文 Generating a Dynamic Symbolic Execution Tool from MIPS Specifications](https://www.jaist.ac.jp/~mizuhito/masterthesis/TracQuangThinh.pdf)
+
 
 ### improving dynamic symbolic execution
 - There are several interesting areas to research:
