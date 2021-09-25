@@ -178,3 +178,40 @@ a filename can be specified using the LD_DEBUG_OUTPUT environment variable.
      - 5.7 Tracing System Calls and Library Calls with strace and ltrace
      - 5.8 Examining Instruction-Level Behavior Using objdump
      - 5.9 Dumping a Dynamic String Buffer Using gdb
+
+# [Pharos Static Binary Analysis Framework](https://github.com/cmu-sei/pharos)
+- The Pharos static binary analysis framework is a project of the Software Engineering Institute at Carnegie Mellon University.
+- The framework is designed to facilitate the automated analysis of binary programs. 
+- It uses the ROSE compiler infrastructure developed by Lawrence Livermore National Laboratory for disassembly, control flow analysis, instruction semantics, and more.
+- This software is released under a BSD license.
+- The current distribution is a substantial update to the previous version, and adds a variety of features including improvements to the OOAnalyzer tool, experimental path analysis code, partitioner improvements, multi-threading, and many other smaller features.
+
+- [The Pharos Static Analysis Framework for Software Assurance](https://apps.dtic.mil/sti/pdfs/AD1084679.pdf)
+
+	
+## 使用docker
+```
+Pre-built Docker Images (Easiest)
+The easiest way to get started with Pharos is to use our pre-built Docker images.
+
+The first step is to download the image:
+
+$ docker pull seipharos/pharos
+	
+To start an interactive session in which the host directory /dir is mapped to /dir inside your container, run the following command:
+
+$ docker run --rm -it -v /dir:/dir seipharos/pharos
+
+The pharos tools will be installed in /usr/local/bin.
+```
+## Toolsets
+
+### OOAnalyzer Applications to Software Assurance
+- OOAnalyzer can be used to:
+  - Understand the design of object oriented software
+  - Gain automated insight into OO library usage?
+  - Compare design documents to observed OO constructs?
+- Ooanalyzer –j <json output> <binary>
+	
+	
+	
