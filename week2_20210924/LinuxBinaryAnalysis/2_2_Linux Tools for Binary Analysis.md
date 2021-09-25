@@ -182,8 +182,13 @@ a filename can be specified using the LD_DEBUG_OUTPUT environment variable.
      - 5.9 Dumping a Dynamic String Buffer Using gdb
 
 ## BinaryAnalysisFramework
+- [博士論文 Binary Analysis Framework(2017)](https://scholar.dsu.edu/cgi/viewcontent.cgi?article=1310&context=theses)
+- [Carnegie Mellon University Binary Analysis Platform (CMU BAP)](https://github.com/BinaryAnalysisPlatform/bap)
+- [Angr](https://angr.io/)
+- [Triton Dynamic Binary Analysis Framework](https://triton.quarkslab.com/)
+- [BARF:Binary Analysis and Reverse engineering Framework](https://github.com/programa-stic/barf-project/)
+- [86 Open Source Binary Analysis Software Projects](https://opensourcelibs.com/libs/binary-analysis)
 ### [Pharos Static Binary Analysis Framework](https://github.com/cmu-sei/pharos)
-# [Pharos Static Binary Analysis Framework](https://github.com/cmu-sei/pharos)
 - The Pharos static binary analysis framework is a project of the Software Engineering Institute at Carnegie Mellon University.
 - The framework is designed to facilitate the automated analysis of binary programs. 
 - It uses the ROSE compiler infrastructure developed by Lawrence Livermore National Laboratory for disassembly, control flow analysis, instruction semantics, and more.
