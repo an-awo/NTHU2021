@@ -53,9 +53,9 @@ https://github.com/NationalSecurityAgency/ghidra/issues/1495
 不支援32 位元
 ```
 ## Ghidra技術
-
+- Ghidra 設定
 - plugin manager
-- [JeremyBlackthorne/Ghidra-Keybindings](https://github.com/JeremyBlackthorne/Ghidra-Keybindings))
+- [JeremyBlackthorne/Ghidra-Keybindings](https://github.com/JeremyBlackthorne/Ghidra-Keybindings)
 
 ## 示範解題
 
