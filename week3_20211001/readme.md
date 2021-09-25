@@ -18,6 +18,8 @@ Ghidra
 ## Reverse Engineering
 - [Reverse Engineering 101](https://malwareunicorn.org/workshops/re101.html#0)
 - [Modern Binary Exploitation - CSCI 4968(2015)](https://github.com/RPISEC/MBE)
+## Binary Unpacking
+- [段鋼加密與解密：軟體保護技術攻防指南](https://www.tenlong.com.tw/products/9789865004309)
 
 ## Binary Deobfuscation
 - [Advanced Binary Deobfuscation](https://github.com/malrev/ABD)
