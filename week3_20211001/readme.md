@@ -20,6 +20,16 @@ Ghidra
 - [Modern Binary Exploitation - CSCI 4968(2015)](https://github.com/RPISEC/MBE)
 ## Binary Unpacking
 - [段鋼加密與解密：軟體保護技術攻防指南](https://www.tenlong.com.tw/products/9789865004309)
+  - CHAPTER 07 Windows 核心基礎
+  - CHAPTER 08 Windows 下的例外處理(SEH) 
+  - CHAPTER 09 Win32 偵錯API
+  - CHAPTER 11 PE 檔案格式
+  - CHAPTER 12 植入技術
+  - CHAPTER 13 Hook 技術
+  - 脫殼篇 CHAPTER 15 專用加密軟體
+    - 壓縮殼 UPX  ASPack 
+    - 加密殼 ASProtect  Armadillo EXECryptor  [Themida](https://www.oreans.com/Themida.php)
+    - 虛擬機器保護軟體 VMProtect
 
 ## Binary Deobfuscation
 - [Advanced Binary Deobfuscation](https://github.com/malrev/ABD)
