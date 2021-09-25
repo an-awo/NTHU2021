@@ -302,4 +302,4 @@ easyctf{XXXXXXXXXXXXXXX}[Inferior 1 (process 24458) exited with code 01]
 - [N64 Decompiling with Ghidra](https://www.retroreversing.com/n64-decompiling)
 
 ## Ghidra Plugin
-- [Using OOAnalyzer to Reverse Engineer Object Oriented Code with Ghidra]()
+- [Using OOAnalyzer to Reverse Engineer Object Oriented Code with Ghidra](https://insights.sei.cmu.edu/blog/using-ooanalyzer-to-reverse-engineer-object-oriented-code-with-ghidra/)
