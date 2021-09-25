@@ -18,6 +18,11 @@ Ghidra
 ## Reverse Engineering
 - [Reverse Engineering 101](https://malwareunicorn.org/workshops/re101.html#0)
 - [Modern Binary Exploitation - CSCI 4968(2015)](https://github.com/RPISEC/MBE)
+
+## Software/Binary Protection
+- [段鋼加密與解密：軟體保護技術攻防指南](https://www.tenlong.com.tw/products/9789865004309)
+  - 保護篇 CHAPTER 17 軟體保護技術 ---CHAPTER 21 VMProtect 逆向和還原淺析
+
 ## Binary Unpacking
 - [段鋼加密與解密：軟體保護技術攻防指南](https://www.tenlong.com.tw/products/9789865004309)
   - CHAPTER 07 Windows 核心基礎
@@ -27,9 +32,12 @@ Ghidra
   - CHAPTER 12 植入技術
   - CHAPTER 13 Hook 技術
   - 脫殼篇 CHAPTER 15 專用加密軟體
-    - 壓縮殼 UPX  ASPack 
-    - 加密殼 ASProtect  Armadillo EXECryptor  [Themida](https://www.oreans.com/Themida.php)
-    - 虛擬機器保護軟體 VMProtect
+    - 壓縮殼 UPX((Ultimate Packer for eXecutables)  ASPack 
+    - 加密殼 ASProtect  Armadillo EXECryptor  [Themida](https://www.oreans.com/Themida.php) [Themida 軟體保護系統](https://www.accesssoft.com.tw/products/themida)
+    - 虛擬機器保護軟體 [VMProtect](https://vmpsoft.com/)  Appetize.io (Freemium), PELock (Paid) and FUPX (Free)
+    - [VMProtect Alternatives](https://alternativeto.net/software/vmprotect/?p=2)
+    - [can1357/NoVmp](https://github.com/can1357/NoVmp)
+  - 脫殼篇 CHAPTER 16 脫殼技術
 
 ## Binary Deobfuscation
 - [Advanced Binary Deobfuscation](https://github.com/malrev/ABD)
