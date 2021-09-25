@@ -17,6 +17,9 @@
 - NSA has applied Ghidra SRE capabilities to a variety of problems that involve analyzing malicious code and generating deep insights for NSA analysts who seek a better understanding of potential vulnerabilities in networks and systems.
 
 ## 安裝
+
+- [Ghidra Installation Guide](https://ghidra-sre.org/InstallationGuide.html)
+
 ### 撰寫 run_ghidra.sh
 ```
 mkdir Ghidra
