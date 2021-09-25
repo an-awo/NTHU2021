@@ -15,21 +15,13 @@ ELF 檔案結構
 檢視ELF 檔案  ==> readelf 
 ```
 
-## 教科書 Practical Binary Analysis
- - [[教科書Practical Binary Analysis: Build Your Own Linux Tools for Binary Instrumentation, Analysis, and Disassembly,Dennis Andriesse]](https://www.tenlong.com.tw/products/9781593279127) [[Github]](https://github.com/wilvk/practical-binary) [[官方網站:下載ova及code]](https://practicalbinaryanalysis.com/)
-   - chapter 2: THE ELF FORMAT(Executable and Linkable Format (ELF))
-
-## `[實作練習|pratice|s'entraîner|üben|관행|práctica]`
-- [Advanced C and C++ Compiling  Milan Stevanovic/Apress 高級C/C++編譯技術(2014)](https://www.books.com.tw/products/CN11244082)
-  - 第3章 加載程序執行階段
-
-
 # ELF 檔案 == Executable and Linkable Format
 - Linux 系統上所運行的就是ELF 格式的檔案
 - 定義在"/usr/include/elf.h"檔案
-- [elf.h](https://github.com/torvalds/linux/blob/master/include/uapi/linux/elf.h)
+- [ELF 各結構定義在 elf.h](https://github.com/torvalds/linux/blob/master/include/uapi/linux/elf.h)
 - [The ELF Specification](http://sco.com/developers/gabi/latest/contents.html)
 - [ELF man page:整理的不錯](http://manpages.courier-mta.org/htmlman5/elf.5.html)
+- [In-depth: ELF - The Extensible & Linkable Format(2020)](https://www.youtube.com/watch?v=nC1U1LJQL8o)
 
 # ELF 檔案類型 ==> 三種類型 + 核心轉儲檔案(Core Dump file) 
 
@@ -266,7 +258,16 @@ Program Headers:
 |stripped  | strip --strip-all a.out  |
 |  | file a.out  |
 |  | readelf --syms a.out |
-  
+
+
+## 教科書 Practical Binary Analysis
+ - [[教科書Practical Binary Analysis: Build Your Own Linux Tools for Binary Instrumentation, Analysis, and Disassembly,Dennis Andriesse]](https://www.tenlong.com.tw/products/9781593279127) [[Github]](https://github.com/wilvk/practical-binary) [[官方網站:下載ova及code]](https://practicalbinaryanalysis.com/)
+   - chapter 2: THE ELF FORMAT(Executable and Linkable Format (ELF))
+
+## `[實作練習|pratice|s'entraîner|üben|관행|práctica]`
+- [Advanced C and C++ Compiling  Milan Stevanovic/Apress 高級C/C++編譯技術(2014)](https://www.books.com.tw/products/CN11244082)
+  - 第3章 加載程序執行階段
+ 
 ## `[延伸閱讀|read-around|Further reading|Weiterlesen|Lectures complémentaires]`
  - [[教科書Practical Binary Analysis: Build Your Own Linux Tools for Binary Instrumentation, Analysis, and Disassembly,Dennis Andriesse]](https://www.tenlong.com.tw/products/9781593279127) [[Github]](https://github.com/wilvk/practical-binary) [[官方網站:下載ova及code]](https://practicalbinaryanalysis.com/)
    - chapter 3: THE PE FORMAT[Portable Executable (PE)]
@@ -274,5 +275,6 @@ Program Headers:
    - examine PE structure using tools(What tools? Googling them!)
    - examine PE structure using python
    - demo what you can find
+
 
 ## Midterm 30% 報告主題 Windows Binary Analysis
