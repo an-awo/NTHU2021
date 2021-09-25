@@ -40,13 +40,14 @@ exploits CDCL. Essentially, CDCL enables “pruning” in the exploration proces
   - Automatic crackme solving
   - Reconstruction of algorithm
   - Deobfuscation
+- [簡報 Dynamic symbolic execution(2018)](https://www.cis.upenn.edu/~mhnaik/edu/cis700/lessons/symbolic_execution.pdf) 
+- [簡報 Dynamic	Symbolic	Execution	](https://www.st.cs.uni-saarland.de/edu/automatedtestingverification12/slides/11-DynamicSymbolicExecution.pdf)
 - DART [Godefroid et al. 2005],
 - CUTE [Sen et al. 2005] 
 - [KLEE [Cadar et al. 2008a] w]
 - [Miasm動態符號執行(DSE)](https://github.com/cea-sec/miasm)
-- [](https://www.cis.upenn.edu/~mhnaik/edu/cis700/lessons/symbolic_execution.pdf)
-- [Sydr: Cutting Edge Dynamic Symbolic Execution(202011)](https://arxiv.org/abs/2011.09269)
-- [[PAPER]TracerX: Dynamic Symbolic Execution with Interpolation(202012)](https://arxiv.org/abs/2012.00556)
+- [PAPER Sydr: Cutting Edge Dynamic Symbolic Execution(202011)](https://arxiv.org/abs/2011.09269)
+- [PAPER TracerX: Dynamic Symbolic Execution with Interpolation(202012)](https://arxiv.org/abs/2012.00556)
 
 ### improving dynamic symbolic execution
 - There are several interesting areas to research:
