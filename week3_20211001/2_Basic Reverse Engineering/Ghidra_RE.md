@@ -303,4 +303,5 @@ easyctf{XXXXXXXXXXXXXXX}[Inferior 1 (process 24458) exited with code 01]
 
 ## Ghidra Plugin
 - [0x6d696368/ghidra_scripts](https://github.com/0x6d696368/ghidra_scripts)
+- [0x6d696368/ghidra-data](https://github.com/0x6d696368/ghidra-data)
 - [Using OOAnalyzer to Reverse Engineer Object Oriented Code with Ghidra](https://insights.sei.cmu.edu/blog/using-ooanalyzer-to-reverse-engineer-object-oriented-code-with-ghidra/)
