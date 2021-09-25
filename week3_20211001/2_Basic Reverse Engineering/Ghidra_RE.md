@@ -54,7 +54,8 @@ https://github.com/NationalSecurityAgency/ghidra/issues/1495
 ```
 ## Ghidra技術
 
-plugin manager
+- plugin manager
+- [JeremyBlackthorne/Ghidra-Keybindings](https://github.com/JeremyBlackthorne/Ghidra-Keybindings))
 
 ## 示範解題
 
