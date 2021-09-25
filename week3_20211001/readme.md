@@ -32,8 +32,8 @@ Ghidra
   - CHAPTER 12 植入技術
   - CHAPTER 13 Hook 技術
   - 脫殼篇 CHAPTER 15 專用加密軟體
-    - 壓縮殼 UPX(Ultimate Packer for eXecutables)  ASPack 
-    - 加密殼 ASProtect  Armadillo EXECryptor  [Themida](https://www.oreans.com/Themida.php) [Themida 軟體保護系統](https://www.accesssoft.com.tw/products/themida)
+    - 壓縮殼 [UPX(Ultimate Packer for eXecutables)](https://upx.github.io/)  [ASPack](http://www.aspack.com/) 
+    - 加密殼 [ASProtect](http://www.aspack.com/)  [Armadillo](https://the-armadillo-software-protection-system.software.informer.com/8.6/) [EXECryptor](https://execryptor.en.softonic.com/)  [Themida](https://www.oreans.com/Themida.php) [Themida 軟體保護系統](https://www.accesssoft.com.tw/products/themida)
     - 虛擬機器保護軟體 [VMProtect](https://vmpsoft.com/)  Appetize.io (Freemium), PELock (Paid) and FUPX (Free)
     - [VMProtect Alternatives](https://alternativeto.net/software/vmprotect/?p=2)
     - [can1357/NoVmp](https://github.com/can1357/NoVmp)
