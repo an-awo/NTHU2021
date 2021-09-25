@@ -673,3 +673,4 @@ Function Keys: (See 'e key.'), defaults to:
 - [easyCTF-2018-Adder](https://github.com/asinggih/easyCTF-2018-writeups/blob/master/Reverse_Engineering/Adder.md)
 
 ## 網路學習資源
+- [Using Radare2 to patch a binary(2019)](https://rderik.com/blog/using-radare2-to-patch-a-binary/)
