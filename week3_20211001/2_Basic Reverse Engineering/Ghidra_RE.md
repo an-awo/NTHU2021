@@ -59,6 +59,7 @@ https://github.com/NationalSecurityAgency/ghidra/issues/1495
   ![Ghidra_views](Ghidra_views.png)
 
 - symbol Tree ==> 檢看 DLL 
+- Version tracking ==> malware 相似度與famlily/classification
 - Ghidra 設定CUSTOMIZING GHIDRA
 - plugin manager
   - [Reversing Statically-Linked Binaries with Function Signatures - bin 0x2D](https://www.youtube.com/watch?v=CgGha_zLqlo)
