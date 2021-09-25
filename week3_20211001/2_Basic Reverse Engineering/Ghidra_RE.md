@@ -1,6 +1,7 @@
 # Ghidra
 - [Ghidra簡介](#Ghidra簡介)
 - [安裝](#安裝)
+- [Ghidra技術](#Ghidra技術)
 - [示範解題](#示範解題)
 - [學習資源](#學習資源)
 
@@ -53,6 +54,7 @@ https://github.com/NationalSecurityAgency/ghidra/issues/1495
 不支援32 位元
 ```
 ## Ghidra技術
+- 各種view 的使用: byte view
 - Ghidra 設定CUSTOMIZING GHIDRA
 - plugin manager
   - [Reversing Statically-Linked Binaries with Function Signatures - bin 0x2D](https://www.youtube.com/watch?v=CgGha_zLqlo)
