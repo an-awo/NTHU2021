@@ -184,8 +184,7 @@ undefined8 main(void)
 
 >* [NOP](https://zh.wikipedia.org/wiki/NOP)
 
-### binary Patch
-- [Patching Binaries (with vim, Binary Ninja, Ghidra and radare2)](https://www.youtube.com/watch?v=LyNyf3UM9Yc)
+
 
 ```
 gdb-peda ./LuckyGuess 
@@ -296,6 +295,14 @@ easyctf{XXXXXXXXXXXXXXX}[Inferior 1 (process 24458) exited with code 01]
 
 - [InCTF Junior　blade](https://medium.com/@amustaque97/demystify-reverse-engineering-ctf-challenge-blade-40c45e7933c0)
 - [easyCTF-2018-Adder](https://github.com/asinggih/easyCTF-2018-writeups/blob/master/Reverse_Engineering/Adder.md)
+
+### binary Patch
+- [YOUTUBE Patching Binaries (with vim, Binary Ninja, Ghidra and radare2)](https://www.youtube.com/watch?v=LyNyf3UM9Yc)
+- [Using Radare2 to patch a binary(2019)](https://rderik.com/blog/using-radare2-to-patch-a-binary/)
+- [xxd binary Patch](https://vi.stackexchange.com/questions/343/how-to-edit-binary-files-with-vim)
+  - vim + xxd
+  - xxd /bin/ls | vi -
+  - vi:open the file ==> :%!xxd ==> make changes  ==> :%!xxd -r > new-ls (save file)
 
 ## 學習資源
 - [Ghidra - Journey from Classified NSA Tool to Open Source](https://www.youtube.com/watch?v=kx2xp7IQNSc&t=683s)
