@@ -55,7 +55,7 @@ https://github.com/NationalSecurityAgency/ghidra/issues/1495
 ## Ghidra技術
 - Ghidra 設定CUSTOMIZING GHIDRA
 - plugin manager
-  - [Reversing Statically-Linked Binaries with Function Signatures - bin 0x2D](https://www.youtube.com/watch?v=ugNTZFnlWLQ)
+  - [Reversing Statically-Linked Binaries with Function Signatures - bin 0x2D](https://www.youtube.com/watch?v=CgGha_zLqlo)
 - [JeremyBlackthorne/Ghidra-Keybindings](https://github.com/JeremyBlackthorne/Ghidra-Keybindings)
   - [Reversing: Ghidra: Import IDA-like keyboard bindings(2019)](https://www.youtube.com/watch?v=1ztztKjA50s)
 - [Ghidra-Cheat-Sheet](https://hackersfun.com/wp-content/uploads/2019/03/Ghidra-Cheat-Sheet.pdf)
