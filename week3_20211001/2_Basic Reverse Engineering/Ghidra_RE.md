@@ -52,6 +52,10 @@ https://github.com/NationalSecurityAgency/ghidra/issues/1495
 
 不支援32 位元
 ```
+## Ghidra技術
+
+plugin manager
+
 ## 示範解題
 
 ### EasyCTF 2017_LuckyGuess解題
@@ -290,4 +294,7 @@ easyctf{XXXXXXXXXXXXXXX}[Inferior 1 (process 24458) exited with code 01]
 - [Reversing CrackMe with Ghidra (Part 1)](https://www.youtube.com/watch?v=6p5Qviusskk&t=33s)
 - [Reversing CrackMe with Ghidra (Part 2)](https://www.youtube.com/watch?v=Eu9YC1Jq1Do)
 
+- [N64 Decompiling with Ghidra](https://www.retroreversing.com/n64-decompiling)
 
+## Ghidra Plugin
+- [Using OOAnalyzer to Reverse Engineer Object Oriented Code with Ghidra]()
