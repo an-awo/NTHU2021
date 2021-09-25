@@ -1,7 +1,7 @@
 # Linux Tools for Binary Analysis
 - [常用工具集](#常用工具集)
 - [實作練習](#實作練習)
-- [Binary Analysis Framework](#Binary Analysis Framework)
+- [Binary Analysis Framework](#BinaryAnalysisFramework)
 
 ## 常用工具集
 ### Linux 工具集
@@ -181,8 +181,9 @@ a filename can be specified using the LD_DEBUG_OUTPUT environment variable.
      - 5.8 Examining Instruction-Level Behavior Using objdump
      - 5.9 Dumping a Dynamic String Buffer Using gdb
 
-## Binary Analysis Framework
--[Pharos Static Binary Analysis Framework](https://github.com/cmu-sei/pharos)
+## BinaryAnalysisFramework
+### [Pharos Static Binary Analysis Framework](https://github.com/cmu-sei/pharos)
+# [Pharos Static Binary Analysis Framework](https://github.com/cmu-sei/pharos)
 - The Pharos static binary analysis framework is a project of the Software Engineering Institute at Carnegie Mellon University.
 - The framework is designed to facilitate the automated analysis of binary programs. 
 - It uses the ROSE compiler infrastructure developed by Lawrence Livermore National Laboratory for disassembly, control flow analysis, instruction semantics, and more.
@@ -192,7 +193,7 @@ a filename can be specified using the LD_DEBUG_OUTPUT environment variable.
 - [The Pharos Static Analysis Framework for Software Assurance](https://apps.dtic.mil/sti/pdfs/AD1084679.pdf)
 
 	
-## 使用docker
+### 測試環境:使用docker
 ```
 Pre-built Docker Images (Easiest)
 The easiest way to get started with Pharos is to use our pre-built Docker images.
@@ -208,13 +209,42 @@ $ docker run --rm -it -v /dir:/dir seipharos/pharos
 The pharos tools will be installed in /usr/local/bin.
 ```
 ## Toolsets
+- APIAnalyzer
+  - ApiAnalyzer is a tool for finding sequences of API calls with the specified data and control relationships. 
+  - This capability is intended to be used to detect common operating system interaction paradigms like opening a file, writing to it, and the closing it.
+
+- OOAnalyzer
+  - OOAnalyzer is a tool for the analysis and recovery of object oriented constructs. 
+  - This tool was the subject of a paper titled "Using Logic Programming to Recover C++ Classes and Methods from Compiled Executables" which was published at the ACM Conference on Computer and Communications Security in 2018.
+  - The tool identifies object members and methods by tracking object pointers between functions in the program.
+  - A previous implementation of this tool was named "Objdigger", but it was renamed to reflect a substantial redesign using Prolog rules to recover the object attributes. 
+  - The Pharos distribution used to include a plugin that imported OO information exported by OOAnalayzer into the Ghidra reverse engineering tool set. 
+  - To get that functionality now and in the future, install the Kaiju Ghidra plugin, which includes the functionality that was provided by the OOAnalayzer plugin.
+
+- CallAnalyzer
+  - CallAnalyzer is a tool for reporting the static parameters to API calls in a binary program.
+  - It is largely a demonstration of our current calling convention, parameter analysis, and type detection capabilities, although it also provides useful analysis of the code in a program.
+
+- FN2Yara
+  - FN2Yara is a tool to generate YARA signatures for matching functions in an executable program. Programs that share significant numbers of functions are are likely to have behavior in common.
+
+- FN2Hash
+  - FN2Hash is tool for generating a variety of hashes and other descriptive properties for functions in an executable program.
+  - Like FN2Yara it can be used to support binary similarity analysis, or provide features for machine learning algorithms.
+
+- DumpMASM
+  - DumpMASM is a tool for dumping disassembly listings from an executable using the Pharos framework in the same style as the other tools. 
+  - It has not been actively maintained, and you should consider using ROSE's standard recursiveDisassemble instead http://rosecompiler.org/ROSE_HTML_Reference/rosetools.html.
 
 ### OOAnalyzer Applications to Software Assurance
 - OOAnalyzer can be used to:
   - Understand the design of object oriented software
   - Gain automated insight into OO library usage?
   - Compare design documents to observed OO constructs?
-- Ooanalyzer –j <json output> <binary>
+```
+    Ooanalyzer –j <json output> <binary>
+```	
+
 	
 	
 	
