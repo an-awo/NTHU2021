@@ -41,7 +41,8 @@ Ghidra
 
 ## Binary{Malware?} Deobfuscation
 - [Advanced Binary Deobfuscation](https://github.com/malrev/ABD)
-- [A Generic Approach to Automatic Deobfuscation of Executable Code(2015)](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7163054)
+- [PAPER A Generic Approach to Automatic Deobfuscation of Executable Code(2015)](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7163054)
+- [PAPER Unpacking Virtualization Obfuscators](https://www.usenix.org/legacy/event/woot09/tech/full_papers/rolles.pdf)
 - [Case Study: Egregor ransomeware]
 
 # Tools
