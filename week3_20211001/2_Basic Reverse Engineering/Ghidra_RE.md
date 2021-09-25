@@ -55,6 +55,7 @@ https://github.com/NationalSecurityAgency/ghidra/issues/1495
 ```
 ## Ghidra技術
 - 各種view 的使用: List View | Bytes view | 
+
   ![Ghidra_views](Ghidra_views.png)
 
 - Ghidra 設定CUSTOMIZING GHIDRA
@@ -89,6 +90,10 @@ hi
 ```
 
 ### 先用Ghidra 分析看看
+- 找main()
+
+![ghidra_main](ghidra_main.png)
+
 ```
 undefined8 main(void)
 
