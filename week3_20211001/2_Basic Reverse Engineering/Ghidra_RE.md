@@ -19,6 +19,7 @@
 ## 安裝
 
 - [Ghidra Installation Guide](https://ghidra-sre.org/InstallationGuide.html)
+- [不支援32 位元 could not find decompiler executable decompile #1495](https://github.com/NationalSecurityAgency/ghidra/issues/1495)
 
 ### 撰寫 run_ghidra.sh
 ```
@@ -45,17 +46,7 @@ bash run_ghidra.sh
 Navigate to <GhidraInstallDir>
 Run ghidraRun.bat (Windows) or ghidraRun (Linux or macOS)
 ```
-```
-Ghidra Installation on Ubuntu |18.04, 16.04, 14.04
-Posted on March 26, 2019 by Yılmaz Cemalettin
-https://www.ylmzcmlttn.com/2019/03/26/ghidra-installation-on-ubuntu-18-04-16-04-14-04/
-```
-```
-could not find decompiler executable decompile #1495
-https://github.com/NationalSecurityAgency/ghidra/issues/1495
 
-不支援32 位元
-```
 ## Ghidra技術
 - 各種view 的使用: List View | Bytes view | 
 
