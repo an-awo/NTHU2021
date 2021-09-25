@@ -53,9 +53,12 @@ https://github.com/NationalSecurityAgency/ghidra/issues/1495
 不支援32 位元
 ```
 ## Ghidra技術
-- Ghidra 設定
+- Ghidra 設定CUSTOMIZING GHIDRA
 - plugin manager
 - [JeremyBlackthorne/Ghidra-Keybindings](https://github.com/JeremyBlackthorne/Ghidra-Keybindings)
+- [Reversing: Ghidra: Import IDA-like keyboard bindings(2019)](https://www.youtube.com/watch?v=1ztztKjA50s)
+- [Ghidra-Cheat-Shee](https://hackersfun.com/wp-content/uploads/2019/03/Ghidra-Cheat-Sheet.pdf)
+
 
 ## 示範解題
 
