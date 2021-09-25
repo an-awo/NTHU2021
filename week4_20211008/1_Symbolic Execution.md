@@ -16,6 +16,7 @@
   - Condition	on inputs –for the	execution to follow that path	
   - Check	path condition satisfiability	–	explore	only feasible paths	
 
+- [REVIEW Symbolic Execution for Software Testing: Three Decades Later](https://people.eecs.berkeley.edu/~ksen/papers/cacm13.pdf)
 - [REVIEW A Survey of Symbolic Execution Techniques(2016)](https://arxiv.org/abs/1610.00502)
 - [Symbolic Execution PAPERs](https://arxiv.org/search/?query=Symbolic+Execution&searchtype=all&source=header)
 
