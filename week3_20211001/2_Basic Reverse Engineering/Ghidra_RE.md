@@ -310,6 +310,7 @@ easyctf{XXXXXXXXXXXXXXX}[Inferior 1 (process 24458) exited with code 01]
 
 - [Reversing CrackMe with Ghidra (Part 1)](https://www.youtube.com/watch?v=6p5Qviusskk&t=33s)
 - [Reversing CrackMe with Ghidra (Part 2)](https://www.youtube.com/watch?v=Eu9YC1Jq1Do)
+- [Reversing WannaCry Part 3 - The encryption component](https://www.youtube.com/watch?v=ru5VzUigKqw)
 
 - [N64 Decompiling with Ghidra](https://www.retroreversing.com/n64-decompiling)
 
