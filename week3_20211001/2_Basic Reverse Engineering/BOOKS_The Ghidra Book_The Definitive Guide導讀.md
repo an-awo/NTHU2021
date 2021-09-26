@@ -77,10 +77,19 @@
     - Example 1: Enumerating Functions- 
     - Example 2: Enumerating Instructions
     - Example 3: Enumerating Cross-References
-
+    - Example 4: Finding Function Calls
+    - Example 5: Emulating Assembly Language Behavior
 
 - Chapter 15: Eclipse and GhidraDev
+
 - Chapter 16: Ghidra in Headless Mode
+  - Ghidra has a command line interface called the Ghidra headless analyzer
+  - analyzeHeadless command
+    - analyzeHeadless D:\GhidraProjects CH16 -import global_array_demo_x64
+    - analyzeHeadless D:\GhidraProjects CH16 -import D:\ch16
+    - analyzeHeadless D:\GhidraProjects CH16 -import global_array_demo_x64 -log D:\GhidraProjects\CH16-logs\CH16-Logfile
+  - Writing Scripts
+
 
 - Chapter 17: Ghidra Loaders 檔案載入器
 - Unknown File Analysis
