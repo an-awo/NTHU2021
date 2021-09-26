@@ -30,6 +30,9 @@ Calling Conventions
   - Chapter 5: Intermediate Instructions
   - Chapter 6: Functions
   - Chapter 7: String Instructions & Structures
+- [Assembly Programming for All Platforms, Learn to Code [Video](2019)](https://www.packtpub.com/product/assembly-programming-for-all-platforms-learn-to-code-video/9781838987541) [[GITHUB]](https://github.com/packtpublishing/assembly-programming-for-all-platforms-learn-to-code)
+- [Mastering Assembly Programming(2017)](https://www.packtpub.com/product/mastering-assembly-programming/9781787287488) [[GITHUB]](https://github.com/packtpublishing/mastering-assembly-programming)
+  - FASM. GAS, MASM 
 
 ## GAS
 - [GNU Assembler Examples](https://cs.lmu.edu/~ray/notes/gasexamples/)
