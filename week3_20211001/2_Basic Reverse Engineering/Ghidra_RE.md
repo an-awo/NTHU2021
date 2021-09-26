@@ -3,6 +3,7 @@
 - [安裝](#安裝)
 - [Ghidra技術](#Ghidra技術)
 - [示範解題](#示範解題)
+- [參考書籍與推薦章節](#參考書籍與推薦章節)
 - [學習資源](#學習資源)
 
 ## [Ghidra簡介](https://en.wikipedia.org/wiki/Ghidra)
