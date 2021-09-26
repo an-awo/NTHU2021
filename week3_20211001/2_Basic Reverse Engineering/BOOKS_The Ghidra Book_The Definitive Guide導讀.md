@@ -45,9 +45,11 @@
 - Chapter 20: Compiler Variations
 
 - Chapter 21: Obfuscated Code Analysis 重要!
-  - [Strike/Counter-Strike: Reverse Engineering Shiva - Black Hat](https://www.blackhat.com/presentations/bh-federal-03/bh-federal-03-eagle/bh-fed-03-eagle.pdf)
-  - Linux ELF 保護軟體 ==> [Shiva 2003:Advances in ELF Binary Encryption - Black Hat](https://www.blackhat.com/presentations/bh-usa-03/bh-us-03-mehta/bh-us-03-mehta.pdf)
-  - [Armouring the ELF: Binary encryption on the UNIX platform](https://grugq.github.io/docs/phrack-58-05.txt)
+  - binary 保護技術 linux binary protection
+    - [Strike/Counter-Strike: Reverse Engineering Shiva - Black Hat](https://www.blackhat.com/presentations/bh-federal-03/bh-federal-03-eagle/bh-fed-03-eagle.pdf)
+    - Linux ELF 保護軟體 ==> [Shiva 2003:Advances in ELF Binary Encryption - Black Hat](https://www.blackhat.com/presentations/bh-usa-03/bh-us-03-mehta/bh-us-03-mehta.pdf)
+    - [Armouring the ELF: Binary encryption on the UNIX platform](https://grugq.github.io/docs/phrack-58-05.txt)
+  - Deobfuscation of Binaries Using Ghidra
 
 - Chapter 22: Patching Binaries 重要!
 - Chapter 23: Binary Differencing and Version Tracking 重要!
