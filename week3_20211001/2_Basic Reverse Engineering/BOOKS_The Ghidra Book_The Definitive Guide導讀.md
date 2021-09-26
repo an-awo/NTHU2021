@@ -52,5 +52,32 @@
   - Deobfuscation of Binaries Using Ghidra
 
 - Chapter 22: Patching Binaries 重要!
+
+- 執行檔修正的情境
+  - Modifying a malware sample to eliminate anti-debug techniques that prevent the malware from being studied
+  - Patching vulnerabilities in software for which you have no source code
+  - Customizing an application’s splash screen or string content
+  - Modifying game logic for the purposes of cheating
+  - Unlocking hidden features
+  - Bypassing licensing checks or other anti-piracy protections
+- 執行檔修正的做法與步驟
+  - The Search Memory dialog
+  - 使用 Byte Viewer修改
+    - The Ghidra Byte Viewer (Window =>Bytes)
+
 - Chapter 23: Binary Differencing and Version Tracking 重要!
+  - 兩個惡意程式是否相似 或同一家族 ?
+  - 有多少相似?多少差異?
+  - Tools => Program Differences
+  - The Version Tracking tool
+    - 原理 
+    - Seven types of correlators [At a high level, the Version Tracking tool is looking for correlations between two files.]
+      - Data Match correlators
+      - Function Match correlators
+      - Legacy Import correlators
+      - Implied correlators
+      - Manual Match correlators
+      - Symbol Name Match correlators
+      - Reference correlators 
+
 - Appendix: Ghidra for IDA Users
