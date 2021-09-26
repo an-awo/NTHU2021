@@ -45,32 +45,39 @@
   - Workspaces
 
 - Chapter 13: Extending Ghidra’s Worldview
-- a highquality reverse engineering tool ==> fully automated identification and annotation of as much of a binary as possible. 
-- How to identify various constructs within binaries and discuss how you can enhance its ability to do so.
-- Importing Files
-  - Figure 13-1: Import dialog and options for a PE file Figure 
-  - Figure 13-2: Import dialog and options for an ELF binary
-  - Figure 13-4: Import Results Summary window for an ELF binary
-- Analyzers
-- Word Models 特殊字串
-  - A word model provides a way to identify special strings and types of strings you’re interested in searching for, such as known identifiers, email addresses, directory pathnames, file extensions, and so on. 
-- Data Types
-  - The Data Type Manager allows us to manage all of the data types associated with a file. 
-  - Ghidra lets you reuse data type definitions by storing them in data type archive files. 
-- Function IDs
-  - Figure 13-9: Auto analysis options 選項中有 Function IDs
-- Function ID Plugin
-  - allows you to create, modify, and control associations for FidDbs. 
-  - not enabled in a default Ghidra installation. 
-  - To enable it, 點選  CodeBrowser window => File=>Configure and then click the checkbox for Function ID. 
+  - a highquality reverse engineering tool ==> fully automated identification and annotation of as much of a binary as possible. 
+  - How to identify various constructs within binaries and discuss how you can enhance its ability to do so.
+  - Importing Files
+    - Figure 13-1: Import dialog and options for a PE file Figure 
+    - Figure 13-2: Import dialog and options for an ELF binary
+    - Figure 13-4: Import Results Summary window for an ELF binary
+  - Analyzers
+  - Word Models 特殊字串
+    - A word model provides a way to identify special strings and types of strings you’re interested in searching for, such as known identifiers, email addresses, directory pathnames, file extensions, and so on. 
+  - Data Types
+    - The Data Type Manager allows us to manage all of the data types associated with a file. 
+    - Ghidra lets you reuse data type definitions by storing them in data type archive files. 
+  - Function IDs
+    - Figure 13-9: Auto analysis options 選項中有 Function IDs
+  - Function ID Plugin
+    - allows you to create, modify, and control associations for FidDbs. 
+    - 預設為不啟動 
+    - 啟動方式 ==> 點選  CodeBrowser window => File=>Configure and then click the checkbox for Function ID. 
   - Function ID Plugin Example: UPX
 
 
 - Chapter 14: Basic Ghidra Scripting
   - Script Manager
   - Script Development
+    - 使用java
+    - 使用python
+    - Support for Other Languages ? 那些啊?
   - Introduction to the Ghidra API
   - Ghidra Scripting Examples
+    - Example 1: Enumerating Functions- 
+    - Example 2: Enumerating Instructions
+    - Example 3: Enumerating Cross-References
+
 
 - Chapter 15: Eclipse and GhidraDev
 - Chapter 16: Ghidra in Headless Mode
