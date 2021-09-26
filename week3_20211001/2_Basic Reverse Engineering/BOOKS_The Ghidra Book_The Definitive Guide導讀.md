@@ -26,6 +26,8 @@
 
 
 - Chapter 5: Ghidra Data Displays
+
+
 - Chapter 6: Making Sense of a Ghidra Disassembly
 - Chapter 7: Disassembly Manipulation
 - Chapter 8: Data Types and Data Structures
@@ -34,18 +36,60 @@
 - Chapter 11: Collaborative SRE with Ghidra
   - 多人協同分析 
   - 使用Ghidra Server 
+
 - Chapter 12: Customizing Ghidra
+  - CodeBrowser
+  - Ghidra Project Window
+  - Tools
+    - Ghidra Configure Tool window 
+  - Workspaces
+
 - Chapter 13: Extending Ghidra’s Worldview
+- a highquality reverse engineering tool ==> fully automated identification and annotation of as much of a binary as possible. 
+- How to identify various constructs within binaries and discuss how you can enhance its ability to do so.
+- Importing Files
+  - Figure 13-1: Import dialog and options for a PE file Figure 
+  - Figure 13-2: Import dialog and options for an ELF binary
+  - Figure 13-4: Import Results Summary window for an ELF binary
+- Analyzers
+- Word Models 特殊字串
+  - A word model provides a way to identify special strings and types of strings you’re interested in searching for, such as known identifiers, email addresses, directory pathnames, file extensions, and so on. 
+- Data Types
+  - The Data Type Manager allows us to manage all of the data types associated with a file. 
+  - Ghidra lets you reuse data type definitions by storing them in data type archive files. 
+- Function IDs
+  - Figure 13-9: Auto analysis options 選項中有 Function IDs
+- Function ID Plugin
+  - allows you to create, modify, and control associations for FidDbs. 
+  - not enabled in a default Ghidra installation. 
+  - To enable it, 點選  CodeBrowser window => File=>Configure and then click the checkbox for Function ID. 
+  - Function ID Plugin Example: UPX
+
+
 - Chapter 14: Basic Ghidra Scripting
+  - Script Manager
+  - Script Development
+  - Introduction to the Ghidra API
+  - Ghidra Scripting Examples
+
 - Chapter 15: Eclipse and GhidraDev
 - Chapter 16: Ghidra in Headless Mode
-- Chapter 17: Ghidra Loaders
+
+- Chapter 17: Ghidra Loaders 檔案載入器
+- Unknown File Analysis
+- Manually Loading a Windows PE File
+- Example 1: SimpleShellcode Loader Module
+- Example 2: Simple Shellcode Source Loader
+- Example 3: Simple ELF Shellcode Loader
+
+
 - Chapter 18: Ghidra Processors
 - Chapter 19: The Ghidra Decompiler
+  - Ghidra Decompiler analysis options 
 - Chapter 20: Compiler Variations
 
 - Chapter 21: Obfuscated Code Analysis 重要!
-  - binary 保護技術 linux binary protection
+  - binary 保護技術 linux binary protection   ==>  Anti–Reverse Engineering
     - [Strike/Counter-Strike: Reverse Engineering Shiva - Black Hat](https://www.blackhat.com/presentations/bh-federal-03/bh-federal-03-eagle/bh-fed-03-eagle.pdf)
     - Linux ELF 保護軟體 ==> [Shiva 2003:Advances in ELF Binary Encryption - Black Hat](https://www.blackhat.com/presentations/bh-usa-03/bh-us-03-mehta/bh-us-03-mehta.pdf)
     - [Armouring the ELF: Binary encryption on the UNIX platform](https://grugq.github.io/docs/phrack-58-05.txt)
