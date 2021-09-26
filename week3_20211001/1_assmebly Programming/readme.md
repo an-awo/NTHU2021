@@ -16,6 +16,14 @@ Calling Conventions
 | [GAS(GNU Assembler,as)](https://en.wikipedia.org/wiki/GNU_Assembler)|  AT&T-style syntax | .as  .s|
 |[NASM(Netwide Assembler)](https://en.wikipedia.org/wiki/Netwide_Assembler)| | .asm|
 |[MASM(Microsoft Macro Assembler)](https://en.wikipedia.org/wiki/Microsoft_Macro_Assembler) ||.asm|
+| [FASM(flat assembler)](https://flatassembler.net/download.php) || .asm|
+
+FASM
+- The flat assembler (abbreviated to fasm, intentionally stylized with lowercase letters) is a fast assembler running in a variety of operating systems, in continued development since 1999. 
+- It was designed primarily for the assembly of x86 instructions and it supports x86 and x86-64 instructions sets with extensions like MMX, 3DNow!, SSE up to SSE4, AVX, AVX2, XOP, and AVX-512. 
+- It can produce output in plain binary, MZ, PE, COFF or ELF format. 
+- It includes a powerful but simple macroinstruction system and does multiple passes to optimize the size of instruction codes. 
+- The flat assembler is self-hosting and the complete source code is included.
 
 ## 參考書籍與推薦章節
 - [Assembly Programming and Computer Architecture for Software Engineers(2017)](https://www.prospectpressvt.com/textbooks/hall-assembly-programming-and-computer-architecture-for-software-engineers)
@@ -33,7 +41,28 @@ Calling Conventions
 - [Assembly Programming for All Platforms, Learn to Code [Video](2019)](https://www.packtpub.com/product/assembly-programming-for-all-platforms-learn-to-code-video/9781838987541) [[GITHUB]](https://github.com/packtpublishing/assembly-programming-for-all-platforms-learn-to-code)
 - [Mastering Assembly Programming(2017)](https://www.packtpub.com/product/mastering-assembly-programming/9781787287488) [[GITHUB]](https://github.com/packtpublishing/mastering-assembly-programming)
   - FASM. GAS, MASM 
+  -  下載Windows版 直接解壓縮即可使用
+  -  目錄夾底下有examples
+  -  https://flatassembler.net/download.php
+ ```
+ ; example of simplified Windows programming using complex macro features
 
+include 'win32ax.inc' ; you can simply switch between win32ax, win32wx, win64ax and win64wx here
+
+.code
+
+  start:
+
+        invoke  MessageBox,HWND_DESKTOP,"May I introduce myself?",invoke GetCommandLine,MB_YESNO
+
+        .if eax = IDYES
+                invoke  MessageBox,HWND_DESKTOP,"Hi! I'm the example program!","Hello!",MB_OK
+        .endif
+
+        invoke  ExitProcess,0
+
+.end start
+```
 ## GAS
 - [GNU Assembler Examples](https://cs.lmu.edu/~ray/notes/gasexamples/)
 
