@@ -303,10 +303,18 @@ easyctf{XXXXXXXXXXXXXXX}[Inferior 1 (process 24458) exited with code 01]
   - vim + xxd
   - xxd /bin/ls | vi -
   - vi:open the file ==> :%!xxd ==> make changes  ==> :%!xxd -r > new-ls (save file)
+## 參考書籍與推薦章節
+
+- [The Ghidra Book_The Definitive Guide 官方網站(含有程式碼可下載)+ 可網路購買電子書](https://ghidrabook.com/l)
+- [Ghidra Software Reverse Engineering for Beginners(2021)](https://www.packtpub.com/product/ghidra-software-reverse-engineering-for-beginners/9781800207974) [[GITHUB]](https://github.com/PacktPublishing/Ghidra-Software-Reverse-Engineering-for-Beginners)
 
 ## 學習資源
 - [Ghidra - Journey from Classified NSA Tool to Open Source](https://www.youtube.com/watch?v=kx2xp7IQNSc&t=683s)
 - [Ghidra and IDA - Solving a reverse engineering CTF crackme - AmIRootYet - Pranshu Bajpai](https://www.youtube.com/watch?v=S06pgk4DjFQ)
+  - Chapter05 - Reversing Malware Using Ghidra
+  - Chapter06 - Scripting Malware Analysis
+  - Chapter08 - Auditing Program Binaries 
+
 
 - [Reversing CrackMe with Ghidra (Part 1)](https://www.youtube.com/watch?v=6p5Qviusskk&t=33s)
 - [Reversing CrackMe with Ghidra (Part 2)](https://www.youtube.com/watch?v=Eu9YC1Jq1Do)
