@@ -311,9 +311,7 @@ easyctf{XXXXXXXXXXXXXXX}[Inferior 1 (process 24458) exited with code 01]
 ## 學習資源
 - [Ghidra - Journey from Classified NSA Tool to Open Source](https://www.youtube.com/watch?v=kx2xp7IQNSc&t=683s)
 - [Ghidra and IDA - Solving a reverse engineering CTF crackme - AmIRootYet - Pranshu Bajpai](https://www.youtube.com/watch?v=S06pgk4DjFQ)
-  - Chapter05 - Reversing Malware Using Ghidra
-  - Chapter06 - Scripting Malware Analysis
-  - Chapter08 - Auditing Program Binaries 
+
 
 
 - [Reversing CrackMe with Ghidra (Part 1)](https://www.youtube.com/watch?v=6p5Qviusskk&t=33s)
