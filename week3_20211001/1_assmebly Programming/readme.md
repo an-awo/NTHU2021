@@ -28,9 +28,7 @@ FASM
 ## 參考書籍與推薦章節
 - [Assembly Programming Tutorial(NASM)](https://www.tutorialspoint.com/assembly_programming/index.htm) [[可下載的PDF]](https://www.tutorialspoint.com/assembly_programming/assembly_tutorial.pdf)
 
-- [Assembly Programming and Computer Architecture for Software Engineers(2017)](https://www.prospectpressvt.com/textbooks/hall-assembly-programming-and-computer-architecture-for-software-engineers)
-- [匯編程序設計與電腦體系結構：軟件工程師教程](https://www.tenlong.com.tw/products/9787111615163)
-- [GITHUB(原始碼)](https://github.com/brianrhall/Assembly)
+- [Assembly Programming and Computer Architecture for Software Engineers(2017)](https://www.prospectpressvt.com/textbooks/hall-assembly-programming-and-computer-architecture-for-software-engineers) [[簡中譯本:匯編程序設計與電腦體系結構：軟件工程師教程]](https://www.tenlong.com.tw/products/9787111615163) [GITHUB(原始碼)](https://github.com/brianrhall/Assembly)
   - 以x86與x86_64這兩種主流架構為重點
   - 兼顧AT&T及Intel語法，
   - 適用於GAS、NASM及MASM三種常見的匯編器
