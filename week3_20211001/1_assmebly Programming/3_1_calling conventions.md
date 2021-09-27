@@ -28,7 +28,9 @@ int caller(void)
 - syscall:OS2用
 
 
-## x86-64 calling conventions 兩種類型
+## x86-64 calling conventions 
+![x86_64_callingconventions](x86_64_callingconventions.png)
+
 - 第一類型 :System V AMD64 ABI
   - Solaris，GNU/Linux，FreeBSD和其他非微軟OS上使用。
   - 頭六個整型參數放在暫存器RDI, RSI, RDX, RCX, R8和R9上
