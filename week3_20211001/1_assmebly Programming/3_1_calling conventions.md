@@ -29,7 +29,7 @@ int caller(void)
 
 
 ## x86-64 calling conventions 兩種類型
-- System V AMD64 ABI
+- 第一類型 :System V AMD64 ABI
   - Solaris，GNU/Linux，FreeBSD和其他非微軟OS上使用。
   - 頭六個整型參數放在暫存器RDI, RSI, RDX, RCX, R8和R9上
   - XMM0到XMM7用來放置浮點變元。
@@ -40,7 +40,7 @@ int caller(void)
   - 在函式入口，返回值與棧上第七個整型參數相鄰。 
 - [AMD64 Calling Conventions for Linux / Mac OSX](https://courses.cs.washington.edu/courses/cse378/10au/sections/Section1_recap.pdf)
 
--[微軟x86-64呼叫約定](https://docs.microsoft.com/en-us/cpp/build/x64-calling-convention?view=msvc-160)
+-第二類型 :[微軟x86-64呼叫約定](https://docs.microsoft.com/en-us/cpp/build/x64-calling-convention?view=msvc-160)
  - 在Windows x64環境下編譯代碼時，只有一種呼叫約定(32位元下的各種約定在64位元下統一成一種)
  - Two important differences between x86 and x64 are the 64-bit addressing capability and a flat set of 16 64-bit registers for general use. 
  - Given the expanded register set, x64 uses the __fastcall calling convention and a RISC-based exception-handling model. 
