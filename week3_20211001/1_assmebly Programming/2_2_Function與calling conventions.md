@@ -26,8 +26,12 @@ int caller(void)
 
 
 - cdecl(C declaration)
-- fastcall
-- syscall:OS2用
+  - Parameters are passed in reverse order (from right to left) via the stack.
+  - eax, ecx, and edx are caller-saved (volatile), while the rest of the general purpose registers are callee-saved (non-volatile). Consequently, if you want to save eax, ecx, and edx, you need to do so in the calling function because they will likely be overwritten during function execution.
+  - eax is used as the return register in most cases. st(0) is used for a floating-point return.
+  - The caller is responsible for cleaning up the stack. 
+
+
 
 
 ## x86-64 calling conventions 
