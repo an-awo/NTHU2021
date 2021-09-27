@@ -46,27 +46,19 @@ FASM
   - FASM:下載Windows版 直接解壓縮即可使用
   - 目錄夾底下有examples
   - https://flatassembler.net/download.php
- ```
- ; example of simplified Windows programming using complex macro features
 
-include 'win32ax.inc' ; you can simply switch between win32ax, win32wx, win64ax and win64wx here
-
-.code
-
-  start:
-
-        invoke  MessageBox,HWND_DESKTOP,"May I introduce myself?",invoke GetCommandLine,MB_YESNO
-
-        .if eax = IDYES
-                invoke  MessageBox,HWND_DESKTOP,"Hi! I'm the example program!","Hello!",MB_OK
-        .endif
-
-        invoke  ExitProcess,0
-
-.end start
-```
 ## GAS
 - [GNU Assembler Examples](https://cs.lmu.edu/~ray/notes/gasexamples/)
+- [Programming from the Ground Up(有一些程式範例)](https://download-mirror.savannah.gnu.org/releases/pgubook/ProgrammingGroundUp-1-0-booksize.pdf) [[中譯本]](https://www.books.com.tw/products/CN11078208) [[Github]](https://github.com/foomur/programming-ground-up)
+  - 32-bit assembly program
+  - Chapter 3 - Your first assembly program
+    - exit.s - a first assembly program showing the functionality of the exit() syscall
+    - maximum.s - finding the largest number in a data index
+    - minimum.s - finding the smallest number in a data index
+  - Chapter 4 - Functions
+    - power.s - illustrating how functions work by solving 2^3 + 5^2
+    - factorial.s - solving a factorial by creating a function
+    - square.s - solving a square x^2 = ? by creating a function
 
 ## NASM
 - [講解NASM Tutorial](https://cs.lmu.edu/~ray/notes/nasmtutorial)
