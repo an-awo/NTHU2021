@@ -39,11 +39,7 @@ FASM
   - Chapter 6: Functions
   - Chapter 7: String Instructions & Structures
 - [Assembly Programming for All Platforms, Learn to Code_Video(2019)](https://www.packtpub.com/product/assembly-programming-for-all-platforms-learn-to-code-video/9781838987541) [[GITHUB]](https://github.com/packtpublishing/assembly-programming-for-all-platforms-learn-to-code)
-- [Mastering Assembly Programming(2017)](https://www.packtpub.com/product/mastering-assembly-programming/9781787287488) [[GITHUB]](https://github.com/packtpublishing/mastering-assembly-programming)
-  - FASM. GAS, MASM 
-  - FASM:下載Windows版 直接解壓縮即可使用
-  - 目錄夾底下有examples
-  - https://flatassembler.net/download.php
+
 
 ## GAS
 - [GNU Assembler Examples](https://cs.lmu.edu/~ray/notes/gasexamples/)
@@ -66,6 +62,13 @@ FASM
 - [Sakib2263/64-Bit-NASM-Assembly-Code-Examples](https://github.com/Sakib2263/64-Bit-NASM-Assembly-Code-Examples)
 - [Sample 64-bit nasm programs](https://www.csee.umbc.edu/portal/help/nasm/sample_64.shtml)
 - [Sample nasm programs(32 bit)](https://www.csee.umbc.edu/portal/help/nasm/sample.shtml)
+
+## FASM
+- [Mastering Assembly Programming(2017)](https://www.packtpub.com/product/mastering-assembly-programming/9781787287488) [[GITHUB]](https://github.com/packtpublishing/mastering-assembly-programming)
+  - FASM. GAS, MASM 
+  - FASM:下載Windows版 直接解壓縮即可使用
+  - 目錄夾底下有examples
+  - https://flatassembler.net/download.php
 
 ## 微軟MASM
 - [Assembly Language for x86 Processors, 8th edition(2019)](http://asmirvine.com/)
