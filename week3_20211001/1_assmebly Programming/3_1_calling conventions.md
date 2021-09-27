@@ -22,6 +22,8 @@ int caller(void)
 
 
 ## [x86-calling conventions](https://en.wikipedia.org/wiki/X86_calling_conventions) [[中文說明]](https://zh.wikipedia.org/wiki/X86%E8%B0%83%E7%94%A8%E7%BA%A6%E5%AE%9A)
+![x86_callingconventions](x86_callingconventions.png)
+
 
 - cdecl(C declaration)
 - fastcall
