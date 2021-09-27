@@ -31,12 +31,102 @@ int caller(void)
   - eax is used as the return register in most cases. st(0) is used for a floating-point return.
   - The caller is responsible for cleaning up the stack. 
 
+### [練習: 完成課本範例程式Program_6.1的測試](https://github.com/brianrhall/Assembly/tree/master/Chapter_6/Program%206.1)
+```c
+# include <stdio.h>
 
+int sum(int, int);
+
+int main() {
+  int numl = 2, num2 = 4, answer;
+  answer = sum (numl, num2);
+  return 0;
+}
+
+int sum (int numl, int num2) {
+  return numl + num2;
+}
+```
+### Program_6.1_32bit NASM.asm
+```c
+section .data
+num1: dd 2
+num2: dd 4
+
+section .text
+global _main, _sum
+_main:
+
+mov eax, 10
+dec eax
+mov ebx, 5
+
+push DWORD[num2]
+push DWORD[num1]
+call _sum
+add esp, 8
+
+add eax, ebx
+dec eax
+
+mov eax, 1
+mov ebx, 0
+int 80h
+
+_sum:
+push ebp
+mov ebp, esp
+push ebx
+mov ebx, [ebp + 8]
+mov eax, [ebp + 12]
+add eax, ebx
+pop ebx
+pop ebp
+ret
+```
+
+## ### Program_6.1_64bit NASM.asm
+```c
+section .data
+num1: dd 2
+num2: dd 4
+
+section .text
+global _main, _sum
+_main:
+
+mov rax, 10
+dec rax
+mov rbx, 5
+
+movsx rdi, DWORD [rel num1]
+movsx rsi, DWORD [rel num2]
+call _sum
+
+add rax, rbx
+dec rax
+
+mov rax, 60
+xor rdi, rdi
+syscall
+
+_sum:
+push rbp
+mov rbp, rsp
+push rbx
+mov rax, rdi
+add rax, rsi
+pop rbx
+pop rbp
+ret
+```
+## 比較cdecl, stdcall, and fastcall conventions in 32-bit  
 
 
 ## x86-64 calling conventions 
 ![x86_64_callingconventions](x86_64_callingconventions.png)
 
+- Table 6.1 x86_64 Calling conventions
 - 第一類型 :System V AMD64 ABI
   - Solaris，GNU/Linux，FreeBSD和其他非微軟OS上使用。
   - 頭六個整型參數放在暫存器RDI, RSI, RDX, RCX, R8和R9上
