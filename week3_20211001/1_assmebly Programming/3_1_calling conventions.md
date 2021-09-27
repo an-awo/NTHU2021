@@ -38,6 +38,7 @@ int caller(void)
   - 返回值儲存在RAX 
   - 與微軟不同的是，不需要提供影子空間。
   - 在函式入口，返回值與棧上第七個整型參數相鄰。 
+- [AMD64 Calling Conventions for Linux / Mac OSX](https://courses.cs.washington.edu/courses/cse378/10au/sections/Section1_recap.pdf)
 
 -[微軟x86-64呼叫約定](https://docs.microsoft.com/en-us/cpp/build/x64-calling-convention?view=msvc-160)
  - 在Windows x64環境下編譯代碼時，只有一種呼叫約定(32位元下的各種約定在64位元下統一成一種)
