@@ -17,9 +17,10 @@
 
 - 底下範例若有誤植與錯誤,請自行更正
 
-- 基礎題 (5題)
+- 基礎題 (5題) 不必因解簡單題覺得羞愧! 人生都是由簡單開始! 記得把艱難的讓它變得簡單!
   - picoCTF 2021 | Reverse Engineering | speeds and feeds [[解答1]](https://www.youtube.com/watch?v=_Q2Trkp8F8w)
   - [Angstrom CTF 2021 - Reverse Engineering Challenge Walkthroughs](https://www.youtube.com/watch?v=MhkVkOpj5OI)
+
 - 使用angr或z3解題(3題)
   -  Google-ctf-2020/reversing/beginner
 [[題目]](https://github.com/luker983/google-ctf-2020/tree/master/reversing/beginner)
@@ -34,7 +35,8 @@
   - Android app逆向題
     - [ Google Capture The Flag 2021|tridroid題目](https://ctftime.org/task/16572)
   - Haskill
-    - hxp CTF 2017 /wreckme  [[題目]]()  [[參考解答]](https://ctftime.org/writeup/8112)  
+    - hxp CTF 2017 /wreckme  [[題目!尚未找到]]()  [[參考解答]](https://ctftime.org/writeup/8112)  
+
 - 其他平台(ARM,MIPS,...)程式逆向題(1題)
   - ARM 
     - [PicoCTF2021](https://github.com/HHousen/PicoCTF-2021/tree/master/Reverse%20Engineering)
@@ -55,7 +57,7 @@ $ aarch64-linux-gnu-gcc -static -o [the name of the executable] a.o
   - CSAW CTF Qualification Round 2020/not_malware
     - [[ 題目]](https://github.com/acdwas/ctf/tree/master/2020/CSAW/rev/not_malware)
     - [[anti-debugging technique using ptrace範例解答pstrace/strace ]](https://ctftime.org/writeup/23357)
-    - [[很好的writeup]](https://github.com/Ragnar-Security/ctf-writeups/tree/master/csaw-2020/not_malware)- 
+    - [[很好的writeup]](https://github.com/Ragnar-Security/ctf-writeups/tree/master/csaw-2020/not_malware)
   - JavaScript
     - [JavaScript Obfuscator Tool](https://obfuscator.io/)
 
