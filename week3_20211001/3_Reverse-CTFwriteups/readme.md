@@ -31,7 +31,11 @@
     - [[使用Intel pin 解題]](https://www.bookstack.cn/read/CTF-All-In-One/doc-6.2.4_re_csawctf2015_wyvern.md) 
     - [[使用afl-fuzz解題]](https://www.mathyvanhoef.com/2015/09/csaw-ctf-solving-reversing-wyvern-500.html)
     - [[使用ANGR解題]](https://github.com/angr/angr-doc/blob/master/examples/csaw_wyvern/solve.py)
-
+    - [[binary patch作法]](https://www.bookstack.cn/read/CTF-All-In-One/doc-6.2.4_re_csawctf2015_wyvern.md)
+    - [[writeup1 ddaa]](https://ithelp.ithome.com.tw/articles/10218237)
+    - [[writeup2 使用Intel pin]](https://bruce30262.github.io/csaw-ctf-2015-wyvern/)
+    - [[writeup3]](https://gist.github.com/inaz2/1682e7254b1c7a2cf641)
+    - [[writeup4 使用angr]](https://blog.csdn.net/doudoudouzoule/article/details/79969378?utm_medium=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-1.control&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-1.control)
 
 - python/Java/ruby/go程式逆向題(3題)
   - python pyc
