@@ -27,7 +27,7 @@
 [[解法1]](https://github.com/luker983/google-ctf-2020/tree/master/reversing/beginner)
 [[解法2(youtube)(angr)]](https://www.youtube.com/watch?v=RCgEIBfnTEI&t=1641s)
 [[解法3]](https://github.com/Dvd848/CTFs/blob/master/2020_GoogleCTF/Beginner.md)
-  - CSAW CTF 2015 -- wyvern [[題目]](https://github.com/ctfs/write-ups-2015/blob/master/csaw-ctf-2015/reverse/wyvern-500/wyvern_c85f1be480808a9da350faaa6104a19b) 
+  - CSAW CTF 2015 -- wyvern{一道題目千百解  一雞三吃} [[題目]](https://github.com/ctfs/write-ups-2015/blob/master/csaw-ctf-2015/reverse/wyvern-500/wyvern_c85f1be480808a9da350faaa6104a19b) 
     - [[使用Intel pin 解題]](https://www.bookstack.cn/read/CTF-All-In-One/doc-6.2.4_re_csawctf2015_wyvern.md) 
     - [[使用afl-fuzz解題]](https://www.mathyvanhoef.com/2015/09/csaw-ctf-solving-reversing-wyvern-500.html)
     - [[使用ANGR解題]](https://github.com/angr/angr-doc/blob/master/examples/csaw_wyvern/solve.py)
