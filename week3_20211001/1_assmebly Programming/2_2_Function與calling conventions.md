@@ -122,7 +122,7 @@ pop rbp
 ret
 ```
 
-## Ubuntu 16.04 LTS(32bit) 測試結果
+### Ubuntu 16.04 LTS(32bit) 測試結果
 ```c
 # include <stdio.h>
 
@@ -180,7 +180,7 @@ int sum (int numl, int num2) {
  804846d:	ret    
  804846e:	xchg   ax,ax
 ```
-## 比較cdecl, stdcall, and fastcall conventions in 32-bit  
+## 有時間看看microsoft cdecl, stdcall, and fastcall conventions in 32-bit 的差異
 
 
 ## x86-64 calling conventions 
@@ -324,7 +324,6 @@ Disassembly of section .text:
  804847b:	xchg   ax,ax
  804847d:	xchg   ax,ax
  804847f:	nop
-
 ```
 ##  example 2
 ```c
@@ -372,7 +371,7 @@ int main()
     1164:	8b 45 e8             	mov    eax,DWORD PTR [rbp-0x18]
     1167:	01 c2                	add    edx,eax
     1169:	8b 45 10             	mov    eax,DWORD PTR [rbp+0x10]
-    116c:	01 d0                	add    eax,edx
+    116c:	01 d0                	add    eax,edx               ==> 最後的 eax 就是函數回傳值
     116e:	5d                   	pop    rbp
     116f:	c3                   	ret    
 
@@ -429,7 +428,7 @@ int main()
  8048425:	mov    eax,DWORD PTR [ebp+0x1c]
  8048428:	add    edx,eax
  804842a:	mov    eax,DWORD PTR [ebp+0x20]
- 804842d:	add    eax,edx
+ 804842d:	add    eax,edx                 ==> 最後的 eax 就是函數回傳值
  804842f:	pop    ebp
  8048430:	ret    
 
