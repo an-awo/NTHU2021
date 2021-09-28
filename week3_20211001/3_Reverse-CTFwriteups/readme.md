@@ -39,6 +39,8 @@
     - [[writeup2 使用Intel pin]](https://bruce30262.github.io/csaw-ctf-2015-wyvern/)
     - [[writeup3]](https://gist.github.com/inaz2/1682e7254b1c7a2cf641)
     - [[writeup4 使用angr]](https://blog.csdn.net/doudoudouzoule/article/details/79969378?utm_medium=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-1.control&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-1.control)
+  - [CSCBE 2018 finals|](https://github.com/jimbauwens/cscbe_ctf_serial_solver/blob/master/serial_killer)
+    - [Triton解法](https://github.com/jimbauwens/cscbe_ctf_serial_solver/blob/master/solve.py) 
 
 - python/Java/ruby/go程式逆向題(3題)
   - python pyc
