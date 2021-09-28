@@ -10,15 +10,15 @@
 
 ## 參考列表
 
-- 基礎題 (X題)
-- python/Java/ruby/go程式逆向題
-- 其他平台(ARM,MIPS,...)逆向題
-- 使用angr或z3解題
+- 基礎題 (5題)
+- python/Java/ruby/go程式逆向題(3題)
+- 其他平台(ARM,MIPS,...)程式逆向題(1題)
+- 使用angr或z3解題(5題)
   -  Google-ctf-2020/reversing/beginner
 [[題目]](https://github.com/luker983/google-ctf-2020/tree/master/reversing/beginner)
 [[解法1]](https://github.com/luker983/google-ctf-2020/tree/master/reversing/beginner)
 [[解法2(youtube)(angr)]](https://www.youtube.com/watch?v=RCgEIBfnTEI&t=1641s)
 [[解法3]](https://github.com/Dvd848/CTFs/blob/master/2020_GoogleCTF/Beginner.md)
 
-- 代碼混淆/packing/Anti-analysis題
-- 艱難題
+- 代碼混淆/packing/Anti-analysis題(1題)
+- 艱難題(1題)
