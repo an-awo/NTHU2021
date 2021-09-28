@@ -204,7 +204,7 @@ int sum (int numl, int num2) {
  - Given the expanded register set, x64 uses the __fastcall calling convention and a RISC-based exception-handling model. 
  - The __fastcall convention uses registers for the first four arguments and the stack frame to pass additional arguments. 
 
-# 驗證32bit 與64bit函數呼叫的機制 [Linux 版本] [Microsoft有不同的story]
+## 驗證32bit 與64bit函數呼叫的機制 [Linux 版本] [Microsoft有不同的story]
 - example 1:三個參數的函數
 - example 2:七個參數的函數 32bit vs 64 bit see 參數傳遞方式的差異
 
