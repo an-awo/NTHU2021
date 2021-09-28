@@ -9,6 +9,10 @@
 - 參考到別人的writeup 須註明出處(也請強調自己的發現)
 - 老師上課的及助教示範的不能列入解題列表(除非有新的解法)
 
+- [HITCON in DEFCON 22 CTF Final 紀錄片(2014)](https://www.youtube.com/watch?v=XcneHvq1hbY)
+- [CTF 的三十道陰影:哪個年代大大走過的路](https://ithelp.ithome.com.tw/users/20121059/ironman/2810)
+
+
 ## 參考列表[不必每一類型都有解過,底下只是列表供你參考用]
 
 - 底下範例若有誤植與錯誤,請自行更正
@@ -16,7 +20,7 @@
 - 基礎題 (5題)
   - picoCTF 2021 | Reverse Engineering | speeds and feeds [[解答1]](https://www.youtube.com/watch?v=_Q2Trkp8F8w)
   - [Angstrom CTF 2021 - Reverse Engineering Challenge Walkthroughs](https://www.youtube.com/watch?v=MhkVkOpj5OI)
-- 使用angr或z3解題(5題)
+- 使用angr或z3解題(3題)
   -  Google-ctf-2020/reversing/beginner
 [[題目]](https://github.com/luker983/google-ctf-2020/tree/master/reversing/beginner)
 [[解法1]](https://github.com/luker983/google-ctf-2020/tree/master/reversing/beginner)
@@ -29,6 +33,8 @@
     - [【CTF工具】 uncompyle6快速反编译pyc](https://www.bilibili.com/s/video/BV1Q64y1z7dh)
   - Android app逆向題
     - [ Google Capture The Flag 2021|tridroid題目](https://ctftime.org/task/16572)
+  - Haskill
+    - hxp CTF 2017 /wreckme  [[題目]]()  [[參考解答]](https://ctftime.org/writeup/8112)  
 - 其他平台(ARM,MIPS,...)程式逆向題(1題)
   - ARM 
     - [PicoCTF2021](https://github.com/HHousen/PicoCTF-2021/tree/master/Reverse%20Engineering)
