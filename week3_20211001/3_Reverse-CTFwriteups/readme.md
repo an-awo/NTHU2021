@@ -45,5 +45,8 @@ $ aarch64-linux-gnu-gcc -static -o [the name of the executable] a.o
     - QEMU to Emulate ARM: sudo apt install qemu-user-static
 
 - 代碼混淆/packing/Anti-analysis題(1題)
+  - JavaScript
+    - [JavaScript Obfuscator Tool](https://obfuscator.io/)
 
-- 艱難題(1題)
+- 艱難題(1題) ==> 你覺得花妳很多時間+氣力才搞懂如何解
+  -  Google Capture The Flag 2020 /reversing/ sprint [[題目]](https://ctftime.org/task/12834) [[參考解答1]](https://ctftime.org/writeup/23412)
