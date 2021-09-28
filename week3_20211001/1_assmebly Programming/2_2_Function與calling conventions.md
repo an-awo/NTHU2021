@@ -25,7 +25,7 @@ int caller(void)
 ![x86_callingconventions](x86_callingconventions.png)
 
 
-- cdecl(C declaration)
+- cdecl(C declaration) [[NASM ]](https://cs.lmu.edu/~ray/notes/nasmtutorial/)
   - Parameters are passed in reverse order (from right to left) via the stack.
   - eax, ecx, and edx are caller-saved (volatile), while the rest of the general purpose registers are callee-saved (non-volatile). Consequently, if you want to save eax, ecx, and edx, you need to do so in the calling function because they will likely be overwritten during function execution.
   - eax is used as the return register in most cases. st(0) is used for a floating-point return.
@@ -189,14 +189,24 @@ int sum (int numl, int num2) {
 - Table 6.1 x86_64 Calling conventions
 - 第一類型 :System V AMD64 ABI
   - Solaris，GNU/Linux，FreeBSD和其他非微軟OS上使用。
-  - 頭六個整型參數放在暫存器RDI, RSI, RDX, RCX, R8和R9上
-  - XMM0到XMM7用來放置浮點變元。
-  - 同微軟x64約定一樣，其他額外的參數推入棧(stack)
+  - 前六個整數型參數放在暫存器RDI, RSI, RDX, RCX, R8和R9 | For integers and pointers, rdi, rsi, rdx, rcx, r8, r9.
+  - XMM0到XMM7用來放置浮點數參數。For floating-point (float, double), xmm0, xmm1, xmm2, xmm3, xmm4, xmm5, xmm6, xmm7.
+  - 其他額外的參數(大於6)推入棧(stack) | Additional parameters are pushed on the stack, right to left, and are to be removed by the caller after the call.
   - 系統呼叫==> 使用R10(替代RCX)
-  - 返回值儲存在RAX 
+  - 返回值儲存在RAX   ==> Integers are returned in rax or rdx:rax, and floating point values are returned in xmm0 or xmm1:xmm0.
   - 與微軟不同的是，不需要提供影子空間。
   - 在函式入口，返回值與棧上第七個整型參數相鄰。 
+
+
 - [AMD64 Calling Conventions for Linux / Mac OSX](https://courses.cs.washington.edu/courses/cse378/10au/sections/Section1_recap.pdf)
+- [NASM Tutorial](https://cs.lmu.edu/~ray/notes/nasmtutorial/)
+```
+After the parameters are pushed, the call instruction is made, so when the called function gets control, the return address is at [rsp], the first memory parameter is at [rsp+8], etc.
+The stack pointer rsp must be aligned to a 16-byte boundary before making a call. Fine, but the process of making a call pushes the return address (8 bytes) on the stack, so when a function gets control, rsp is not aligned. You have to make that extra space yourself, by pushing something or subtracting 8 from rsp.
+The only registers that the called function is required to preserve (the calle-save registers) are: rbp, rbx, r12, r13, r14, r15. All others are free to be changed by the called function.
+The callee is also supposed to save the control bits of the XMCSR and the x87 control word, but x87 instructions are rare in 64-bit code so you probably don’t have to worry about this.
+```
+
 
 -第二類型 :[微軟x86-64呼叫約定](https://docs.microsoft.com/en-us/cpp/build/x64-calling-convention?view=msvc-160)
  - 在Windows x64環境下編譯代碼時，只有一種呼叫約定(32位元下的各種約定在64位元下統一成一種)
