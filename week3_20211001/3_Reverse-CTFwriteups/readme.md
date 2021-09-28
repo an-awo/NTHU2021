@@ -41,6 +41,7 @@
     - PicoCTF-2021|Reverse Engineering|ARMssembly 0-4
     - [ARM Instruction Set Tutorial](https://azeria-labs.com/arm-instruction-set-part-3/)
     - [Arm Architecture Reference Manual](https://developer.arm.com/documentation/ddi0487/latest) 
+    - QEMU to Emulate ARM: sudo apt install qemu-user-static
     - [Running ARMv8 via Linux Command Line](https://github.com/joebobmiles/ARMv8ViaLinuxCommandline)
 ```
 sudo apt install binutils-aarch64-linux-gnu
@@ -48,7 +49,7 @@ sudo apt install binutils-aarch64-linux-gnu
 $ aarch64-linux-gnu-as -o a.o [the name of your source file]
 $ aarch64-linux-gnu-gcc -static -o [the name of the executable] a.o
 ```
-    - QEMU to Emulate ARM: sudo apt install qemu-user-static
+
 
 - 代碼混淆/packing/Anti-analysis題(1題)
   - CSAW CTF Qualification Round 2020/not_malware
