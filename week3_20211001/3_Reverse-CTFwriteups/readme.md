@@ -21,12 +21,17 @@
   - picoCTF 2021 | Reverse Engineering | speeds and feeds [[解答1]](https://www.youtube.com/watch?v=_Q2Trkp8F8w)
   - [Angstrom CTF 2021 - Reverse Engineering Challenge Walkthroughs](https://www.youtube.com/watch?v=MhkVkOpj5OI)
 
-- 使用angr或z3解題(3題)
-  -  Google-ctf-2020/reversing/beginner
+- 使用angr|z3|pin|triton解題(3題)
+  - Google-ctf-2020/reversing/beginner
 [[題目]](https://github.com/luker983/google-ctf-2020/tree/master/reversing/beginner)
 [[解法1]](https://github.com/luker983/google-ctf-2020/tree/master/reversing/beginner)
 [[解法2(youtube)(angr)]](https://www.youtube.com/watch?v=RCgEIBfnTEI&t=1641s)
 [[解法3]](https://github.com/Dvd848/CTFs/blob/master/2020_GoogleCTF/Beginner.md)
+  - CSAW CTF 2015 -- wyvern [[題目]](https://github.com/ctfs/write-ups-2015/blob/master/csaw-ctf-2015/reverse/wyvern-500/wyvern_c85f1be480808a9da350faaa6104a19b) 
+    - [[使用Intel pin 解題]](https://www.bookstack.cn/read/CTF-All-In-One/doc-6.2.4_re_csawctf2015_wyvern.md) 
+    - [[使用afl-fuzz解題]](https://www.mathyvanhoef.com/2015/09/csaw-ctf-solving-reversing-wyvern-500.html)
+    - [[使用ANGR解題]](https://github.com/angr/angr-doc/blob/master/examples/csaw_wyvern/solve.py)
+
 
 - python/Java/ruby/go程式逆向題(3題)
   - python pyc
