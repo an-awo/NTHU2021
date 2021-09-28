@@ -86,7 +86,7 @@ pop ebp
 ret
 ```
 
-## ### Program_6.1_64bit NASM.asm
+### Program_6.1_64bit NASM.asm
 ```c
 section .data
 num1: dd 2
@@ -122,7 +122,7 @@ pop rbp
 ret
 ```
 
-## Ubuntu 16.04 LTS(32bit) 
+## Ubuntu 16.04 LTS(32bit) 測試結果
 ```c
 # include <stdio.h>
 
@@ -294,7 +294,7 @@ int main()
   return 0;
 }
 ```
-
+### Kali Linux 2019(64bit) 測試結果
 - gcc test2.c -o test2 -g
 - objdump -M intel -D -j .text test2
 ```c
@@ -355,5 +355,71 @@ int main()
     11ea:	c9                   	leave  
     11eb:	c3                   	ret    
     11ec:	0f 1f 40 00          	nop    DWORD PTR [rax+0x0]
+```
 
+### Ubuntu 16.04 LTS(32bit)測試結果
+- gcc test2.c -o test2 -g
+- objdump -M intel -D -j .text test2 --no-show-raw-insn
+```
+0804840b <sum>:
+ 804840b:	push   ebp
+ 804840c:	mov    ebp,esp
+ 804840e:	mov    edx,DWORD PTR [ebp+0x8]
+ 8048411:	mov    eax,DWORD PTR [ebp+0xc]
+ 8048414:	add    edx,eax
+ 8048416:	mov    eax,DWORD PTR [ebp+0x10]
+ 8048419:	add    edx,eax
+ 804841b:	mov    eax,DWORD PTR [ebp+0x14]
+ 804841e:	add    edx,eax
+ 8048420:	mov    eax,DWORD PTR [ebp+0x18]
+ 8048423:	add    edx,eax
+ 8048425:	mov    eax,DWORD PTR [ebp+0x1c]
+ 8048428:	add    edx,eax
+ 804842a:	mov    eax,DWORD PTR [ebp+0x20]
+ 804842d:	add    eax,edx
+ 804842f:	pop    ebp
+ 8048430:	ret    
+
+08048431 <main>:
+ 8048431:	lea    ecx,[esp+0x4]
+ 8048435:	and    esp,0xfffffff0
+ 8048438:	push   DWORD PTR [ecx-0x4]
+ 804843b:	push   ebp
+ 804843c:	mov    ebp,esp
+ 804843e:	push   ecx
+ 804843f:	sub    esp,0x24
+ 8048442:	mov    DWORD PTR [ebp-0x28],0x1
+ 8048449:	mov    DWORD PTR [ebp-0x24],0x2
+ 8048450:	mov    DWORD PTR [ebp-0x20],0x3
+ 8048457:	mov    DWORD PTR [ebp-0x1c],0x4
+ 804845e:	mov    DWORD PTR [ebp-0x18],0x5
+ 8048465:	mov    DWORD PTR [ebp-0x14],0x6
+ 804846c:	mov    DWORD PTR [ebp-0x10],0x7
+ 8048473:	push   DWORD PTR [ebp-0x10]
+ 8048476:	push   DWORD PTR [ebp-0x14]
+ 8048479:	push   DWORD PTR [ebp-0x18]
+ 804847c:	push   DWORD PTR [ebp-0x1c]
+ 804847f:	push   DWORD PTR [ebp-0x20]
+ 8048482:	push   DWORD PTR [ebp-0x24]
+ 8048485:	push   DWORD PTR [ebp-0x28]
+ 8048488:	call   804840b <sum>
+ 804848d:	add    esp,0x1c
+ 8048490:	mov    DWORD PTR [ebp-0xc],eax
+ 8048493:	sub    esp,0x8
+ 8048496:	push   DWORD PTR [ebp-0xc]
+ 8048499:	push   0x8048540
+ 804849e:	call   80482e0 <printf@plt>
+ 80484a3:	add    esp,0x10
+ 80484a6:	mov    eax,0x0
+ 80484ab:	mov    ecx,DWORD PTR [ebp-0x4]
+ 80484ae:	leave  
+ 80484af:	lea    esp,[ecx-0x4]
+ 80484b2:	ret    
+ 80484b3:	xchg   ax,ax
+ 80484b5:	xchg   ax,ax
+ 80484b7:	xchg   ax,ax
+ 80484b9:	xchg   ax,ax
+ 80484bb:	xchg   ax,ax
+ 80484bd:	xchg   ax,ax
+ 80484bf:	nop
 ```
