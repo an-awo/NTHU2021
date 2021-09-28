@@ -17,7 +17,7 @@
 
 - 底下範例若有誤植與錯誤,請自行更正
 
-- 基礎題 (5題) 不必因解簡單題覺得羞愧! 人生都是由簡單開始! 記得把艱難的讓它變得簡單!
+- 基礎題 (5題) 不必因解簡單題覺得羞愧! 人生都是由簡單開始(但不要只停留在此)! 記得把艱難的讓它變得簡單!
   - picoCTF 2021 | Reverse Engineering | speeds and feeds [[解答1]](https://www.youtube.com/watch?v=_Q2Trkp8F8w)
   - [Angstrom CTF 2021 - Reverse Engineering Challenge Walkthroughs](https://www.youtube.com/watch?v=MhkVkOpj5OI)
 
