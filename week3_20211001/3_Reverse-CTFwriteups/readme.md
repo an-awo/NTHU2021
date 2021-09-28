@@ -55,7 +55,7 @@ $ aarch64-linux-gnu-gcc -static -o [the name of the executable] a.o
 
 - 代碼混淆/packing/Anti-analysis題(1題)
   - CSAW CTF Qualification Round 2020/not_malware
-    - [[ 題目]](https://github.com/acdwas/ctf/tree/master/2020/CSAW/rev/not_malware)
+    - [[ 題目]](https://github.com/acdwas/ctf/blob/master/2020/CSAW/rev/not_malware/not_malware)
     - [[anti-debugging technique using ptrace範例解答pstrace/strace ]](https://ctftime.org/writeup/23357)
     - [[很好的writeup]](https://github.com/Ragnar-Security/ctf-writeups/tree/master/csaw-2020/not_malware)
   - JavaScript
