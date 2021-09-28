@@ -30,18 +30,19 @@
   - Android app逆向題
     - [ Google Capture The Flag 2021|tridroid題目](https://ctftime.org/task/16572)
 - 其他平台(ARM,MIPS,...)程式逆向題(1題)
-  - [PicoCTF2021](https://github.com/HHousen/PicoCTF-2021/tree/master/Reverse%20Engineering)
-  - PicoCTF-2021|Reverse Engineering|ARMssembly 0-4
-  - [ARM Instruction Set Tutorial](https://azeria-labs.com/arm-instruction-set-part-3/)
-  - [Arm Architecture Reference Manual](https://developer.arm.com/documentation/ddi0487/latest) 
-  - [Running ARMv8 via Linux Command Line](https://github.com/joebobmiles/ARMv8ViaLinuxCommandline)
+  - ARM 
+    - [PicoCTF2021](https://github.com/HHousen/PicoCTF-2021/tree/master/Reverse%20Engineering)
+    - PicoCTF-2021|Reverse Engineering|ARMssembly 0-4
+    - [ARM Instruction Set Tutorial](https://azeria-labs.com/arm-instruction-set-part-3/)
+    - [Arm Architecture Reference Manual](https://developer.arm.com/documentation/ddi0487/latest) 
+    - [Running ARMv8 via Linux Command Line](https://github.com/joebobmiles/ARMv8ViaLinuxCommandline)
 ```
 sudo apt install binutils-aarch64-linux-gnu
 
 $ aarch64-linux-gnu-as -o a.o [the name of your source file]
 $ aarch64-linux-gnu-gcc -static -o [the name of the executable] a.o
 ```
-  - QEMU to Emulate ARM: sudo apt install qemu-user-static
+    - QEMU to Emulate ARM: sudo apt install qemu-user-static
 
 - 代碼混淆/packing/Anti-analysis題(1題)
 
