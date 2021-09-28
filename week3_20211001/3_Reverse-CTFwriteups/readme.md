@@ -21,7 +21,7 @@
   - picoCTF 2021 | Reverse Engineering | speeds and feeds [[解答1]](https://www.youtube.com/watch?v=_Q2Trkp8F8w)
   - [Angstrom CTF 2021 - Reverse Engineering Challenge Walkthroughs](https://www.youtube.com/watch?v=MhkVkOpj5OI)
 
-- 使用angr|z3|pin|triton解題(3題)
+- 使用angr|z3|[pin](https://ctf-wiki.github.io/ctf-tools/binary-core-tools/instrumentation/intel_pin/)|triton解題(3題)
   - Google-ctf-2020/reversing/beginner
 [[題目]](https://github.com/luker983/google-ctf-2020/tree/master/reversing/beginner)
 [[解法1]](https://github.com/luker983/google-ctf-2020/tree/master/reversing/beginner)
