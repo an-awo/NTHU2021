@@ -204,6 +204,10 @@ int sum (int numl, int num2) {
  - Given the expanded register set, x64 uses the __fastcall calling convention and a RISC-based exception-handling model. 
  - The __fastcall convention uses registers for the first four arguments and the stack frame to pass additional arguments. 
 
+# 驗證32bit 與64bit函數呼叫的機制 [Linux 版本] [Microsoft有不同的story]
+- example 1:三個參數的函數
+- example 2:七個參數的函數 32bit vs 64 bit see 參數傳遞方式的差異
+
 ## example 1
 ```c
 # include <stdio.h>
@@ -226,6 +230,7 @@ int main()
 
 }
 ```
+### Kali Linux 2019(64bit) 測試結果
 - gcc test1.c -o test1 -g
 - objdump -M intel -D -j .text test1
 ```
@@ -272,7 +277,55 @@ Disassembly of section .text:
     119f:	c3                   	ret    
 ```
 
+### Ubuntu 16.04 LTS(32bit)測試結果
+- gcc test3.c -o test3 -g
+- objdump -M intel -D -j .text test3 --no-show-raw-insn
+```c
+0804840b <sum>:
+ 804840b:	push   ebp
+ 804840c:	mov    ebp,esp
+ 804840e:	mov    edx,DWORD PTR [ebp+0x8]
+ 8048411:	mov    eax,DWORD PTR [ebp+0xc]
+ 8048414:	add    edx,eax
+ 8048416:	mov    eax,DWORD PTR [ebp+0x10]
+ 8048419:	add    eax,edx
+ 804841b:	pop    ebp
+ 804841c:	ret    
 
+0804841d <main>:
+ 804841d:	lea    ecx,[esp+0x4]
+ 8048421:	and    esp,0xfffffff0
+ 8048424:	push   DWORD PTR [ecx-0x4]
+ 8048427:	push   ebp
+ 8048428:	mov    ebp,esp
+ 804842a:	push   ecx
+ 804842b:	sub    esp,0x14
+ 804842e:	mov    DWORD PTR [ebp-0x18],0x1
+ 8048435:	mov    DWORD PTR [ebp-0x14],0x2
+ 804843c:	mov    DWORD PTR [ebp-0x10],0x3
+ 8048443:	push   DWORD PTR [ebp-0x10]
+ 8048446:	push   DWORD PTR [ebp-0x14]
+ 8048449:	push   DWORD PTR [ebp-0x18]
+ 804844c:	call   804840b <sum>
+ 8048451:	add    esp,0xc
+ 8048454:	mov    DWORD PTR [ebp-0xc],eax
+ 8048457:	sub    esp,0x8
+ 804845a:	push   DWORD PTR [ebp-0xc]
+ 804845d:	push   0x8048500
+ 8048462:	call   80482e0 <printf@plt>
+ 8048467:	add    esp,0x10
+ 804846a:	mov    eax,0x0
+ 804846f:	mov    ecx,DWORD PTR [ebp-0x4]
+ 8048472:	leave  
+ 8048473:	lea    esp,[ecx-0x4]
+ 8048476:	ret    
+ 8048477:	xchg   ax,ax
+ 8048479:	xchg   ax,ax
+ 804847b:	xchg   ax,ax
+ 804847d:	xchg   ax,ax
+ 804847f:	nop
+
+```
 ##  example 2
 ```c
 # include <stdio.h>
