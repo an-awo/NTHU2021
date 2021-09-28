@@ -40,6 +40,7 @@ int sum(int, int);
 int main() {
   int numl = 2, num2 = 4, answer;
   answer = sum (numl, num2);
+  printf("%d + %d = %d \n",num1,num2,answer);
   return 0;
 }
 
@@ -119,6 +120,65 @@ add rax, rsi
 pop rbx
 pop rbp
 ret
+```
+
+## Ubuntu 16.04 LTS(32bit) 
+```c
+# include <stdio.h>
+
+int sum(int, int);
+
+int main() {
+  int numl = 2, num2 = 4, answer;
+  answer = sum (numl, num2);
+  printf("%d + %d = %d \n",num1,num2,answer);
+  return 0;
+}
+
+int sum (int numl, int num2) {
+  return numl + num2;
+}
+```
+- objdump -M intel -D -j .text test1 --no-show-raw-insn
+
+```C
+0804840b <main>:
+ 804840b:	lea    ecx,[esp+0x4]
+ 804840f:	and    esp,0xfffffff0
+ 8048412:	push   DWORD PTR [ecx-0x4]
+ 8048415:	push   ebp
+ 8048416:	mov    ebp,esp
+ 8048418:	push   ecx
+ 8048419:	sub    esp,0x14
+ 804841c:	mov    DWORD PTR [ebp-0x14],0x2
+ 8048423:	mov    DWORD PTR [ebp-0x10],0x4
+ 804842a:	sub    esp,0x8
+ 804842d:	push   DWORD PTR [ebp-0x10]
+ 8048430:	push   DWORD PTR [ebp-0x14]
+ 8048433:	call   8048461 <sum>
+ 8048438:	add    esp,0x10
+ 804843b:	mov    DWORD PTR [ebp-0xc],eax
+ 804843e:	push   DWORD PTR [ebp-0xc]
+ 8048441:	push   DWORD PTR [ebp-0x10]
+ 8048444:	push   DWORD PTR [ebp-0x14]
+ 8048447:	push   0x80484f0
+ 804844c:	call   80482e0 <printf@plt>
+ 8048451:	add    esp,0x10
+ 8048454:	mov    eax,0x0
+ 8048459:	mov    ecx,DWORD PTR [ebp-0x4]
+ 804845c:	leave  
+ 804845d:	lea    esp,[ecx-0x4]
+ 8048460:	ret    
+
+08048461 <sum>:
+ 8048461:	push   ebp
+ 8048462:	mov    ebp,esp
+ 8048464:	mov    edx,DWORD PTR [ebp+0x8]
+ 8048467:	mov    eax,DWORD PTR [ebp+0xc]
+ 804846a:	add    eax,edx
+ 804846c:	pop    ebp
+ 804846d:	ret    
+ 804846e:	xchg   ax,ax
 ```
 ## 比較cdecl, stdcall, and fastcall conventions in 32-bit  
 
