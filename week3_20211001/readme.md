@@ -18,6 +18,7 @@ Ghidra
 ## Reverse Engineering
 - [Reverse Engineering 101](https://malwareunicorn.org/workshops/re101.html#0)
 - [Modern Binary Exploitation - CSCI 4968(2015)](https://github.com/RPISEC/MBE)
+- [Linux binary Exploitation - Basic knowledge(Angelboy 2018)](https://www.slideshare.net/AngelBoy1/linux-binary-exploitation-basic-knowledge)
 
 ## Software/Binary{Malware?} Protection
 - [段鋼加密與解密：軟體保護技術攻防指南](https://www.tenlong.com.tw/products/9789865004309)
@@ -25,12 +26,6 @@ Ghidra
 
 ## Binary{Malware?} Unpacking
 - [段鋼加密與解密：軟體保護技術攻防指南](https://www.tenlong.com.tw/products/9789865004309)
-  - CHAPTER 07 Windows 核心基礎
-  - CHAPTER 08 Windows 下的例外處理(SEH) 
-  - CHAPTER 09 Win32 偵錯API
-  - CHAPTER 11 PE 檔案格式
-  - CHAPTER 12 植入技術
-  - CHAPTER 13 Hook 技術
   - 脫殼篇 CHAPTER 15 專用加密軟體
     - 壓縮殼 [UPX(Ultimate Packer for eXecutables)](https://upx.github.io/)  [ASPack](http://www.aspack.com/) 
     - 加密殼 [ASProtect](http://www.aspack.com/)  [Armadillo](https://the-armadillo-software-protection-system.software.informer.com/8.6/) [EXECryptor](https://execryptor.en.softonic.com/)  [Themida](https://www.oreans.com/Themida.php) [Themida 軟體保護系統](https://www.accesssoft.com.tw/products/themida)
@@ -48,7 +43,14 @@ Ghidra
 # Tools
 - [How far we have come: testing decompilation correctness of C decompilers(2020)](https://dl.acm.org/doi/pdf/10.1145/3395363.3397370)
 
-
+## Binary{Malware?} Unpacking
+- [段鋼加密與解密：軟體保護技術攻防指南](https://www.tenlong.com.tw/products/9789865004309)
+  - CHAPTER 07 Windows 核心基礎
+  - CHAPTER 08 Windows 下的例外處理(SEH) 
+  - CHAPTER 09 Win32 偵錯API
+  - CHAPTER 11 PE 檔案格式
+  - CHAPTER 12 植入技術
+  - CHAPTER 13 Hook 技術
 ## [GDB: The GNU Project Debugger](https://www.gnu.org/software/gdb/)
 
 - [Debugging with GDB](https://sourceware.org/gdb/current/onlinedocs/gdb/)
