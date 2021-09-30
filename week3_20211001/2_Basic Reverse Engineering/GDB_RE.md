@@ -149,17 +149,20 @@ gef➤ run  ==> 會開啟漂亮視窗
 ```
 
 - x/nfu <address> ==> Print memory.檢視記憶體的資料
+  - [x command:Displays the memory contents at a given address using the specified format.](https://visualgdb.com/gdbreference/commands/x)
   - n: How many units to print (default 1).
   - f: Format character (like „print“).
     - d Integer, signed decimal.
     - t Integer, print as binary (t = „two“).
     - o Integer, print as octal.
     - u Integer, unsigned decimal.
-    - x Integer, print as hexadecimal.
+    - x Integer, print as hexadecimal. 預設以16進位顯示
     - f Floating point number.
     - c Read as integer, print as character.
     - s Try to treat as C string.
-  - u: Unit.
+    - i for machine instructions
+    - m (for displaying memory tags)
+  - u: Unit size
     Unit is one of:
     - b: Byte/1 byte (8-bit)
     - h: Half-word (two bytes)
