@@ -1,5 +1,7 @@
 # The Ghidra Book_The Definitive Guide 導讀
-
+```
+這是學習筆記  學習時間斷斷續續,沒有長時間專注   怕忘了,所以記錄重點與代辦事項
+```
 - [官方網站(含有程式碼可下載)+ 可網路購買電子書](https://ghidrabook.com/l)
 
 - Chapter 1: Introduction to Disassembly
