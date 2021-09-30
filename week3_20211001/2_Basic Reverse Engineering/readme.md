@@ -20,6 +20,5 @@
 ## Research PAPERs
 
 - [Integrated static and dynamic analysis for malware detection](https://core.ac.uk/download/pdf/81971921.pdf)
-- [The technique of dynamic binary analysis and its application in the information security sphere]()
 - [The technique of dynamic binary analysis and its application in the information security sphere](https://ieeexplore.ieee.org/document/6624963)
 - [博士論文 Scalable Dynamic Analysis of Binary Code(2019)](https://www.diva-portal.org/smash/get/diva2:1343472/FULLTEXT01.pdf)
