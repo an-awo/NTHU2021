@@ -102,35 +102,16 @@ GCC: (GNU) 4.8.5 20150623 (Red Hat 4.8.5-16)
   - [0x00400860]> aaa
     - % aa # Analyze All 
     - % aaa # 深度分析
-    - % aaaa # 加入實驗功能的分析 
-  ```
-  [0x00400860]> a?
+    - % aaaa # 加入實驗功能的分析
+    - [0x00400860]> a?
+    - [0x00400860]> aa?
 
 ```  
 Usage: a  [abdefFghoprxstc] [...]
 | aa[?]              analyze all (fcns + bbs) (aa0 to avoid sub renaming)
-| a8 [hexpairs]      analyze bytes
-| ab[b] [addr]       analyze block at given address
-| abb [len]          analyze N basic blocks in [len] (section.size by default)
-| ad[?]              analyze data trampoline (wip)
-| ad [from] [to]     analyze data pointers to (from-to)
-| ae[?] [expr]       analyze opcode eval expression (see ao)
+
 | af[?]              analyze Functions
-| aF                 same as above, but using anal.depth=1
-| ag[?] [options]    draw graphs in various formats
-| ah[?]              analysis hints (force opcode size, ...)
-| ai [addr]          address information (show perms, stack, heap, ...)
-| aL                 list all asm/anal plugins (e asm.arch=?)
-| an [name] [@addr]  show/rename/create whatever flag/function is used at addr
-| ao[?] [len]        analyze Opcodes (or emulate it)
-| aO[?] [len]        Analyze N instructions in M bytes
-| ap                 find prelude for current offset
-| ar[?]              like 'dr' but for the esil vm. (registers)
-| as[?] [num]        analyze syscall using dbg.reg
-| av[?] [.]          show vtables
-| ac[?]              manage classes
-| ax[?]              manage refs/xrefs (see also afx?)
- ```
+```
 
  - [0x00400860]> iI
     - i ?
@@ -145,9 +126,20 @@ Usage: a  [abdefFghoprxstc] [...]
  
   - [0x00400860]> afl 
     -  afl  列出所有函式 (Analyze Function List)  ==> 看看各個區段  有沒有main?
-  - [0x00400860]> p?
-    - % pd $n_line  ==>印出當前位置開始 n ⾏的組合語⾔ (Print Disassemble)
 
+```
+[0x00400860]> af?
+Usage: af  
+| af ([name]) ([addr])                  analyze functions (start at addr or $$)
+| afr ([name]) ([addr])                 analyze functions recursively
+| af+ addr name [type] [diff]           hand craft a function (requires afb+)
+| afi [addr|fcn.name]                   show function(s) information (verbose afl)
+| afl[?] [ls*] [fcn name]               list functions (addr, size, bbs, name) (see afll)
+......
+```
+  - [0x00400860]> p?
+    - [0x00400860]> pd?
+    - [0x00400860]> pd $n_line  ==>印出當前位置開始 n ⾏的組合語⾔ (Print Disassemble)
   - [0x00400860]> pdf ==> 反組譯
   - [0x00400860]> pdf @ main ==> 反組譯 main()函數 ==> 開始分析程式邏輯 ==> 找出關鍵程式段落
 ```
@@ -653,7 +645,7 @@ modifier:
 - `p8`：輸出8位元的位元組流。
 - `ps`：輸出字串。
 
-radare2 中反彙編操作是隱藏在列印操作中的，即使用 `pd`：
+- radare2 中反彙編操作是隱藏在列印操作中的，即使用 `pd`：
 
 ```text
 [0x00000000]> pd?
@@ -793,6 +785,7 @@ Function Keys: (See 'e key.'), defaults to:
 - `;`：添加注釋。
 - `V`：查看圖形。
 - `:`：運行 radare2 命令
+
 ## CTF解題
 - [InCTF Junior　blade](https://medium.com/@amustaque97/demystify-reverse-engineering-ctf-challenge-blade-40c45e7933c0)
 - [easyCTF-2018-Adder](https://github.com/asinggih/easyCTF-2018-writeups/blob/master/Reverse_Engineering/Adder.md)
