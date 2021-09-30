@@ -176,6 +176,8 @@ Usage: af
 
  - 退出到上⼀層 / 退出 r2 (Quit)  ==> % q
 
+- [0x00400860]> !python3
+  - 可以在radare2 session執行外部指令 
 
 ### radare2/r2
 ```text
