@@ -111,8 +111,10 @@ Usage: r2 [-ACdfLMnNqStuvwzX] [-P patch] [-p prj] [-a arch] [-b bits] [-i file]
  -z, -zz      do not load strings or load them even in raw
 ```
 
-參數很多，這裡最重要是 `file`。如果你想 attach 到一個進程上，則使用 `pid`。常用參數如下：
-
+- 參數很多，這裡最重要是 `file`。
+- 如果想 attach 到一個進程上，則使用 `pid`。
+- 常用參數如下：
+- 
 - `-A`：相當於在交互介面輸入了 `aaa`。
 - `-c`：運行 radare 命令。（`r2 -A -q -c 'iI~pic' file`）
 - `-d`：調試二進位檔案或進程。
@@ -121,9 +123,8 @@ Usage: r2 [-ACdfLMnNqStuvwzX] [-P patch] [-p prj] [-a arch] [-b bits] [-i file]
 
 ## 互動式使用方法
 
-當我們進入到 Radare2 的互動式介面後，就可以使用互動式命令進行操作。
-
-輸入 `?`　可以獲得説明資訊，由於命令太多，我們只會重點介紹一些常用命令：
+- 當進入到 Radare2 的互動式介面後，就可使用互動式命令進行操作。
+- 輸入 `?`　可以獲得説明資訊：
 
 ```text
 [0x00000000]> ?
@@ -171,7 +172,7 @@ Prefix with number to repeat command N times (f.ex: 3x)
 | ?:?                     List and manage core plugins
 ```
 
-於是我們知道了 Radare2 交互命令的一般格式，如下所示：
+- Radare2 交互命令的一般格式(如下所示)：
 
 ```text
 [.][times][cmd][~grep][@[@iter]addr!size][|>pipe] ; ...
