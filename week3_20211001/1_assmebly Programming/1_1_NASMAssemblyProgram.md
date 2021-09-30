@@ -56,7 +56,14 @@ section .bss   ==>  Section containing uninitialized data《沒有初值的資�
 
 section .text  ==>  ; Section containing code 《執行程式碼》
 ```
-## [線上組譯器](http://rextester.com/l/nasm_online_compiler)
+### [可以使用線上組譯器 寫程式](http://rextester.com/l/nasm_online_compiler)
+
+## 重要的系統呼叫
+
+- [32位元Linux系統呼叫](http://syscalls.kernelgrok.com/)
+- [64位元Linux系統呼叫](http://blog.rchapman.org/posts/Linux_System_Call_Table_for_x86_64/)
+[最新版的定義](https://github.com/torvalds/linux/blob/master/arch/x86/entry/syscalls/syscall_64.tbl)
+
 ## 32-bit helloworld32.asm
 ```
 ;nasm 2.11.08
