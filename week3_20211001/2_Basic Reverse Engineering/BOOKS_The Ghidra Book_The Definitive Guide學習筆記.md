@@ -1,4 +1,4 @@
-# The Ghidra Book_The Definitive Guide 導讀
+# The Ghidra Book_The Definitive Guide 學習筆記
 ```
 這是學習筆記  學習時間斷斷續續,沒有長時間專注   怕忘了,所以記錄重點與代辦事項
 ```
