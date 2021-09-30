@@ -63,8 +63,69 @@ radare2 有一些工具可供使用[本課程專注於radare2的技術]：
 - rarun2：用於在不同環境中運行程式。
 - rax2：資料格式轉換。
 ```
-### radare2/r2
+### radare2/r2範例練習
 
+- [範例練習:easyCTF-2018-Adder](https://github.com/asinggih/easyCTF-2018-writeups/blob/master/Reverse_Engineering/Adder.md)
+- 先執行看看 程式執行的行為
+- file ./adder
+- strings ./adder 
+```
+.....
+libm.so.6
+libgcc_s.so.1
+libc.so.6
+puts
+putchar
+__cxa_atexit
+malloc
+__libc_start_main
+free
+GLIBC_2.2.5
+GLIBCXX_3.4
+UH-x `
+UH-x `
+[]A\A]A^A_
+Enter three numbers!
+easyctf{
+nope.
+;*3$"
+GCC: (GNU) 4.8.5 20150623 (Red Hat 4.8.5-16)
+.symtab
+.strtab
+.....
+```
+
+- r2 -h
+- r2 adder
+- [0x00400860]> aaa
+- [0x00400860]> iI
+- [0x00400860]> afl ==> 看看main
+- [0x00400860]> pdf ==> 反組譯
+- [0x00400860]> pdf @ main ==> 反組譯 main()函數 開始分析程式邏輯  找出關鍵程式段落
+```
+|           0x00400b8d      488945f8       mov qword [ptr], rax
+|           0x00400b91      8b55f4         mov edx, dword [local_ch]
+|           0x00400b94      8b45f0         mov eax, dword [local_10h]
+|           0x00400b97      01c2           add edx, eax
+|           0x00400b99      8b45ec         mov eax, dword [local_14h]
+|           0x00400b9c      01d0           add eax, edx
+|           0x00400b9e      3d39050000     cmp eax, 0x539              ; 1337
+|       ,=< 0x00400ba3      7527           jne 0x400bcc
+```
+－用Visual Mode來看更清楚
+－[0x00400b1e]> s main　　==> 先找(seek) main()函數 
+- [0x00400b1e]> V  按enter 　==> 進入 hex mode 
+- 在 hex mode 輸入 V  按enter ==> 進入 Visual Mode
+- 在 Visual Mode 使用上下鍵移動  ==> 找關鍵程式
+
+### r2 [Modes of Operation三種運作模式]() [資料來源: Radare2 Explorations](https://monosource.gitbooks.io/radare2-explorations/content/)
+- CLI (Command Line Interface)
+- Hex Mode
+- Visual Mode
+
+
+
+### radare2/r2
 ```text
 $ r2 -h
 Usage: r2 [-ACdfLMnNqStuvwzX] [-P patch] [-p prj] [-a arch] [-b bits] [-i file]
@@ -110,11 +171,10 @@ Usage: r2 [-ACdfLMnNqStuvwzX] [-P patch] [-p prj] [-a arch] [-b bits] [-i file]
  -X [rr2rule] specify custom rarun2 directive
  -z, -zz      do not load strings or load them even in raw
 ```
-
-- 參數很多，這裡最重要是 `file`。
+- 開始逆向 ==> r2 $binary
 - 如果想 attach 到一個進程上，則使用 `pid`。
+
 - 常用參數如下：
-- 
 - `-A`：相當於在交互介面輸入了 `aaa`。
 - `-c`：運行 radare 命令。（`r2 -A -q -c 'iI~pic' file`）
 - `-d`：調試二進位檔案或進程。
@@ -124,7 +184,12 @@ Usage: r2 [-ACdfLMnNqStuvwzX] [-P patch] [-p prj] [-a arch] [-b bits] [-i file]
 ## 互動式使用方法
 
 - 當進入到 Radare2 的互動式介面後，就可使用互動式命令進行操作。
-- 輸入 `?`　可以獲得説明資訊：
+
+### 查詢指令的用法
+
+- % ? # 查詢所有指令
+- % p? # 查詢 p 相關指令
+- % pd? # 查詢 pd 相關指令
 
 ```text
 [0x00000000]> ?
@@ -190,15 +255,16 @@ Prefix with number to repeat command N times (f.ex: 3x)
   - `!ls`
 - `|` 是管道符。用法：`<r2command> | <program|H|>`。
   - `pd | less`
-- `~` 用於文本比配（grep）。用法：`[command]~[modifier][word,word][endmodifier][[column]][:line]`。
+- `~` 用於文本比配（grep）
+  - 用法：`[command]~[modifier][word,word][endmodifier][[column]][:line]`。
   - `i~:0` 顯示 `i` 輸出的第一行
   - `pd~mov,eax` 反彙編並匹配 mov 或 eax 所在行
   - `pi~mov&eax` 匹配 mov 和 eax 都有的行
   - `i~0x400$` 匹配以 0x400 結尾的行
 - `???` 可以獲得以 `?` 開頭的命令的細節
   - `?` 可以做各種進制和格式的快速轉換。如 `? 1234`
-  - `?p vaddr` 獲得虛擬位址 vaddr 的物理位址
-  - `?P paddr` 獲得物理位址 paddr 的虛擬位址
+  - `?p vaddr` 獲得虛擬位址 vaddr 的實體位址(physical address)
+  - `?P paddr` 獲得實體位址 paddr 的虛擬位址
   - `?v` 以十六進位的形式顯示某數學運算式的結果。如 `?v eip-0x804800`。
   - `?l str` 獲得 str 的長度，結果被臨時保存，使用 `?v` 可輸出結果。
 - `@@` foreach 反覆運算器，在列出的偏移處重複執行命令。
