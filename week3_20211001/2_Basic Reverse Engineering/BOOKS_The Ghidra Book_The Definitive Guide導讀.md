@@ -92,11 +92,11 @@
 
 
 - Chapter 17: Ghidra Loaders 檔案載入器
-- Unknown File Analysis
-- Manually Loading a Windows PE File
-- Example 1: SimpleShellcode Loader Module
-- Example 2: Simple Shellcode Source Loader
-- Example 3: Simple ELF Shellcode Loader
+  - Unknown File Analysis
+  - Manually Loading a Windows PE File
+  - Example 1: SimpleShellcode Loader Module
+  - Example 2: Simple Shellcode Source Loader
+  - Example 3: Simple ELF Shellcode Loader
 
 
 - Chapter 18: Ghidra Processors
