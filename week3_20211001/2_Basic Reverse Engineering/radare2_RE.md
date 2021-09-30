@@ -24,10 +24,13 @@ PS:忘了從哪個地方整理過來,若有同學知道來源,請告知讓我好
 - Radare2　是由一系列的元件構成的，這些元件賦予了 Radare2 強大的分析能力，可以在 Radare2 中或者單獨被使用。
 
 ### 網路資源
-- [Radare2 與其他二進位分析工具的對比](http://rada.re/r/cmp.html)
+
 - [The Official Radare2 Book](https://book.rada.re/)
+- [radare2 Cheatsheet](https://scoding.de/uploads/r2_cs.pdf)
+- [r2con](https://rada.re/con/)
 - [Radare2 Youtube 頻道](https://www.youtube.com/results?search_query=r2con)
 - [Radare2 blog](https://radareorg.github.io/blog/)
+- [Radare2 與其他二進位分析工具的對比](http://rada.re/r/cmp.html)
 
 ## 安裝
 
