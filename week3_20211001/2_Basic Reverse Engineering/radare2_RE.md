@@ -67,9 +67,9 @@ radare2 有一些工具可供使用[本課程專注於radare2的技術]：
 ## 範例練習
 
 - [範例練習:easyCTF-2018-Adder](https://github.com/asinggih/easyCTF-2018-writeups/blob/master/Reverse_Engineering/Adder.md)
-- 先執行看看 程式執行的行為
-- file ./adder
-- strings ./adder 
+- STEP 1: behavior of binary先執行看看 程式執行的行為
+  - file ./adder
+  - strings ./adder 
 ```
 .....
 libm.so.6
@@ -95,14 +95,14 @@ GCC: (GNU) 4.8.5 20150623 (Red Hat 4.8.5-16)
 .strtab
 .....
 ```
-
-- r2 -h
-- r2 adder
-- [0x00400860]> aaa
-- [0x00400860]> iI
-- [0x00400860]> afl ==> 看看各個區段  有沒有main?
-- [0x00400860]> pdf ==> 反組譯
-- [0x00400860]> pdf @ main ==> 反組譯 main()函數 ==> 開始分析程式邏輯 ==> 找出關鍵程式段落
+- STEP 2: Reverse binary
+  - r2 -h
+  - r2 adder
+  - [0x00400860]> aaa
+  - [0x00400860]> iI
+  - [0x00400860]> afl ==> 看看各個區段  有沒有main?
+  - [0x00400860]> pdf ==> 反組譯
+  - [0x00400860]> pdf @ main ==> 反組譯 main()函數 ==> 開始分析程式邏輯 ==> 找出關鍵程式段落
 ```
 |           0x00400b8d      488945f8       mov qword [ptr], rax
 |           0x00400b91      8b55f4         mov edx, dword [local_ch]
@@ -113,17 +113,17 @@ GCC: (GNU) 4.8.5 20150623 (Red Hat 4.8.5-16)
 |           0x00400b9e      3d39050000     cmp eax, 0x539              ; 1337
 |       ,=< 0x00400ba3      7527           jne 0x400bcc
 ```
-- 用Visual Mode來看更清楚
-  - [0x00400b1e]> s main　　==> 先找(seek) main()函數 
-    - seek command ==> change our position/point of view in the binary
-  - [0x00400b1e]> V  按enter 　==> 進入 hex mode 
-  - 在 hex mode 輸入 V  按enter ==> 進入 Visual Mode
-  - 在 Visual Mode 使用上下鍵移動  ==> 找關鍵程式
-
-### r2 [Modes of Operation三種運作模式]() [資料來源: Radare2 Explorations](https://monosource.gitbooks.io/radare2-explorations/content/)
-- CLI (Command Line Interface)
-- Hex Mode
-- Visual Mode
+  - 用Visual Mode來看更清楚
+    - [0x00400b1e]> s main　　==> 先找(seek) main()函數 
+      - seek command ==> change our position/point of view in the binary
+    - [0x00400b1e]> V  按enter 　==> 進入 hex mode 
+    - 在 hex mode 輸入 V  按enter ==> 進入 Visual Mode
+    - 在 Visual Mode 使用上下鍵移動  ==> 找關鍵程式
+    
+    - r2 [Modes of Operation三種運作模式](https://monosource.gitbooks.io/radare2-explorations/content/intro/modes.html) [資料來源: Radare2 Explorations](https://monosource.gitbooks.io/radare2-explorations/content/)
+      - CLI (Command Line Interface)
+      - Hex Mode
+      - Visual Mode
 
 
 
