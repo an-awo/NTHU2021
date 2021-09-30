@@ -106,6 +106,9 @@ GCC: (GNU) 4.8.5 20150623 (Red Hat 4.8.5-16)
   - [0x00400860]> iI
   - [0x00400860]> afl 
     -  afl  列出所有函式 (Analyze Function List)  ==> 看看各個區段  有沒有main?
+  - [0x00400860]> p?
+    - % pd $n_line  ==>印出當前位置開始 n ⾏的組合語⾔ (Print Disassemble)
+
   - [0x00400860]> pdf ==> 反組譯
   - [0x00400860]> pdf @ main ==> 反組譯 main()函數 ==> 開始分析程式邏輯 ==> 找出關鍵程式段落
 ```
@@ -119,19 +122,24 @@ GCC: (GNU) 4.8.5 20150623 (Red Hat 4.8.5-16)
 |       ,=< 0x00400ba3      7527           jne 0x400bcc
 ```
   - 用Visual Mode來看更清楚
-    - [0x00400b1e]> s main　　==> 先找(seek) main()函數 
+    - [0x00400b1e]> s main　==> 先找(seek) main()函數 
       - seek command ==> change our position/point of view in the binary
+      - % s $function_name # Ex. s main
+      - % s $address # Ex. s 0x0000610
       - [Seeking](https://book.rada.re/basic_commands/seeking.html)
     - [0x00400b1e]> V  按enter 　==> 進入 hex mode 
     - 在 hex mode 輸入 V  按enter ==> 進入 Visual Mode
     - 在 Visual Mode 使用上下鍵移動  ==> 找關鍵程式
       - [Navigation: Navigation can be done using HJKL or arrow keys and PgUp/PgDown keys.](https://book.rada.re/visual_mode/intro.html)
-    
+      - 查看指令 ==> 按 ? ==>To see help on all key bindings defined for visual mode, press ?:
     - [Modes of Operation三種運作模式](https://monosource.gitbooks.io/radare2-explorations/content/intro/modes.html) [資料來源: Radare2 Explorations](https://monosource.gitbooks.io/radare2-explorations/content/)
       - CLI (Command Line Interface)
       - Hex Mode
       - Visual Mode
-    - 資料來源:修改自陳憶賢簡報
+    - 資料來源:陳憶賢博士簡報
+    ![]() 
+
+ - 退出到上⼀層 / 退出 r2 (Quit)  ==> % q
 
 
 ### radare2/r2
