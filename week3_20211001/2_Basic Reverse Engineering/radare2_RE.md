@@ -67,6 +67,7 @@ radare2 有一些工具可供使用[本課程專注於radare2的技術]：
 ## 範例練習
 
 - [範例練習:easyCTF-2018-Adder](https://github.com/asinggih/easyCTF-2018-writeups/blob/master/Reverse_Engineering/Adder.md)
+
 - STEP 1: behavior of binary先執行看看 程式執行的行為
   - file ./adder
   - strings ./adder 
@@ -95,7 +96,7 @@ GCC: (GNU) 4.8.5 20150623 (Red Hat 4.8.5-16)
 .strtab
 .....
 ```
-- STEP 2: Reverse binary
+- STEP 2: Reverse Engineering with Radare2 
   - r2 -h
   - r2 adder
   - [0x00400860]> aaa
