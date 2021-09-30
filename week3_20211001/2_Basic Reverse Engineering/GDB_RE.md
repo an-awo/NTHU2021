@@ -175,6 +175,100 @@ gef➤ run  ==> 會開啟漂亮視窗
 
 ## 示範解題
 
+- [[教科書Practical Binary Analysis: Build Your Own Linux Tools for Binary Instrumentation, Analysis, and Disassembly,Dennis Andriesse]](https://www.tenlong.com.tw/products/9781593279127) [[Github]](https://github.com/wilvk/practical-binary) [[官方網站:下載ova及code]](https://practicalbinaryanalysis.com/)
+- Chpater 5.BASIC BINARY ANALYSIS IN LINUX  有趣
+
+```
+5.1 Resolving Identity Crises Using file
+  
+   file payload
+   head payload
+   base64 -d payload > decoded_payload
+   file decoded_payload
+   file -z decoded_payload
+  
+  tar xvzf decoded_payload
+  ==>ctf
+    67b8601
+
+  file ctf
+  file 67b8601
+
+5.2 Using ldd to Explore Dependencies
+  
+
+   chmod +x ctf
+   ./ctf ==> error
+   ldd ctf
+   grep 'ELF' *
+  
+5.3 Viewing File Contents with xxd 
+  
+  xxd 67b8601 | head -n 15
+  dd skip=52 count=64 if=67b8601 of=elf_header bs=1
+  xxd elf_header
+  
+5.4 Parsing the Extracted ELF with readelf
+  
+  readelf -h elf_header
+  
+  dd skip=52 count=10296 if=67b8601 of=lib5ae9b7f.so bs=1
+  
+  readelf -hs lib5ae9b7f.so
+  
+5.5 Parsing Symbols with nm 
+  
+  nm lib5ae9b7f.so
+  
+  nm -D lib5ae9b7f.so
+  
+  nm -D --demangle lib5ae9b7f.so
+  
+  export LD_LIBRARY_PATH=`pwd`
+  ./ctf
+  $ echo $?
+
+  
+5.6 Looking for Hints with strings 
+  
+  strings ctf
+  ./ctf foobar
+  ./ctf show_me_the_flag
+
+5.7 Tracing System Calls and Library Calls with strace and ltrace
+  
+  strace ./ctf show_me_the_flag
+  
+  ltrace -i -C ./ctf show_me_the_flag
+  
+  GUESSME='foobar' ./ctf show_me_the_flag
+  
+  GUESSME='foobar' ltrace -i -C ./ctf show_me_the_flag
+
+5.8 Examining Instruction-Level Behavior Using objdump 
+
+  objdump -s --section .rodata ctf
+  
+  objdump -d ctf
+  
+5.9 Dumping a Dynamic String Buffer Using gdb
+  
+  gdb ./ctf
+  
+ (gdb) b *0x400dc8
+ (gdb) set env GUESSME=foobar
+ (gdb) run show_me_the_flag
+ (gdb) display/i $pc
+ (gdb) info registers rcx
+ (gdb) info registers rax
+ (gdb) x/s 0x615050
+ (gdb) quit
+  
+  GUESSME="Crackers Don't Matter" ./ctf show_me_the_flag
+  
+  最後的flag 為何?
+```
+  
 ## 學習資源
 
 - [GDB: The GNU Project Debugger](https://www.gnu.org/software/gdb/)
