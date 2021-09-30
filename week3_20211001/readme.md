@@ -18,7 +18,7 @@ Ghidra
 ## Reverse Engineering
 - [Reverse Engineering 101](https://malwareunicorn.org/workshops/re101.html#0)
 - [Modern Binary Exploitation - CSCI 4968(2015)](https://github.com/RPISEC/MBE)
-- [Linux binary Exploitation - Basic knowledge(Angelboy 2018)](https://www.slideshare.net/AngelBoy1/linux-binary-exploitation-basic-knowledge)
+- [超重推薦Linux binary Exploitation - Basic knowledge(Angelboy 2018)](https://www.slideshare.net/AngelBoy1/linux-binary-exploitation-basic-knowledge)
 
 ## Software/Binary{Malware?} Protection
 - [段鋼加密與解密：軟體保護技術攻防指南](https://www.tenlong.com.tw/products/9789865004309)
