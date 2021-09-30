@@ -137,7 +137,8 @@ GCC: (GNU) 4.8.5 20150623 (Red Hat 4.8.5-16)
       - Hex Mode
       - Visual Mode
     - 資料來源:陳憶賢博士簡報
-    ![radare2.png](radare2.png) 
+    
+![radare2.png](radare2.png) 
 
  - 退出到上⼀層 / 退出 r2 (Quit)  ==> % q
 
