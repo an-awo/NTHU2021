@@ -103,7 +103,46 @@ GCC: (GNU) 4.8.5 20150623 (Red Hat 4.8.5-16)
     - % aa # Analyze All 
     - % aaa # 深度分析
     - % aaaa # 加入實驗功能的分析 
-  - [0x00400860]> iI
+  ```
+  [0x00400860]> a?
+
+```  
+Usage: a  [abdefFghoprxstc] [...]
+| aa[?]              analyze all (fcns + bbs) (aa0 to avoid sub renaming)
+| a8 [hexpairs]      analyze bytes
+| ab[b] [addr]       analyze block at given address
+| abb [len]          analyze N basic blocks in [len] (section.size by default)
+| ad[?]              analyze data trampoline (wip)
+| ad [from] [to]     analyze data pointers to (from-to)
+| ae[?] [expr]       analyze opcode eval expression (see ao)
+| af[?]              analyze Functions
+| aF                 same as above, but using anal.depth=1
+| ag[?] [options]    draw graphs in various formats
+| ah[?]              analysis hints (force opcode size, ...)
+| ai [addr]          address information (show perms, stack, heap, ...)
+| aL                 list all asm/anal plugins (e asm.arch=?)
+| an [name] [@addr]  show/rename/create whatever flag/function is used at addr
+| ao[?] [len]        analyze Opcodes (or emulate it)
+| aO[?] [len]        Analyze N instructions in M bytes
+| ap                 find prelude for current offset
+| ar[?]              like 'dr' but for the esil vm. (registers)
+| as[?] [num]        analyze syscall using dbg.reg
+| av[?] [.]          show vtables
+| ac[?]              manage classes
+| ax[?]              manage refs/xrefs (see also afx?)
+ ```
+
+ - [0x00400860]> iI
+    - i ?
+    - | ie                 Entrypoint
+    - | iee                Show Entry and Exit (preinit, init and fini)
+    - | iE                 Exports (global symbols)
+    - | iE.                Current export
+    - | ih                 Headers (alias for iH)
+    - | iHH                Verbose Headers in raw text
+    - | ii                 Imports
+    - | iI                 Binary info
+ 
   - [0x00400860]> afl 
     -  afl  列出所有函式 (Analyze Function List)  ==> 看看各個區段  有沒有main?
   - [0x00400860]> p?
