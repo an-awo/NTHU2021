@@ -94,9 +94,24 @@
   最後的flag 為何?
 ```
   
-File magic 與 file signature
+## File magic 與 file signature
   
 - [[WIKI]List of file signatures](https://en.wikipedia.org/wiki/List_of_file_signatures)  
-  
+
+## [Steganography](https://en.wikipedia.org/wiki/Steganography)  [[隱寫術]](https://zh.wikipedia.org/zh-hant/%E9%9A%90%E5%86%99%E6%9C%AF)
+
+- [Steganography](https://wiki.bi0s.in/steganography/)
+  - 有一些工具介紹與說明
+  - audio steganalysis ==> [Audacity](https://wiki.bi0s.in/steganography/) 
+- [隱寫術實作： 把小檔案藏在圖檔或文字檔裡](https://newtoypia.blogspot.com/2017/04/steganography.html)
+  - cat cover.jpg secret.zip > steg.jpg
+    - cover file == 用來掩護內嵌檔的 「載具」 == cover.jpg 
+    - 需要隱藏/內嵌 (embed) 的機密檔 == secret.zip 
+    - stegofile == 打包完的 steg.jpg 
+  - 用看圖軟體去開 steg.jpg 看起來就是一張普通的圖片
+  - 但用 unzip 指令去開 steg.jpg 則會將 secret.zip 的內容解出來。
+  - 工具有許多: [stegsnow](http://manpages.ubuntu.com/manpages/bionic/man1/stegsnow.1.html)
+
+## 
 - [LD_LIBRARY_PATH環境變數的設定](https://www.itread01.com/content/1549007643.html) 
   [How to set $LD_LIBRARY_PATH in Ubuntu?](https://serverfault.com/questions/201709/how-to-set-ld-library-path-in-ubuntu)
