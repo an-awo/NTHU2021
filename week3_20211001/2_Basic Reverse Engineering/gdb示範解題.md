@@ -111,6 +111,9 @@
   - 用看圖軟體去開 steg.jpg 看起來就是一張普通的圖片
   - 但用 unzip 指令去開 steg.jpg 則會將 secret.zip 的內容解出來。
   - 工具有許多: [stegsnow](http://manpages.ubuntu.com/manpages/bionic/man1/stegsnow.1.html)
+
+- [圖像隱碼術(Steganography)與惡意程式：原理和方法 (2015, Trend Labs 趨勢科技全球技術支援與研發中心)](https://blog.trendmicro.com.tw/?cat=2123)
+- [Daserf 間諜集團以「心肺復甦術」、「防災計畫」主旨信件及日文加圖像隱碼術,騙倒日本企業(2017,Trend Labs 趨勢科技全球技術支援與研發中心])](https://blog.trendmicro.com.tw/?cat=2123)
 - [Python圖片隱寫術] (https://hackmd.io/@NIghTcAt/ByKr8jxGH)
 
 ## 
