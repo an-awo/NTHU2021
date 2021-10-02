@@ -268,6 +268,8 @@ gef➤ run  ==> 會開啟漂亮視窗
   
   最後的flag 為何?
 ```
+- [LD_LIBRARY_PATH環境變數的設定](https://www.itread01.com/content/1549007643.html) 
+  [How to set $LD_LIBRARY_PATH in Ubuntu?](https://serverfault.com/questions/201709/how-to-set-ld-library-path-in-ubuntu)
   
 ## 學習資源
 
