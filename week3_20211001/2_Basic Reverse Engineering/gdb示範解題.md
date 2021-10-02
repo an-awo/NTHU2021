@@ -111,6 +111,7 @@
   - 用看圖軟體去開 steg.jpg 看起來就是一張普通的圖片
   - 但用 unzip 指令去開 steg.jpg 則會將 secret.zip 的內容解出來。
   - 工具有許多: [stegsnow](http://manpages.ubuntu.com/manpages/bionic/man1/stegsnow.1.html)
+- [Python圖片隱寫術] (https://hackmd.io/@NIghTcAt/ByKr8jxGH)
 
 ## 
 - [LD_LIBRARY_PATH環境變數的設定](https://www.itread01.com/content/1549007643.html) 
