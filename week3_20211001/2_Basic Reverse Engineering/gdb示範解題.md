@@ -117,6 +117,7 @@
 - [Daserf 間諜集團以「心肺復甦術」、「防災計畫」主旨信件及日文加圖像隱碼術,騙倒日本企業(2017,Trend Labs 趨勢科技全球技術支援與研發中心])](https://blog.trendmicro.com.tw/?cat=2123)
 - [Python圖片隱寫術] (https://hackmd.io/@NIghTcAt/ByKr8jxGH)
 - [隐写术总结--CTF指南](https://www.jianshu.com/p/b61e4ff0b0d5)
+- [隐写术：从入门到出门](https://zhuanlan.zhihu.com/p/301815967)
 - [REVIEW: Image Steganography: A Review of the Recent Advances(2021)](https://ieeexplore.ieee.org/document/9335027)
 
 ## LD_LIBRARY_PATH環境變數
