@@ -93,7 +93,8 @@
   
   最後的flag 為何?
 ```
-  
+
+## 參考資料
 ## File magic 與 file signature
   
 - [[WIKI]List of file signatures](https://en.wikipedia.org/wiki/List_of_file_signatures)  
@@ -115,7 +116,8 @@
 - [圖像隱碼術(Steganography)與惡意程式：原理和方法 (2015, Trend Labs 趨勢科技全球技術支援與研發中心)](https://blog.trendmicro.com.tw/?cat=2123)
 - [Daserf 間諜集團以「心肺復甦術」、「防災計畫」主旨信件及日文加圖像隱碼術,騙倒日本企業(2017,Trend Labs 趨勢科技全球技術支援與研發中心])](https://blog.trendmicro.com.tw/?cat=2123)
 - [Python圖片隱寫術] (https://hackmd.io/@NIghTcAt/ByKr8jxGH)
+- [REVIEW: Image Steganography: A Review of the Recent Advances(2021)](https://ieeexplore.ieee.org/document/9335027)
 
-## 
+## LD_LIBRARY_PATH環境變數
 - [LD_LIBRARY_PATH環境變數的設定](https://www.itread01.com/content/1549007643.html) 
-  [How to set $LD_LIBRARY_PATH in Ubuntu?](https://serverfault.com/questions/201709/how-to-set-ld-library-path-in-ubuntu)
+- [How to set $LD_LIBRARY_PATH in Ubuntu?](https://serverfault.com/questions/201709/how-to-set-ld-library-path-in-ubuntu)
