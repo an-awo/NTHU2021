@@ -1,0 +1,38 @@
+
+## ret2win
+1. 先用radare2分析，看到有一個sym.ret2win的函式
+2. 進到sym.ret2win 看內容，發現裡面有一個 "bin/cat flag.txt"
+3. 想辦法用BOF 把return_address改到 sym.ret2win()的位置 (0x400756)
+4. var + ret_rbp = 0x28大小，先用40個'a'蓋到 ret_addr，再把0x400756給到return_addr
+![](https://i.imgur.com/2LMQIoO.jpg)
+![](https://i.imgur.com/sEHEZ80.jpg)
+![](https://i.imgur.com/C7KOXND.jpg)
+
+## ret2sc
+1. ret2sc檔案可以輸入2次input，但檔案中沒有"bin/sh"之類可以拿到shell的函式，所以要自行寫一段shellcode塞到程式中，再想辦法用BOF的方式，跳回shellcode位置，執行額外塞入的shellcode
+2. rsp 先多要了0x20的空間， str.Name存放第一次輸入的input，空間是0x32(50個byte)，在此段塞入shellcode，address為0x601080
+3. str.Try_your_best 放第2次input，空間為[var_20h]
+4. BOF往回塞 var_20h -->0x20  + ret_rbp --> 0x08， 因此塞0x28個'a'， 最後塞前面shellcode的位置
+
+![](https://i.imgur.com/KemGKoX.jpg)
+![](https://i.imgur.com/6A8bqRG.jpg)
+![](https://i.imgur.com/9N4veZo.jpg)
+
+
+## pass
+1. 用r2看./pass，發現在main的最後會cmp 0xdeadbeef，從stack 0x28空間以後開始比較，如果相同後面流程會cat /home/ctf/flag
+2. 先塞0x28個'A'，然後會準備開始比較0xdeadbeef，所以塞p64(0xdeadbeef)，用p64()會自動轉成little-endian
+![](https://i.imgur.com/5nYfeqP.png)
+![](https://i.imgur.com/EDgOWoQ.png)
+![](https://i.imgur.com/hzGKkXb.png)
+
+## gohome
+1. 用strings 看gohome會有一個 Billyhouse的函式很可疑，用r2 afl找到sym.Billyhouse()
+2. 看sym.Billyhouse()的內容，會發現裡面有"car /home/ctf/flag"， Billyhouse()的address為0x4006c6，想辦法執行Billyhouse()
+3. 從main當中可以看到 rsp取了0x20的開間，加上ret_rbp --> 0x08的空間，因此需要往回塞0x28的空間， 再放Billyhouse() --> 0x4006c6 蓋掉ret_addr
+![](https://i.imgur.com/L7TXRmi.png)
+![](https://i.imgur.com/YPO1NY3.png)
+![](https://i.imgur.com/7y8d56c.png)
+![](https://i.imgur.com/U7TKse5.png)
+
+
